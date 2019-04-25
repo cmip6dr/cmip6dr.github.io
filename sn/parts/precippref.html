@@ -1,0 +1,73 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>precippref</h1>
+<ul>
+<li><a name="1000">graupel_and_</a><a href="javascript:void(0)" onclick="ltoggle('t-1000')"> toggle </a>
+<div id="t-1000"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0574">graupel_and_hail_fall_amount</a></li>
+<li><a href="../parsed.html#0575">graupel_and_hail_fall_flux</a></li>
+</ul></div>
+</li>
+<li><a name="1001">lwe_</a><a href="javascript:void(0)" onclick="ltoggle('t-1001')"> toggle </a>
+<div id="t-1001"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1077">lwe_precipitation_rate</a></li>
+<li><a href="../parsed.html#1078">lwe_snowfall_rate</a></li>
+</ul></div>
+</li>
+<li><a name="1002">lwe_convective_</a><a href="javascript:void(0)" onclick="ltoggle('t-1002')"> toggle </a>
+<div id="t-1002"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1075">lwe_convective_precipitation_rate</a></li>
+<li><a href="../parsed.html#1076">lwe_convective_snowfall_rate</a></li>
+</ul></div>
+</li>
+<li><a name="1003">lwe_stratiform_</a><a href="javascript:void(0)" onclick="ltoggle('t-1003')"> toggle </a>
+<div id="t-1003"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1079">lwe_stratiform_precipitation_rate</a></li>
+<li><a href="../parsed.html#1080">lwe_stratiform_snowfall_rate</a></li>
+</ul></div>
+</li>
+<li><a name="1004">subsurface_</a><a href="javascript:void(0)" onclick="ltoggle('t-1004')"> toggle </a>
+<div id="t-1004"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2672">subsurface_runoff_amount</a></li>
+<li><a href="../parsed.html#2673">subsurface_runoff_flux</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>

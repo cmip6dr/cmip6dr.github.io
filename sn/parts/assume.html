@@ -1,0 +1,128 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>Assumptions</h1>
+
+<p>Phrases used with the "X_assuming_Y" construction, meaning that the quantity X is computed as if the assumed conditions held.
+</p>
+<ul>
+<li><a name="0182">_assuming_clear_sky</a><a href="javascript:void(0)" onclick="ltoggle('t-0182')"> toggle </a>
+<div id="t-0182"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0432">diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#0463">downwelling_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#0484">downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#1742">net_downward_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#1746">net_downward_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#1765">net_upward_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#1767">net_upward_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2690">surface_diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2723">surface_downwelling_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2745">surface_downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2771">surface_net_downward_longwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2773">surface_net_downward_longwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2781">surface_net_downward_shortwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2783">surface_net_downward_shortwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#3222">surface_upwelling_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#3235">surface_upwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#3260">tendency_of_air_temperature_due_to_longwave_heating_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#3266">tendency_of_air_temperature_due_to_shortwave_heating_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4100">toa_brightness_temperature_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4109">toa_longwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4111">toa_net_downward_longwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4114">toa_net_downward_shortwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4116">toa_net_upward_longwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4119">toa_outgoing_longwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4120">toa_outgoing_longwave_flux_due_to_volcanic_ambient_aerosol_particles_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4128">toa_outgoing_shortwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4131">toa_outgoing_shortwave_flux_due_to_volcanic_ambient_aerosol_particles_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4160">ultraviolet_index_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4190">upwelling_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4196">upwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+</ul></div>
+</li>
+<li><a name="0183">_assuming_clear_sky_and_no_aerosol</a><a href="javascript:void(0)" onclick="ltoggle('t-0183')"> toggle </a>
+<div id="t-0183"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0485">downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#2746">surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#3236">surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#4129">toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#4197">upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</a></li>
+</ul></div>
+</li>
+<li><a name="0184">_assuming_deep_snow</a><a href="javascript:void(0)" onclick="ltoggle('t-0184')"> toggle </a>
+<div id="t-0184"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2678">surface_albedo_assuming_deep_snow</a></li>
+</ul></div>
+</li>
+<li><a name="0185">_assuming_mean_sea_level_for_geoid</a><a href="javascript:void(0)" onclick="ltoggle('t-0185')"> toggle </a>
+<div id="t-0185"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2757">surface_geostrophic_eastward_sea_water_velocity_assuming_mean_sea_level_for_geoid</a></li>
+<li><a href="../parsed.html#2759">surface_geostrophic_northward_sea_water_velocity_assuming_mean_sea_level_for_geoid</a></li>
+<li><a href="../parsed.html#2761">surface_geostrophic_sea_water_x_velocity_assuming_mean_sea_level_for_geoid</a></li>
+<li><a href="../parsed.html#2763">surface_geostrophic_sea_water_y_velocity_assuming_mean_sea_level_for_geoid</a></li>
+</ul></div>
+</li>
+<li><a name="0186">_assuming_no_aerosol</a><a href="javascript:void(0)" onclick="ltoggle('t-0186')"> toggle </a>
+<div id="t-0186"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4130">toa_outgoing_shortwave_flux_assuming_no_aerosol</a></li>
+</ul></div>
+</li>
+<li><a name="0187">_assuming_no_aerosol_or_cloud</a><a href="javascript:void(0)" onclick="ltoggle('t-0187')"> toggle </a>
+<div id="t-0187"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4218">volume_attenuated_backwards_scattering_function_in_air_assuming_no_aerosol_or_cloud</a></li>
+</ul></div>
+</li>
+<li><a name="0188">_assuming_no_snow</a><a href="javascript:void(0)" onclick="ltoggle('t-0188')"> toggle </a>
+<div id="t-0188"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2679">surface_albedo_assuming_no_snow</a></li>
+</ul></div>
+</li>
+<li><a name="0189">_assuming_no_tide</a><a href="javascript:void(0)" onclick="ltoggle('t-0189')"> toggle </a>
+<div id="t-0189"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0510">eastward_sea_water_velocity_assuming_no_tide</a></li>
+<li><a href="../parsed.html#1813">northward_sea_water_velocity_assuming_no_tide</a></li>
+</ul></div>
+</li>
+<li><a name="0190">_assuming_overcast_sky</a><a href="javascript:void(0)" onclick="ltoggle('t-0190')"> toggle </a>
+<div id="t-0190"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4161">ultraviolet_index_assuming_overcast_sky</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>

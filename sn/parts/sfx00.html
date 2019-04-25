@@ -1,0 +1,89 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>sfx00</h1>
+<ul>
+<li><a name="1061">center_to_leading_edge_of_displaced_convection</a><a href="javascript:void(0)" onclick="ltoggle('t-1061')"> toggle </a>
+<div id="t-1061"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0440">distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection</a></li>
+</ul></div>
+</li>
+<li><a name="1062">central_dense_overcast_region</a><a href="javascript:void(0)" onclick="ltoggle('t-1062')"> toggle </a>
+<div id="t-1062"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2355">radius_of_tropical_cyclone_central_dense_overcast_region</a></li>
+</ul></div>
+</li>
+<li><a name="1063">cloud_region</a><a href="javascript:void(0)" onclick="ltoggle('t-1063')"> toggle </a>
+<div id="t-1063"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2384">scene_type_of_dvorak_tropical_cyclone_cloud_region</a></li>
+</ul></div>
+</li>
+<li><a name="1064">current_intensity_number</a><a href="javascript:void(0)" onclick="ltoggle('t-1064')"> toggle </a>
+<div id="t-1064"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0496">dvorak_tropical_cyclone_current_intensity_number</a></li>
+</ul></div>
+</li>
+<li><a name="1065">eye</a><a href="javascript:void(0)" onclick="ltoggle('t-1065')"> toggle </a>
+<div id="t-1065"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2356">radius_of_tropical_cyclone_eye</a></li>
+</ul></div>
+</li>
+<li><a name="1066">eye_brightness_temperature</a><a href="javascript:void(0)" onclick="ltoggle('t-1066')"> toggle </a>
+<div id="t-1066"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4136">tropical_cyclone_eye_brightness_temperature</a></li>
+</ul></div>
+</li>
+<li><a name="1067">eye_region</a><a href="javascript:void(0)" onclick="ltoggle('t-1067')"> toggle </a>
+<div id="t-1067"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2385">scene_type_of_dvorak_tropical_cyclone_eye_region</a></li>
+</ul></div>
+</li>
+<li><a name="1068">forecasting_system_storm_identifier</a><a href="javascript:void(0)" onclick="ltoggle('t-1068')"> toggle </a>
+<div id="t-1068"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0330">automated_tropical_cyclone_forecasting_system_storm_identifier</a></li>
+</ul></div>
+</li>
+<li><a name="1069">maximum_sustained_wind_speed</a><a href="javascript:void(0)" onclick="ltoggle('t-1069')"> toggle </a>
+<div id="t-1069"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2357">radius_of_tropical_cyclone_maximum_sustained_wind_speed</a></li>
+<li><a href="../parsed.html#4137">tropical_cyclone_maximum_sustained_wind_speed</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>

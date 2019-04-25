@@ -1,0 +1,275 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>Process</h1>
+<ul>
+<li><a name="0114">adjusted</a><a href="javascript:void(0)" onclick="ltoggle('t-0114')"> toggle </a>
+<div id="t-0114"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4095">toa_adjusted_longwave_forcing</a></li>
+<li><a href="../parsed.html#4096">toa_adjusted_radiative_forcing</a></li>
+<li><a href="../parsed.html#4097">toa_adjusted_shortwave_forcing</a></li>
+<li><a href="../parsed.html#4138">tropopause_adjusted_longwave_forcing</a></li>
+<li><a href="../parsed.html#4139">tropopause_adjusted_radiative_forcing</a></li>
+<li><a href="../parsed.html#4140">tropopause_adjusted_shortwave_forcing</a></li>
+</ul></div>
+</li>
+<li><a name="0115">baroclinic</a><a href="javascript:void(0)" onclick="ltoggle('t-0115')"> toggle </a>
+<div id="t-0115"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0332">baroclinic_eastward_sea_water_velocity</a></li>
+<li><a href="../parsed.html#0333">baroclinic_northward_sea_water_velocity</a></li>
+</ul></div>
+</li>
+<li><a name="0116">barotropic</a><a href="javascript:void(0)" onclick="ltoggle('t-0116')"> toggle </a>
+<div id="t-0116"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0335">barotropic_eastward_sea_water_velocity</a></li>
+<li><a href="../parsed.html#0336">barotropic_northward_sea_water_velocity</a></li>
+<li><a href="../parsed.html#0337">barotropic_sea_water_x_velocity</a></li>
+<li><a href="../parsed.html#0338">barotropic_sea_water_y_velocity</a></li>
+<li><a href="../parsed.html#1845">ocean_barotropic_mass_streamfunction</a></li>
+<li><a href="../parsed.html#1846">ocean_barotropic_streamfunction</a></li>
+<li><a href="../parsed.html#3956">tendency_of_ocean_barotropic_streamfunction</a></li>
+</ul></div>
+</li>
+<li><a name="0117">burned</a><a href="javascript:void(0)" onclick="ltoggle('t-0117')"> toggle </a>
+<div id="t-0117"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0350">burned_area</a></li>
+<li><a href="../parsed.html#0351">burned_area_fraction</a></li>
+</ul></div>
+</li>
+<li><a name="0118">cloud</a><a href="javascript:void(0)" onclick="ltoggle('t-0118')"> toggle </a>
+<div id="t-0118"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0393">cloud_albedo</a></li>
+<li><a href="../parsed.html#0394">cloud_area_fraction</a></li>
+<li><a href="../parsed.html#0395">cloud_area_fraction_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#0397">cloud_binary_mask</a></li>
+<li><a href="../parsed.html#0398">cloud_ice_mixing_ratio</a></li>
+<li><a href="../parsed.html#0399">cloud_liquid_water_mixing_ratio</a></li>
+<li><a href="../parsed.html#0404">convective_cloud_area_fraction</a></li>
+<li><a href="../parsed.html#0405">convective_cloud_area_fraction_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#0408">convective_cloud_longwave_emissivity</a></li>
+<li><a href="../parsed.html#1062">liquid_water_cloud_area_fraction</a></li>
+<li><a href="../parsed.html#1063">liquid_water_cloud_area_fraction_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#2655">stratiform_cloud_area_fraction</a></li>
+<li><a href="../parsed.html#2656">stratiform_cloud_area_fraction_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#2657">stratiform_cloud_longwave_emissivity</a></li>
+<li><a href="../parsed.html#4103">toa_cloud_radiative_effect</a></li>
+</ul></div>
+</li>
+<li><a name="0119">convective</a><a href="javascript:void(0)" onclick="ltoggle('t-0119')"> toggle </a>
+<div id="t-0119"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0055">atmosphere_convective_available_potential_energy</a></li>
+<li><a href="../parsed.html#0056">atmosphere_convective_available_potential_energy_wrt_surface</a></li>
+<li><a href="../parsed.html#0059">atmosphere_downdraft_convective_mass_flux</a></li>
+<li><a href="../parsed.html#0298">atmosphere_net_upward_convective_mass_flux</a></li>
+<li><a href="../parsed.html#0329">atmosphere_updraft_convective_mass_flux</a></li>
+<li><a href="../parsed.html#0404">convective_cloud_area_fraction</a></li>
+<li><a href="../parsed.html#0405">convective_cloud_area_fraction_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#0406">convective_cloud_base_altitude</a></li>
+<li><a href="../parsed.html#0407">convective_cloud_base_height</a></li>
+<li><a href="../parsed.html#0408">convective_cloud_longwave_emissivity</a></li>
+<li><a href="../parsed.html#0409">convective_cloud_top_altitude</a></li>
+<li><a href="../parsed.html#0410">convective_cloud_top_height</a></li>
+<li><a href="../parsed.html#0411">convective_precipitation_amount</a></li>
+<li><a href="../parsed.html#0412">convective_precipitation_flux</a></li>
+<li><a href="../parsed.html#0413">convective_precipitation_rate</a></li>
+<li><a href="../parsed.html#0414">convective_rainfall_amount</a></li>
+<li><a href="../parsed.html#0415">convective_rainfall_flux</a></li>
+<li><a href="../parsed.html#0416">convective_rainfall_rate</a></li>
+<li><a href="../parsed.html#0417">convective_snowfall_amount</a></li>
+<li><a href="../parsed.html#0418">convective_snowfall_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0120">diffuse</a><a href="javascript:void(0)" onclick="ltoggle('t-0120')"> toggle </a>
+<div id="t-0120"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0431">diffuse_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#0432">diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2688">surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air</a></li>
+<li><a href="../parsed.html#2689">surface_diffuse_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#2690">surface_diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2691">surface_diffuse_shortwave_hemispherical_reflectance</a></li>
+</ul></div>
+</li>
+<li><a name="0121">direct</a><a href="javascript:void(0)" onclick="ltoggle('t-0121')"> toggle </a>
+<div id="t-0121"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0434">direct_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#2692">surface_direct_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#2693">surface_direct_shortwave_hemispherical_reflectance</a></li>
+</ul></div>
+</li>
+<li><a name="0122">geostrophic</a><a href="javascript:void(0)" onclick="ltoggle('t-0122')"> toggle </a>
+<div id="t-0122"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0567">geostrophic_eastward_sea_water_velocity</a></li>
+<li><a href="../parsed.html#0568">geostrophic_eastward_wind</a></li>
+<li><a href="../parsed.html#0569">geostrophic_northward_sea_water_velocity</a></li>
+<li><a href="../parsed.html#0570">geostrophic_northward_wind</a></li>
+<li><a href="../parsed.html#2756">surface_geostrophic_eastward_sea_water_velocity</a></li>
+<li><a href="../parsed.html#2757">surface_geostrophic_eastward_sea_water_velocity_assuming_mean_sea_level_for_geoid</a></li>
+<li><a href="../parsed.html#2758">surface_geostrophic_northward_sea_water_velocity</a></li>
+<li><a href="../parsed.html#2759">surface_geostrophic_northward_sea_water_velocity_assuming_mean_sea_level_for_geoid</a></li>
+<li><a href="../parsed.html#2760">surface_geostrophic_sea_water_x_velocity</a></li>
+<li><a href="../parsed.html#2761">surface_geostrophic_sea_water_x_velocity_assuming_mean_sea_level_for_geoid</a></li>
+<li><a href="../parsed.html#2762">surface_geostrophic_sea_water_y_velocity</a></li>
+<li><a href="../parsed.html#2763">surface_geostrophic_sea_water_y_velocity_assuming_mean_sea_level_for_geoid</a></li>
+</ul></div>
+</li>
+<li><a name="0123">instantaneous</a><a href="javascript:void(0)" onclick="ltoggle('t-0123')"> toggle </a>
+<div id="t-0123"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4105">toa_instantaneous_longwave_forcing</a></li>
+<li><a href="../parsed.html#4106">toa_instantaneous_radiative_forcing</a></li>
+<li><a href="../parsed.html#4107">toa_instantaneous_shortwave_forcing</a></li>
+<li><a href="../parsed.html#4145">tropopause_instantaneous_longwave_forcing</a></li>
+<li><a href="../parsed.html#4146">tropopause_instantaneous_radiative_forcing</a></li>
+<li><a href="../parsed.html#4147">tropopause_instantaneous_shortwave_forcing</a></li>
+</ul></div>
+</li>
+<li><a name="0124">isotropic</a><a href="javascript:void(0)" onclick="ltoggle('t-0124')"> toggle </a>
+<div id="t-0124"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1015">isotropic_longwave_radiance_in_air</a></li>
+<li><a href="../parsed.html#1016">isotropic_radiance_per_unit_wavelength_in_air</a></li>
+<li><a href="../parsed.html#1017">isotropic_shortwave_radiance_in_air</a></li>
+</ul></div>
+</li>
+<li><a name="0125">liquid_water</a><a href="javascript:void(0)" onclick="ltoggle('t-0125')"> toggle </a>
+<div id="t-0125"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0374">change_over_time_in_land_surface_liquid_water_amount</a></li>
+<li><a href="../parsed.html#0399">cloud_liquid_water_mixing_ratio</a></li>
+<li><a href="../parsed.html#0454">downward_liquid_water_mass_flux_into_groundwater</a></li>
+<li><a href="../parsed.html#1055">land_surface_liquid_water_amount</a></li>
+<li><a href="../parsed.html#1062">liquid_water_cloud_area_fraction</a></li>
+<li><a href="../parsed.html#1063">liquid_water_cloud_area_fraction_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#1064">liquid_water_content_of_permafrost_layer</a></li>
+<li><a href="../parsed.html#1065">liquid_water_content_of_soil_layer</a></li>
+<li><a href="../parsed.html#1066">liquid_water_content_of_surface_snow</a></li>
+<li><a href="../parsed.html#1067">liquid_water_mass_flux_into_soil_due_to_surface_snow_melt</a></li>
+</ul></div>
+</li>
+<li><a name="0126">primary_swell</a><a href="javascript:void(0)" onclick="ltoggle('t-0126')"> toggle </a>
+<div id="t-0126"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2444">sea_surface_primary_swell_wave_directional_spread</a></li>
+<li><a href="../parsed.html#2445">sea_surface_primary_swell_wave_energy_at_variance_spectral_density_maximum</a></li>
+<li><a href="../parsed.html#2446">sea_surface_primary_swell_wave_from_direction</a></li>
+<li><a href="../parsed.html#2447">sea_surface_primary_swell_wave_mean_period</a></li>
+<li><a href="../parsed.html#2448">sea_surface_primary_swell_wave_period_at_variance_spectral_density_maximum</a></li>
+<li><a href="../parsed.html#2449">sea_surface_primary_swell_wave_significant_height</a></li>
+</ul></div>
+</li>
+<li><a name="0127">secondary_swell</a><a href="javascript:void(0)" onclick="ltoggle('t-0127')"> toggle </a>
+<div id="t-0127"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2451">sea_surface_secondary_swell_wave_directional_spread</a></li>
+<li><a href="../parsed.html#2452">sea_surface_secondary_swell_wave_energy_at_variance_spectral_density_maximum</a></li>
+<li><a href="../parsed.html#2453">sea_surface_secondary_swell_wave_from_direction</a></li>
+<li><a href="../parsed.html#2454">sea_surface_secondary_swell_wave_mean_period</a></li>
+<li><a href="../parsed.html#2455">sea_surface_secondary_swell_wave_period_at_variance_spectral_density_maximum</a></li>
+<li><a href="../parsed.html#2456">sea_surface_secondary_swell_wave_significant_height</a></li>
+</ul></div>
+</li>
+<li><a name="0128">shallow_convective</a><a href="javascript:void(0)" onclick="ltoggle('t-0128')"> toggle </a>
+<div id="t-0128"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0300">atmosphere_net_upward_shallow_convective_mass_flux</a></li>
+<li><a href="../parsed.html#2569">shallow_convective_precipitation_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0129">solid</a><a href="javascript:void(0)" onclick="ltoggle('t-0129')"> toggle </a>
+<div id="t-0129"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2608">solid_precipitation_flux</a></li>
+<li><a href="../parsed.html#2609">solid_precipitation_flux_containing_17O</a></li>
+<li><a href="../parsed.html#2610">solid_precipitation_flux_containing_18O</a></li>
+<li><a href="../parsed.html#2611">solid_precipitation_flux_containing_single_2H</a></li>
+</ul></div>
+</li>
+<li><a name="0130">stratiform</a><a href="javascript:void(0)" onclick="ltoggle('t-0130')"> toggle </a>
+<div id="t-0130"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2655">stratiform_cloud_area_fraction</a></li>
+<li><a href="../parsed.html#2656">stratiform_cloud_area_fraction_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#2657">stratiform_cloud_longwave_emissivity</a></li>
+<li><a href="../parsed.html#2658">stratiform_graupel_flux</a></li>
+<li><a href="../parsed.html#2659">stratiform_precipitation_amount</a></li>
+<li><a href="../parsed.html#2660">stratiform_precipitation_flux</a></li>
+<li><a href="../parsed.html#2661">stratiform_rainfall_amount</a></li>
+<li><a href="../parsed.html#2662">stratiform_rainfall_flux</a></li>
+<li><a href="../parsed.html#2663">stratiform_rainfall_rate</a></li>
+<li><a href="../parsed.html#2664">stratiform_snowfall_amount</a></li>
+<li><a href="../parsed.html#2665">stratiform_snowfall_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0131">swell</a><a href="javascript:void(0)" onclick="ltoggle('t-0131')"> toggle </a>
+<div id="t-0131"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2459">sea_surface_swell_wave_from_direction</a></li>
+<li><a href="../parsed.html#2460">sea_surface_swell_wave_mean_period</a></li>
+<li><a href="../parsed.html#2461">sea_surface_swell_wave_mean_period_from_variance_spectral_density_first_frequency_moment</a></li>
+<li><a href="../parsed.html#2462">sea_surface_swell_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment</a></li>
+<li><a href="../parsed.html#2463">sea_surface_swell_wave_mean_period_from_variance_spectral_density_second_frequency_moment</a></li>
+<li><a href="../parsed.html#2464">sea_surface_swell_wave_period</a></li>
+<li><a href="../parsed.html#2465">sea_surface_swell_wave_significant_height</a></li>
+<li><a href="../parsed.html#2466">sea_surface_swell_wave_to_direction</a></li>
+</ul></div>
+</li>
+<li><a name="0132">tertiary_swell</a><a href="javascript:void(0)" onclick="ltoggle('t-0132')"> toggle </a>
+<div id="t-0132"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2468">sea_surface_tertiary_swell_wave_directional_spread</a></li>
+<li><a href="../parsed.html#2469">sea_surface_tertiary_swell_wave_energy_at_variance_spectral_density_maximum</a></li>
+<li><a href="../parsed.html#2470">sea_surface_tertiary_swell_wave_from_direction</a></li>
+<li><a href="../parsed.html#2471">sea_surface_tertiary_swell_wave_mean_period</a></li>
+<li><a href="../parsed.html#2472">sea_surface_tertiary_swell_wave_period_at_variance_spectral_density_maximum</a></li>
+<li><a href="../parsed.html#2473">sea_surface_tertiary_swell_wave_significant_height</a></li>
+</ul></div>
+</li>
+<li><a name="0133">tidal</a><a href="javascript:void(0)" onclick="ltoggle('t-0133')"> toggle </a>
+<div id="t-0133"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4088">tidal_sea_surface_height_above_lowest_astronomical_tide</a></li>
+<li><a href="../parsed.html#4089">tidal_sea_surface_height_above_mean_sea_level</a></li>
+</ul></div>
+</li>
+<li><a name="0134">wind</a><a href="javascript:void(0)" onclick="ltoggle('t-0134')"> toggle </a>
+<div id="t-0134"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2499">sea_surface_wind_wave_directional_spread</a></li>
+<li><a href="../parsed.html#2500">sea_surface_wind_wave_energy_at_variance_spectral_density_maximum</a></li>
+<li><a href="../parsed.html#2501">sea_surface_wind_wave_from_direction</a></li>
+<li><a href="../parsed.html#2502">sea_surface_wind_wave_mean_period</a></li>
+<li><a href="../parsed.html#2503">sea_surface_wind_wave_mean_period_from_variance_spectral_density_first_frequency_moment</a></li>
+<li><a href="../parsed.html#2504">sea_surface_wind_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment</a></li>
+<li><a href="../parsed.html#2505">sea_surface_wind_wave_mean_period_from_variance_spectral_density_second_frequency_moment</a></li>
+<li><a href="../parsed.html#2506">sea_surface_wind_wave_period</a></li>
+<li><a href="../parsed.html#2507">sea_surface_wind_wave_period_at_variance_spectral_density_maximum</a></li>
+<li><a href="../parsed.html#2508">sea_surface_wind_wave_significant_height</a></li>
+<li><a href="../parsed.html#2509">sea_surface_wind_wave_to_direction</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>

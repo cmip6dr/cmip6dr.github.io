@@ -1,0 +1,128 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>precip</h1>
+<ul>
+<li><a name="0992">graupel</a><a href="javascript:void(0)" onclick="ltoggle('t-0992')"> toggle </a>
+<div id="t-0992"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2658">stratiform_graupel_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0993">graupel_fall</a><a href="javascript:void(0)" onclick="ltoggle('t-0993')"> toggle </a>
+<div id="t-0993"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0576">graupel_fall_amount</a></li>
+<li><a href="../parsed.html#0577">graupel_fall_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0994">hail_fall</a><a href="javascript:void(0)" onclick="ltoggle('t-0994')"> toggle </a>
+<div id="t-0994"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0574">graupel_and_hail_fall_amount</a></li>
+<li><a href="../parsed.html#0575">graupel_and_hail_fall_flux</a></li>
+<li><a href="../parsed.html#0593">hail_fall_amount</a></li>
+<li><a href="../parsed.html#0594">hail_fall_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0995">precipitation</a><a href="javascript:void(0)" onclick="ltoggle('t-0995')"> toggle </a>
+<div id="t-0995"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0411">convective_precipitation_amount</a></li>
+<li><a href="../parsed.html#0412">convective_precipitation_flux</a></li>
+<li><a href="../parsed.html#0413">convective_precipitation_rate</a></li>
+<li><a href="../parsed.html#1075">lwe_convective_precipitation_rate</a></li>
+<li><a href="../parsed.html#1077">lwe_precipitation_rate</a></li>
+<li><a href="../parsed.html#1079">lwe_stratiform_precipitation_rate</a></li>
+<li><a href="../parsed.html#1954">precipitation_amount</a></li>
+<li><a href="../parsed.html#1955">precipitation_flux</a></li>
+<li><a href="../parsed.html#1956">precipitation_flux_containing_17O</a></li>
+<li><a href="../parsed.html#1957">precipitation_flux_containing_18O</a></li>
+<li><a href="../parsed.html#1958">precipitation_flux_containing_single_2H</a></li>
+<li><a href="../parsed.html#1959">precipitation_flux_onto_canopy</a></li>
+<li><a href="../parsed.html#2569">shallow_convective_precipitation_flux</a></li>
+<li><a href="../parsed.html#2608">solid_precipitation_flux</a></li>
+<li><a href="../parsed.html#2609">solid_precipitation_flux_containing_17O</a></li>
+<li><a href="../parsed.html#2610">solid_precipitation_flux_containing_18O</a></li>
+<li><a href="../parsed.html#2611">solid_precipitation_flux_containing_single_2H</a></li>
+<li><a href="../parsed.html#2659">stratiform_precipitation_amount</a></li>
+<li><a href="../parsed.html#2660">stratiform_precipitation_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0996">rainfall</a><a href="javascript:void(0)" onclick="ltoggle('t-0996')"> toggle </a>
+<div id="t-0996"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0414">convective_rainfall_amount</a></li>
+<li><a href="../parsed.html#0415">convective_rainfall_flux</a></li>
+<li><a href="../parsed.html#0416">convective_rainfall_rate</a></li>
+<li><a href="../parsed.html#2358">rainfall_amount</a></li>
+<li><a href="../parsed.html#2359">rainfall_flux</a></li>
+<li><a href="../parsed.html#2360">rainfall_rate</a></li>
+<li><a href="../parsed.html#2661">stratiform_rainfall_amount</a></li>
+<li><a href="../parsed.html#2662">stratiform_rainfall_flux</a></li>
+<li><a href="../parsed.html#2663">stratiform_rainfall_rate</a></li>
+</ul></div>
+</li>
+<li><a name="0997">runoff</a><a href="javascript:void(0)" onclick="ltoggle('t-0997')"> toggle </a>
+<div id="t-0997"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1039">land_ice_runoff_flux</a></li>
+<li><a href="../parsed.html#2378">runoff_amount</a></li>
+<li><a href="../parsed.html#2379">runoff_amount_excluding_baseflow</a></li>
+<li><a href="../parsed.html#2380">runoff_flux</a></li>
+<li><a href="../parsed.html#2672">subsurface_runoff_amount</a></li>
+<li><a href="../parsed.html#2673">subsurface_runoff_flux</a></li>
+<li><a href="../parsed.html#3161">surface_runoff_amount</a></li>
+<li><a href="../parsed.html#3162">surface_runoff_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0998">snowfall</a><a href="javascript:void(0)" onclick="ltoggle('t-0998')"> toggle </a>
+<div id="t-0998"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0417">convective_snowfall_amount</a></li>
+<li><a href="../parsed.html#0418">convective_snowfall_flux</a></li>
+<li><a href="../parsed.html#1076">lwe_convective_snowfall_rate</a></li>
+<li><a href="../parsed.html#1078">lwe_snowfall_rate</a></li>
+<li><a href="../parsed.html#1080">lwe_stratiform_snowfall_rate</a></li>
+<li><a href="../parsed.html#2582">snowfall_amount</a></li>
+<li><a href="../parsed.html#2583">snowfall_flux</a></li>
+<li><a href="../parsed.html#2664">stratiform_snowfall_amount</a></li>
+<li><a href="../parsed.html#2665">stratiform_snowfall_flux</a></li>
+</ul></div>
+</li>
+<li><a name="0999">throughfall</a><a href="javascript:void(0)" onclick="ltoggle('t-0999')"> toggle </a>
+<div id="t-0999"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0358">canopy_throughfall_flux</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>

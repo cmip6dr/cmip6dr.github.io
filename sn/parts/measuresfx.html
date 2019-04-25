@@ -1,0 +1,68 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>measuresfx</h1>
+<ul>
+<li><a name="0978">amount</a><a href="javascript:void(0)" onclick="ltoggle('t-0978')"> toggle </a>
+<div id="t-0978"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1082">lwe_thickness_of_canopy_water_amount</a></li>
+<li><a href="../parsed.html#1083">lwe_thickness_of_convective_precipitation_amount</a></li>
+<li><a href="../parsed.html#1084">lwe_thickness_of_convective_snowfall_amount</a></li>
+<li><a href="../parsed.html#1087">lwe_thickness_of_precipitation_amount</a></li>
+<li><a href="../parsed.html#1088">lwe_thickness_of_snowfall_amount</a></li>
+<li><a href="../parsed.html#1090">lwe_thickness_of_stratiform_precipitation_amount</a></li>
+<li><a href="../parsed.html#1091">lwe_thickness_of_stratiform_snowfall_amount</a></li>
+<li><a href="../parsed.html#1092">lwe_thickness_of_surface_snow_amount</a></li>
+<li><a href="../parsed.html#1093">lwe_thickness_of_water_evaporation_amount</a></li>
+<li><a href="../parsed.html#4079">thickness_of_convective_rainfall_amount</a></li>
+<li><a href="../parsed.html#4080">thickness_of_convective_snowfall_amount</a></li>
+<li><a href="../parsed.html#4083">thickness_of_rainfall_amount</a></li>
+<li><a href="../parsed.html#4084">thickness_of_snowfall_amount</a></li>
+<li><a href="../parsed.html#4085">thickness_of_stratiform_rainfall_amount</a></li>
+<li><a href="../parsed.html#4086">thickness_of_stratiform_snowfall_amount</a></li>
+</ul></div>
+</li>
+<li><a name="0979">undersaturation</a><a href="javascript:void(0)" onclick="ltoggle('t-0979')"> toggle </a>
+<div id="t-0979"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1434">minimum_depth_of_aragonite_undersaturation_in_sea_water</a></li>
+<li><a href="../parsed.html#1435">minimum_depth_of_calcite_undersaturation_in_sea_water</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>

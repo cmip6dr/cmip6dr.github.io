@@ -1,0 +1,234 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>radsfx</h1>
+<ul>
+<li><a name="1049">_effect</a><a href="javascript:void(0)" onclick="ltoggle('t-1049')"> toggle </a>
+<div id="t-1049"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2770">surface_net_downward_longwave_dust_ambient_aerosol_particles_direct_radiative_effect</a></li>
+<li><a href="../parsed.html#2771">surface_net_downward_longwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2780">surface_net_downward_shortwave_dust_ambient_aerosol_particles_direct_radiative_effect</a></li>
+<li><a href="../parsed.html#2781">surface_net_downward_shortwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4103">toa_cloud_radiative_effect</a></li>
+<li><a href="../parsed.html#4108">toa_longwave_cloud_radiative_effect</a></li>
+<li><a href="../parsed.html#4109">toa_longwave_dust_ambient_aerosol_particles_direct_radiative_effect_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4132">toa_shortwave_cloud_radiative_effect</a></li>
+</ul></div>
+</li>
+<li><a name="1050">_emissivity</a><a href="javascript:void(0)" onclick="ltoggle('t-1050')"> toggle </a>
+<div id="t-1050"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0408">convective_cloud_longwave_emissivity</a></li>
+<li><a href="../parsed.html#2657">stratiform_cloud_longwave_emissivity</a></li>
+<li><a href="../parsed.html#2767">surface_longwave_emissivity</a></li>
+</ul></div>
+</li>
+<li><a name="1051">_energy</a><a href="javascript:void(0)" onclick="ltoggle('t-1051')"> toggle </a>
+<div id="t-1051"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0296">atmosphere_net_rate_of_absorption_of_longwave_energy</a></li>
+<li><a href="../parsed.html#0297">atmosphere_net_rate_of_absorption_of_shortwave_energy</a></li>
+<li><a href="../parsed.html#1761">net_rate_of_absorption_of_longwave_energy_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#1762">net_rate_of_absorption_of_shortwave_energy_in_atmosphere_layer</a></li>
+<li><a href="../parsed.html#1763">net_rate_of_absorption_of_shortwave_energy_in_ocean_layer</a></li>
+</ul></div>
+</li>
+<li><a name="1052">_flux</a><a href="javascript:void(0)" onclick="ltoggle('t-1052')"> toggle </a>
+<div id="t-1052"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0431">diffuse_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#0432">diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#0434">direct_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#0462">downwelling_longwave_flux_in_air</a></li>
+<li><a href="../parsed.html#0463">downwelling_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#0475">downwelling_photosynthetic_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#0480">downwelling_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#0483">downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#0484">downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#0485">downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#0486">downwelling_shortwave_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#0487">downwelling_shortwave_flux_in_sea_water_at_sea_ice_base</a></li>
+<li><a href="../parsed.html#1001">integral_wrt_time_of_surface_downwelling_longwave_flux_in_air</a></li>
+<li><a href="../parsed.html#1002">integral_wrt_time_of_surface_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#1003">integral_wrt_time_of_surface_net_downward_longwave_flux</a></li>
+<li><a href="../parsed.html#1004">integral_wrt_time_of_surface_net_downward_shortwave_flux</a></li>
+<li><a href="../parsed.html#1005">integral_wrt_time_of_toa_net_downward_shortwave_flux</a></li>
+<li><a href="../parsed.html#1006">integral_wrt_time_of_toa_outgoing_longwave_flux</a></li>
+<li><a href="../parsed.html#1436">minus_one_times_surface_upwelling_longwave_flux_in_air</a></li>
+<li><a href="../parsed.html#1437">minus_one_times_surface_upwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#1438">minus_one_times_toa_outgoing_shortwave_flux</a></li>
+<li><a href="../parsed.html#1741">net_downward_longwave_flux_in_air</a></li>
+<li><a href="../parsed.html#1742">net_downward_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#1743">net_downward_radiative_flux_at_top_of_atmosphere_model</a></li>
+<li><a href="../parsed.html#1744">net_downward_shortwave_flux_at_sea_water_surface</a></li>
+<li><a href="../parsed.html#1745">net_downward_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#1746">net_downward_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#1764">net_upward_longwave_flux_in_air</a></li>
+<li><a href="../parsed.html#1765">net_upward_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#1766">net_upward_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#1767">net_upward_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2688">surface_diffuse_downwelling_photosynthetic_radiative_flux_in_air</a></li>
+<li><a href="../parsed.html#2689">surface_diffuse_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#2690">surface_diffuse_downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2692">surface_direct_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#2722">surface_downwelling_longwave_flux_in_air</a></li>
+<li><a href="../parsed.html#2723">surface_downwelling_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2724">surface_downwelling_longwave_flux_in_air_due_to_volcanic_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#2736">surface_downwelling_photosynthetic_radiative_flux_in_air</a></li>
+<li><a href="../parsed.html#2737">surface_downwelling_photosynthetic_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#2741">surface_downwelling_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#2744">surface_downwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#2745">surface_downwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2746">surface_downwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#2747">surface_downwelling_shortwave_flux_in_air_due_to_volcanic_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#2772">surface_net_downward_longwave_flux</a></li>
+<li><a href="../parsed.html#2773">surface_net_downward_longwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2779">surface_net_downward_radiative_flux</a></li>
+<li><a href="../parsed.html#2782">surface_net_downward_shortwave_flux</a></li>
+<li><a href="../parsed.html#2783">surface_net_downward_shortwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#2784">surface_net_upward_longwave_flux</a></li>
+<li><a href="../parsed.html#2787">surface_net_upward_radiative_flux</a></li>
+<li><a href="../parsed.html#2788">surface_net_upward_shortwave_flux</a></li>
+<li><a href="../parsed.html#3221">surface_upwelling_longwave_flux_in_air</a></li>
+<li><a href="../parsed.html#3222">surface_upwelling_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#3234">surface_upwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#3235">surface_upwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#3236">surface_upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#4104">toa_incoming_shortwave_flux</a></li>
+<li><a href="../parsed.html#4110">toa_net_downward_longwave_flux</a></li>
+<li><a href="../parsed.html#4111">toa_net_downward_longwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4112">toa_net_downward_radiative_flux</a></li>
+<li><a href="../parsed.html#4113">toa_net_downward_shortwave_flux</a></li>
+<li><a href="../parsed.html#4114">toa_net_downward_shortwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4115">toa_net_upward_longwave_flux</a></li>
+<li><a href="../parsed.html#4116">toa_net_upward_longwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4117">toa_net_upward_shortwave_flux</a></li>
+<li><a href="../parsed.html#4118">toa_outgoing_longwave_flux</a></li>
+<li><a href="../parsed.html#4119">toa_outgoing_longwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4120">toa_outgoing_longwave_flux_due_to_volcanic_ambient_aerosol_particles_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4127">toa_outgoing_shortwave_flux</a></li>
+<li><a href="../parsed.html#4128">toa_outgoing_shortwave_flux_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4129">toa_outgoing_shortwave_flux_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#4130">toa_outgoing_shortwave_flux_assuming_no_aerosol</a></li>
+<li><a href="../parsed.html#4131">toa_outgoing_shortwave_flux_due_to_volcanic_ambient_aerosol_particles_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4144">tropopause_downwelling_longwave_flux</a></li>
+<li><a href="../parsed.html#4148">tropopause_net_downward_longwave_flux</a></li>
+<li><a href="../parsed.html#4149">tropopause_net_downward_shortwave_flux</a></li>
+<li><a href="../parsed.html#4150">tropopause_upwelling_shortwave_flux</a></li>
+<li><a href="../parsed.html#4189">upwelling_longwave_flux_in_air</a></li>
+<li><a href="../parsed.html#4190">upwelling_longwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4195">upwelling_shortwave_flux_in_air</a></li>
+<li><a href="../parsed.html#4196">upwelling_shortwave_flux_in_air_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4197">upwelling_shortwave_flux_in_air_assuming_clear_sky_and_no_aerosol</a></li>
+<li><a href="../parsed.html#4215">volume_absorption_coefficient_of_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#4216">volume_absorption_coefficient_of_radiative_flux_in_sea_water_due_to_dissolved_organic_matter</a></li>
+<li><a href="../parsed.html#4219">volume_attenuation_coefficient_of_downwelling_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#4221">volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#4222">volume_beam_attenuation_coefficient_of_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#4237">volume_scattering_coefficient_of_radiative_flux_in_air_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#4238">volume_scattering_coefficient_of_radiative_flux_in_air_due_to_dried_aerosol_particles</a></li>
+<li><a href="../parsed.html#4239">volume_scattering_coefficient_of_radiative_flux_in_sea_water</a></li>
+<li><a href="../parsed.html#4240">volume_scattering_function_of_radiative_flux_in_air_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#4241">volume_scattering_function_of_radiative_flux_in_sea_water</a></li>
+</ul></div>
+</li>
+<li><a name="1053">_flux_absorbed_by_vegetation</a><a href="javascript:void(0)" onclick="ltoggle('t-1053')"> toggle </a>
+<div id="t-1053"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0554">fraction_of_surface_downwelling_photosynthetic_radiative_flux_absorbed_by_vegetation</a></li>
+</ul></div>
+</li>
+<li><a name="1054">_flux_in_sea_water_corrected_for_pure_water_attenuance</a><a href="javascript:void(0)" onclick="ltoggle('t-1054')"> toggle </a>
+<div id="t-1054"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4223">volume_beam_attenuation_coefficient_of_radiative_flux_in_sea_water_corrected_for_pure_water_attenuance</a></li>
+</ul></div>
+</li>
+<li><a name="1055">_flux_per_unit_wavelength</a><a href="javascript:void(0)" onclick="ltoggle('t-1055')"> toggle </a>
+<div id="t-1055"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0481">downwelling_radiative_flux_per_unit_wavelength_in_air</a></li>
+<li><a href="../parsed.html#0482">downwelling_radiative_flux_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#2742">surface_downwelling_radiative_flux_per_unit_wavelength_in_air</a></li>
+<li><a href="../parsed.html#2743">surface_downwelling_radiative_flux_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#3232">surface_upwelling_radiative_flux_per_unit_wavelength_in_air</a></li>
+<li><a href="../parsed.html#3233">surface_upwelling_radiative_flux_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#4193">upwelling_radiative_flux_per_unit_wavelength_in_air</a></li>
+<li><a href="../parsed.html#4194">upwelling_radiative_flux_per_unit_wavelength_in_sea_water</a></li>
+</ul></div>
+</li>
+<li><a name="1056">_forcing</a><a href="javascript:void(0)" onclick="ltoggle('t-1056')"> toggle </a>
+<div id="t-1056"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4095">toa_adjusted_longwave_forcing</a></li>
+<li><a href="../parsed.html#4096">toa_adjusted_radiative_forcing</a></li>
+<li><a href="../parsed.html#4097">toa_adjusted_shortwave_forcing</a></li>
+<li><a href="../parsed.html#4105">toa_instantaneous_longwave_forcing</a></li>
+<li><a href="../parsed.html#4106">toa_instantaneous_radiative_forcing</a></li>
+<li><a href="../parsed.html#4107">toa_instantaneous_shortwave_forcing</a></li>
+<li><a href="../parsed.html#4138">tropopause_adjusted_longwave_forcing</a></li>
+<li><a href="../parsed.html#4139">tropopause_adjusted_radiative_forcing</a></li>
+<li><a href="../parsed.html#4140">tropopause_adjusted_shortwave_forcing</a></li>
+<li><a href="../parsed.html#4145">tropopause_instantaneous_longwave_forcing</a></li>
+<li><a href="../parsed.html#4146">tropopause_instantaneous_radiative_forcing</a></li>
+<li><a href="../parsed.html#4147">tropopause_instantaneous_shortwave_forcing</a></li>
+</ul></div>
+</li>
+<li><a name="1057">_hemispherical_reflectance</a><a href="javascript:void(0)" onclick="ltoggle('t-1057')"> toggle </a>
+<div id="t-1057"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2691">surface_diffuse_shortwave_hemispherical_reflectance</a></li>
+<li><a href="../parsed.html#2693">surface_direct_shortwave_hemispherical_reflectance</a></li>
+</ul></div>
+</li>
+<li><a name="1058">_in_air_reflected_by_sea_water</a><a href="javascript:void(0)" onclick="ltoggle('t-1058')"> toggle </a>
+<div id="t-1058"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3226">surface_upwelling_radiance_in_air_reflected_by_sea_water</a></li>
+</ul></div>
+</li>
+<li><a name="1059">_per_unit_wavelength</a><a href="javascript:void(0)" onclick="ltoggle('t-1059')"> toggle </a>
+<div id="t-1059"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0468">downwelling_photon_radiance_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#0470">downwelling_photon_spherical_irradiance_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#0490">downwelling_spherical_irradiance_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#1920">omnidirectional_spherical_irradiance_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#2728">surface_downwelling_photon_radiance_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#2730">surface_downwelling_photon_spherical_irradiance_per_unit_wavelength_in_sea_water</a></li>
+<li><a href="../parsed.html#2749">surface_downwelling_spherical_irradiance_per_unit_wavelength_in_sea_water</a></li>
+</ul></div>
+</li>
+<li><a name="1060">_power</a><a href="javascript:void(0)" onclick="ltoggle('t-1060')"> toggle </a>
+<div id="t-1060"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0543">fire_radiative_power</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>
