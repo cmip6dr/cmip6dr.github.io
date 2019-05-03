@@ -23,3 +23,5 @@ bodyclass: splash
   <li>For general enquiries: submit and issue <a href="https://github.com/cmip6dr/Introduction/issues">here</a>;</li>
   <li>For specific questions about the CMIP6 data request, submit an issue <a href=" https://github.com/cmip6dr/CMIP6_DataRequest_VariableDefinitions">here</a>.</li>
  </ul>
+ 
+ <div id="bleft"></div>
