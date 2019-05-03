@@ -46,6 +46,7 @@
 }
 #section .content {   
     margin-left: 60px;
+    margin-top: 60px;
     background-image: linear-gradient(red, yellow);
     padding: 0px;
 }
