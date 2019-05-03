@@ -47,9 +47,9 @@
     width: 100%;
 }
 #section {   
-    margin-left: 330px;
+    margin-left: 60px;
     background-image: linear-gradient(red, yellow);
-    padding: 0 30px 0 0;
+    padding: 0px;
 }
 
 .body {
