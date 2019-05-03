@@ -24,4 +24,5 @@ bodyclass: splash
   <li>For specific questions about the CMIP6 data request, submit an issue <a href=" https://github.com/cmip6dr/CMIP6_DataRequest_VariableDefinitions">here</a>.</li>
  </ul>
  
- <div id="bleft"></div>
+ <div id="bleftxx"></div>
+ <!-- the transparency CSS is not working ... perhaps too fragile to waste time on -->
