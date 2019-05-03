@@ -41,7 +41,9 @@
     left:0; 
 }
 #section {
-    float: right;
+    position: absolute;
+    top:0;
+    left:0;
     width: 100%;
     padding: 0px;
     margin: 0px;
