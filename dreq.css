@@ -43,6 +43,7 @@
 #section {
     float: right;
     width: 100%;
+    padding: 0px;
 }
 #section .content {   
     margin-left: 60px;
