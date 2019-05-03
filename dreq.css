@@ -54,10 +54,15 @@
     padding: 0px;
     margin: 0px;
 }
-#section .content {   
+#section .back {   
     margin-left: 60px;
-    margin-top: 80px;
+    margin-top: 60px;
     background-image: linear-gradient(red, yellow);
+    padding: 0px;
+}
+#section .content {   
+    margin-left: 12px;
+    margin-top: 12px;
     padding: 0px;
 }
 
