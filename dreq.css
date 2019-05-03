@@ -40,13 +40,13 @@
     top:60px;
     left:0; 
 }
-#section-wrap {
+#section {
     position: absolute;
     top: 60px;
     left: 0px;
     width: 100%;
 }
-#section {   
+#section .content {   
     margin-left: 60px;
     background-image: linear-gradient(red, yellow);
     padding: 0px;
