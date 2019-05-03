@@ -34,10 +34,11 @@
 #section {
     position: absolute;
     background-image: linear-gradient(red, yellow);
-    top: 60px;
-    left: 60px;
+    top: 70px;
+    left: 70px;
     float:left;
     padding:10px;
 }
 
-.h1 { font-size: 40px; }
+.h1 { font-size: 40px;
+    font-family: Impact, Arial, serif; }
