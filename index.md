@@ -4,7 +4,7 @@ title: Data Request
 bodyclass: splash
 ---
 
-<h1 style="font-family: "Comic Sans MS", Arial, sans-serif;"><i>MIP Data Specifications</i></h1>
+<h1><i>MIP Data Specifications</i></h1>
 
 <div class="display-left">
 <ul><li>Clarity</li>
