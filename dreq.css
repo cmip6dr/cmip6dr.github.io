@@ -33,6 +33,7 @@
 }
 #section {
     position: absolute;
+    background-image: linear-gradient(red, yellow);
     top: 60px;
     left: 60px;
     float:left;
