@@ -40,13 +40,16 @@
     top:60px;
     left:0; 
 }
-#section {
+#section-wrap {
     position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+}
+#section {   
+    margin-left: 330px;
     background-image: linear-gradient(red, yellow);
-    top: 70px;
-    left: 70px;
-    float:left;
-    padding:10px;
+    padding: 0 30px 0 0;
 }
 
 .body {
