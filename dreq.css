@@ -50,6 +50,8 @@
     position: absolute;
     top:0;
     left:0;
+    z-index:-10;
+    background-image: linear-gradient(#ff6060, yellow);
     width: 100%;
     padding: 0px;
     margin: 0px;
@@ -57,7 +59,6 @@
 #section .back {   
     margin-left: 60px;
     margin-top: 60px;
-    background-image: linear-gradient(red, yellow);
     padding: 0px;
 }
 #section .content {   
