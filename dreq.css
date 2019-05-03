@@ -1,0 +1,42 @@
+#corner {
+    background-color:blue;
+    color:white;
+    text-align:center;
+    height:0px;
+    width:0px;
+    padding:0px;
+    margin:0px;
+    float:left;
+    border-top: 30px solid #004060;
+    border-bottom: 30px solid #004040;
+    border-left: 30px solid #004060;
+    border-right: 30px solid #000080;
+    margin-right:auto;
+    margin-left:auto;
+}
+#top {
+    color:white;
+    text-align:center;
+    background-color:#000080;
+    font-size: 40px;
+    height:60px;
+    padding:0px;
+}
+#nav {
+    line-height:30px;
+    color:white;
+    background-color:#004040;
+    height:100%;
+    width:60px;
+    float:left;
+    padding:0px;
+}
+#section {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    float:left;
+    padding:10px;
+}
+
+.h1 { font-size: 40px; }
