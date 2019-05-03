@@ -30,16 +30,21 @@
 #nav {
     line-height:30px;
     color:white;
-    background-color:#004040;
     height:100%;
     width:60px;
-    float:left;
     padding:0px;
     margin:0px;
     position:absolute;
-    top:60px;
+    top:0px;
     left:0; 
 }
+#nav .content {
+    margin-left: 0px;
+    margin-top: 60px;
+    background-color:#004040;
+    padding: 0px;
+}
+
 #section {
     position: absolute;
     top:0;
@@ -50,7 +55,7 @@
 }
 #section .content {   
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 80px;
     background-image: linear-gradient(red, yellow);
     padding: 0px;
 }
