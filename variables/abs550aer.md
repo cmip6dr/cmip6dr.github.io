@@ -32,3 +32,5 @@ general quantity named by omitting the phrase.
 
 The keyword `LayerProperty` is introduced to distinguish between variables which generally reopresent the property of a level and 
 properities for layers of finite depth. 
+
+The standard name description needs to be editted to wrap or escape all underscores before inclusion here: otherwise the page is not published.
