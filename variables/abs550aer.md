@@ -16,7 +16,7 @@ Optical thickness of atmospheric aerosols at wavelength 550 nanometers.
 
 The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. 
 The radiative flux is reduced by a factor `exp(-optical_thickness)` on traversing the path. A coordinate variable of 
-radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at 
+`radiation_wavelength` or `radiation_frequency` can be specified to indicate that the optical thickness applies at 
 specific wavelengths or frequencies. "Absorption optical thickness" means that part of the atmosphere optical thickness 
 that is caused by the absorption of incident radiation. "Aerosol" means the system of suspended liquid or solid particles in air 
 (except cloud droplets) and their carrier gas, the air itself. "Ambient aerosol" means that the aerosol is measured or modelled 
