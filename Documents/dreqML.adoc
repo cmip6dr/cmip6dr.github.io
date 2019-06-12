@@ -155,10 +155,8 @@ python API);^1^
 The following table summarises the specifications of the core
 attributes:
 
-[cols="",]
+[width="80%",cols="3,^2,^2,10",options="header"]
 |=======================================================================
-|Table 1: Core attributes
-
 |label |title |description |usage
 
 |label |Record Label |A single word, with restricted character set |A
