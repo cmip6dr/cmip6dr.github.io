@@ -87,12 +87,9 @@ file.
 
 The configuration file contains three types of information:
 
-\(1) Layout information which is used to generate the content schema;
-
-\(2) Comments on the purpose and intent of attributes;
-
-\(3) Technical labels to facilitate automated navigation of the
-contents.
+. Layout information which is used to generate the content schema;
+. Comments on the purpose and intent of attributes;
+. Technical labels to facilitate automated navigation of the contents.
 
 If users wish to exploit the XML files directly it is recommended that
 they make use of the configuration file, as the information types (2)
