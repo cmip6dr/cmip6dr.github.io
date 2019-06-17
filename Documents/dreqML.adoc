@@ -1,6 +1,8 @@
 = Data Request XML format =
 
 :dreq-core: http://clipc-services.ceda.ac.uk/dreq/index/__core__.html
+:main-core: http://clipc-services.ceda.ac.uk/dreq/index/__main__.html
+:sect-core: http://clipc-services.ceda.ac.uk/dreq/index/__sect__.html
 Martin Juckes, October 15^th^, 2018.
 
 [[executive-summary]]
@@ -507,14 +509,14 @@ Units [units]
 The attributes listed in table 1 above.
 
 [[x.2-data-request-attributes-__main__]]
-http://clipc-services.ceda.ac.uk/dreq/index/__main__.html[X.2 Data Request Attributes \[__main__\]]
+{dreq-main}[X.2 Data Request Attributes \[__main__\]]
 
 Attributes used to in the content records, such as “units”, “valid_max”.
 Each record in this section defines one of these attributes, specifying
 its type and other properties used in the python API.
 
 [[x.3-section-attributes-__sect__]]
-http://clipc-services.ceda.ac.uk/dreq/index/__sect__.html[X.3 Section Attributes \[__sect__\]]
+{dreq-sect}[X.3 Section Attributes \[__sect__\]]
 
 Defines the attributes which are used to describe each section.
 
