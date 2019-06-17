@@ -1,5 +1,6 @@
 = Data Request XML format =
 
+:dreq-core: http://clipc-services.ceda.ac.uk/dreq/index/__core__.html
 Martin Juckes, October 15^th^, 2018.
 
 [[executive-summary]]
@@ -501,7 +502,7 @@ Units [units]
 ++++++++++++++
 
 [[x.1-core-attributes-__core__]]
-http://clipc-services.ceda.ac.uk/dreq/index/__core__.html[X.1 Core Attributes &#91;__core__&#93;]
+{dreq-core}[X.1 Core Attributes &#91;__core__&#93;]
 
 The attributes listed in table 1 above.
 
