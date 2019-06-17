@@ -1,8 +1,9 @@
 = Data Request XML format =
 
 :dreq-core: http://clipc-services.ceda.ac.uk/dreq/index/__core__.html
-:main-core: http://clipc-services.ceda.ac.uk/dreq/index/__main__.html
-:sect-core: http://clipc-services.ceda.ac.uk/dreq/index/__sect__.html
+:dreq-main: http://clipc-services.ceda.ac.uk/dreq/index/__main__.html
+:dreq-sect: http://clipc-services.ceda.ac.uk/dreq/index/__sect__.html
+
 Martin Juckes, October 15^th^, 2018.
 
 [[executive-summary]]
@@ -85,8 +86,7 @@ http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSupp.
 [[anchor-3]]Configuration file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The XML Data Request is presented as a configuration file and a content
-file.
+The XML Data Request is presented as a configuration file and a content file.
 
 The configuration file contains three types of information:
 
@@ -101,31 +101,25 @@ and (3) are not embedded in the content file.
 Each section of the document is defined by a “table” element with the
 following attributes:
 
-* label (e.g. 'var'): a name for a section of the content – will be used
-as the XML element name;
+* label (e.g. 'var'): a name for a section of the content – will be used as the XML element name;
 * title (e.g. 'MIP variable”): a longer, human readable string;
 * id: an opaque name;
-* itemLabelMode: specifies whether the “label” attribute of records in
-this section should permit use of '-';
-* level: an integer, designed to assisted automated processing by giving
-an indication of the structure of the request;
+* itemLabelMode: specifies whether the “label” attribute of records in this section should permit use of '-';
+* level: an integer, designed to assisted automated processing by giving an indication of the structure of the request;
 * maxOccurs: maximum number of times the section is allowed;
-* labUnique [Yes|No]: set to yes if label values for records are unique
-within each section.
+* labUnique [Yes|No]: set to yes if label values for records are unique within each section.
 
 Within each section there are definitions for attributes of items. Each
 item attribute is defined using the following configuration attributes:
 
 * label: this will be the attribute name;
 * title: a longer string explaining usage;
-* class: the class supports automation. e.g. attributes which refer to
-another record in the document will have the class set to
+* class: the class supports automation. e.g. attributes which refer to another record in the document will have the class set to
 “internalLink”;
 * type: the xsd content type (e.g. “XS:STRING”);
 * techNote: to support automation. e.g. if class is “internalLink”, this
 attribute should be set to the name of the intended section:
-* required: indicates whether the attribute is required;footnote:[New in
-01.beta.17]
+* required: indicates whether the attribute is required;footnote:[New in 01.beta.17]
 * usage: notes on the usage of the attribute.^1^
 +
 
@@ -516,7 +510,7 @@ Each record in this section defines one of these attributes, specifying
 its type and other properties used in the python API.
 
 [[x.3-section-attributes-__sect__]]
-{dreq-sect}[X.3 Section Attributes \[__sect__\]]
+{dreq-sect}[X.3 Section Attributes $$[__sect__]$$]
 
 Defines the attributes which are used to describe each section.
 
