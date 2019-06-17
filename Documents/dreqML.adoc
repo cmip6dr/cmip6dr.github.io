@@ -307,7 +307,6 @@ the requested diagnostics.
 http://clipc-services.ceda.ac.uk/dreq/index/standardname.html[1.8 CF
 St]http://clipc-services.ceda.ac.uk/dreq/index/standardname.html[andard Names \[standardname\]]
 
-
 The reference list of CF standard names is provided at
 cfconventions.org, but the definitions of terms used in the data request
 are copied into this section so that the detailed definitions are easily
@@ -321,8 +320,7 @@ which might be part of a collective data request.
 
 [[spatial-dimensions-spatialshape]]
 http://clipc-services.ceda.ac.uk/dreq/index/spatialShape.html[2.1
-Spatial dimensions [spatialShape]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Spatial dimensions \[spatialShape\]]
 
 The spatial shape record contains the spatial dimensions of the field,
 and also, for convenience, an integer specifying the number of levels if
@@ -331,15 +329,13 @@ number of vertical levels is specified.
 
 [[temporal-dimension-temporalshape]]
 http://clipc-services.ceda.ac.uk/dreq/index/temporalShape.html[2.2
-Temporal dimension [temporalShape]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Temporal dimension \[temporalShape\]]
 
 The temporal shape record contains the temporal dimensions.
 
 [[dimensions-and-related-information-structure]]
 http://clipc-services.ceda.ac.uk/dreq/index/structure.html[2.3
-Dimensions and related information [structure]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Dimensions and related information \[structure\]]
 
 The structure record combines specification of dimensions, cell_measures
 and cell_methods attributes. Spatial and temporal dimensions are
@@ -347,21 +343,18 @@ specified through links to “spatialshape” and “temporalshape” records.
 
 [[mip-tables-miptable]]
 http://clipc-services.ceda.ac.uk/dreq/index/miptable.html[2.4 MIP tables
-[miptable]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\[miptable\]]
 
 [[request-variable-group-a-collection-of-request-variables-requestvargroup]]
 http://clipc-services.ceda.ac.uk/dreq/index/requestVarGroup.html[3.1
 Request variable group: a collection of request variables
-[requestVarGroup]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\[requestVarGroup\]]
 
 The request variable groups collect variables.
 
 [[request-item-specifying-the-number-of-years-for-an-experiment-requestitem]]
 http://clipc-services.ceda.ac.uk/dreq/index/requestItem.html[3.2 Request
-Item: specifying the number of years for an experiment [requestItem]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Item: specifying the number of years for an experiment \[requestItem\]]
 
 The request item links a collection of variables with a specific
 experiment or group of experiments, and a temporal range for output. The
@@ -380,34 +373,29 @@ ensemeble size.
 
 [[request-link-linking-a-set-of-variables-and-a-set-of-experiments-requestlink]]
 http://clipc-services.ceda.ac.uk/dreq/index/requestLink.html[3.3 Request
-link: linking a set of variables and a set of experiments [requestLink]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+link: linking a set of variables and a set of experiments \[requestLink\]]
 
 The request link records specify some additional information about
 variable groups, concerning shared output requirements and objectives.
 
 [[cmor-table-sections-tablesection]]
 http://clipc-services.ceda.ac.uk/dreq/index/tableSection.html[3.4 CMOR
-Table Sections [tableSection]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Table Sections \[tableSection\]]
 
 [[model-configuration-options-modelconfig]]
 http://clipc-services.ceda.ac.uk/dreq/index/modelConfig.html[3.5 Model
-configuration options [modelConfig]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+configuration options \[modelConfig\]]
 
 [[links-a-variable-to-a-choice-element-varchoicelinkc]]
 http://clipc-services.ceda.ac.uk/dreq/index/varChoiceLinkC.html[3.6
-Links a variable to a choice element [varChoiceLinkC]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Links a variable to a choice element \[varChoiceLinkC\]]
 
 Presence of a link indicates that there is a choice of different
 representations for a diagnostic.
 
 [[link-between-scientific-objectives-and-requests-objectivelink]]
 http://clipc-services.ceda.ac.uk/dreq/index/objectiveLink.html[3.7 Link
-between scientific objectives and requests [objectiveLink]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+between scientific objectives and requests \[objectiveLink\]]
 
 Each objective link record joins one objective to one request link. Some
 requests are linked to multiple objectives and most objectives are
@@ -415,8 +403,7 @@ linked to multiple requests.
 
 [[remarks-about-other-items-remarks]]
 http://clipc-services.ceda.ac.uk/dreq/index/remarks.html[3.08 Remarks
-about other items [remarks]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+about other items \[remarks\]]
 
 The remarks section contains additional comments about other records. It
 can be used to add detail without adding to the complexity of the other
@@ -424,8 +411,7 @@ sections.
 
 [[links-a-variable-to-a-choice-element-varchoicelinkr]]
 http://clipc-services.ceda.ac.uk/dreq/index/varChoiceLinkR.html[3.09
-Links a variable to a choice element [varChoiceLinkR]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Links a variable to a choice element \[varChoiceLinkR\]]
 
 Indicates that there is a ranked choice of variables, and that only one
 of the ranked list is required.
@@ -433,8 +419,7 @@ of the ranked list is required.
 [[indicates-variables-for-which-a-there-is-a-range-of-potential-cmor-varibles-varchoice]]
 http://clipc-services.ceda.ac.uk/dreq/index/varChoice.html[3.10
 Indicates variables for which a there is a range of potential CMOR
-Varibles [varChoice]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Varibles \[varChoice\]]
 
 There are several instances where variables defined in the tables are
 mutually exclusive options of which only one should be requested. The
@@ -446,8 +431,7 @@ HighResMIP request.
 
 [[time-slices-for-output-requests-timeslice]]
 http://clipc-services.ceda.ac.uk/dreq/index/timeSlice.html[3.11 Time
-Slices for Output Requests [timeSlice]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Slices for Output Requests \[timeSlice\]]
 
 Specifies time slices (i.e. subsets of an experiment when data for the
 full duration of the experiment is not required).
@@ -465,7 +449,6 @@ to aid automated processing.
 6.2 Relations between CMOR variables [varRelations]footnote:[There
 appear to be a number of broken links in this area .. the use of these
 records is under development.]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Provides structured information about the difference between variables
 of the same name and frequency in different tables. E.g. different
@@ -521,25 +504,19 @@ Units [units]
 ++++++++++++++
 
 [[x.1-core-attributes-__core__]]
-http://clipc-services.ceda.ac.uk/dreq/index/__core__.html[X.1 Core
-Attributes [__core__]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+http://clipc-services.ceda.ac.uk/dreq/index/__core__.html[X.1 Core Attributes \[__core__\]]
 
 The attributes listed in table 1 above.
 
 [[x.2-data-request-attributes-__main__]]
-http://clipc-services.ceda.ac.uk/dreq/index/__main__.html[X.2 Data
-Request Attributes [__main__]]
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+http://clipc-services.ceda.ac.uk/dreq/index/__main__.html[X.2 Data Request Attributes \[__main__\]]
 
 Attributes used to in the content records, such as “units”, “valid_max”.
 Each record in this section defines one of these attributes, specifying
 its type and other properties used in the python API.
 
 [[x.3-section-attributes-__sect__]]
-http://clipc-services.ceda.ac.uk/dreq/index/__sect__.html[X.3 Section
-Attributes [__sect__]]
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+http://clipc-services.ceda.ac.uk/dreq/index/__sect__.html[X.3 Section Attributes \[__sect__\]]
 
 Defines the attributes which are used to describe each section.
 
