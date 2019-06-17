@@ -252,8 +252,7 @@ http://clipc-services.ceda.ac.uk/dreq/index.html .
 The sections, with section numbers, are listed below:
 
 [[model-intercomparison-project-mip]]
-http://clipc-services.ceda.ac.uk/dreq/index/mip.html[1.1 Model
-Intercomparison Project \[mip\]]
+http://clipc-services.ceda.ac.uk/dreq/index/mip.html[1.1 Model Intercomparison Project \[mip\]]
 
 [[mip-variable-var]]
 http://clipc-services.ceda.ac.uk/dreq/index/var.html[1.2 MIP Variable \[var\]]
@@ -456,14 +455,12 @@ masking, temporal mean vs. point, different vertical structure (model
 levels vs. pressure levels).
 
 [[variable-relation-link-varrellnk]]
-6.3 Variable relation link [varRelLnk]
-++++++++++++++++++++++++++++++++++++++
+6.3 Variable relation link &#91;varRelLnk&#93;
 
 Provides links between CMOR variables and varRelation records.
 
 [[cell-methods-cellmethods]]
-7.1 Cell Methods [cellMethods]
-++++++++++++++++++++++++++++++
+7.1 Cell Methods &#91;cellMethods&#93;
 
 [[quality-control-ranges-in-supplement]]
 Quality Control Ranges [in supplement]
@@ -504,7 +501,7 @@ Units [units]
 ++++++++++++++
 
 [[x.1-core-attributes-__core__]]
-http://clipc-services.ceda.ac.uk/dreq/index/__core__.html[X.1 Core Attributes \[__core__\]]
+http://clipc-services.ceda.ac.uk/dreq/index/__core__.html[X.1 Core Attributes &#91;__core__&#93;]
 
 The attributes listed in table 1 above.
 
