@@ -1,0 +1,73 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>byproc</h1>
+<ul>
+<li><a name="0191">_by_calcareous_phytoplankton</a><a href="javascript:void(0)" onclick="ltoggle('t-0191')"> toggle </a>
+<div id="t-0191"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1747">net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_calcareous_phytoplankton</a></li>
+</ul></div>
+</li>
+<li><a name="0192">_by_diatoms</a><a href="javascript:void(0)" onclick="ltoggle('t-0192')"> toggle </a>
+<div id="t-0192"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1748">net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diatoms</a></li>
+</ul></div>
+</li>
+<li><a name="0193">_by_diazotrophs</a><a href="javascript:void(0)" onclick="ltoggle('t-0193')"> toggle </a>
+<div id="t-0193"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1749">net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_diazotrophs</a></li>
+</ul></div>
+</li>
+<li><a name="0194">_by_miscellaneous_phytoplankton</a><a href="javascript:void(0)" onclick="ltoggle('t-0194')"> toggle </a>
+<div id="t-0194"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1750">net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_miscellaneous_phytoplankton</a></li>
+</ul></div>
+</li>
+<li><a name="0195">_by_phytoplankton</a><a href="javascript:void(0)" onclick="ltoggle('t-0195')"> toggle </a>
+<div id="t-0195"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1751">net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_phytoplankton</a></li>
+</ul></div>
+</li>
+<li><a name="0196">_by_picophytoplankton</a><a href="javascript:void(0)" onclick="ltoggle('t-0196')"> toggle </a>
+<div id="t-0196"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1752">net_primary_mole_productivity_of_biomass_expressed_as_carbon_by_picophytoplankton</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>

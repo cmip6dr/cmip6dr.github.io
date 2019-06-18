@@ -1,0 +1,106 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>object</h1>
+<ul>
+<li><a name="0987">cyclone_</a><a href="javascript:void(0)" onclick="ltoggle('t-0987')"> toggle </a>
+<div id="t-0987"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0330">automated_tropical_cyclone_forecasting_system_storm_identifier</a></li>
+<li><a href="../parsed.html#0440">distance_from_tropical_cyclone_center_to_leading_edge_of_displaced_convection</a></li>
+<li><a href="../parsed.html#0496">dvorak_tropical_cyclone_current_intensity_number</a></li>
+<li><a href="../parsed.html#2355">radius_of_tropical_cyclone_central_dense_overcast_region</a></li>
+<li><a href="../parsed.html#2356">radius_of_tropical_cyclone_eye</a></li>
+<li><a href="../parsed.html#2357">radius_of_tropical_cyclone_maximum_sustained_wind_speed</a></li>
+<li><a href="../parsed.html#2384">scene_type_of_dvorak_tropical_cyclone_cloud_region</a></li>
+<li><a href="../parsed.html#2385">scene_type_of_dvorak_tropical_cyclone_eye_region</a></li>
+<li><a href="../parsed.html#4136">tropical_cyclone_eye_brightness_temperature</a></li>
+<li><a href="../parsed.html#4137">tropical_cyclone_maximum_sustained_wind_speed</a></li>
+</ul></div>
+</li>
+<li><a name="0988">platform</a><a href="javascript:void(0)" onclick="ltoggle('t-0988')"> toggle </a>
+<div id="t-0988"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1933">platform_azimuth_angle</a></li>
+<li><a href="../parsed.html#1934">platform_course</a></li>
+<li><a href="../parsed.html#1935">platform_heave</a></li>
+<li><a href="../parsed.html#1936">platform_heave_rate</a></li>
+<li><a href="../parsed.html#1937">platform_id</a></li>
+<li><a href="../parsed.html#1938">platform_name</a></li>
+<li><a href="../parsed.html#1939">platform_orientation</a></li>
+<li><a href="../parsed.html#1940">platform_pitch_angle</a></li>
+<li><a href="../parsed.html#1941">platform_pitch_rate</a></li>
+<li><a href="../parsed.html#1942">platform_roll_angle</a></li>
+<li><a href="../parsed.html#1943">platform_roll_rate</a></li>
+<li><a href="../parsed.html#1944">platform_speed_wrt_air</a></li>
+<li><a href="../parsed.html#1945">platform_speed_wrt_ground</a></li>
+<li><a href="../parsed.html#1946">platform_speed_wrt_sea_water</a></li>
+<li><a href="../parsed.html#1947">platform_view_angle</a></li>
+<li><a href="../parsed.html#1948">platform_yaw_angle</a></li>
+<li><a href="../parsed.html#1949">platform_yaw_rate</a></li>
+<li><a href="../parsed.html#1950">platform_zenith_angle</a></li>
+<li><a href="../parsed.html#2372">relative_platform_azimuth_angle</a></li>
+</ul></div>
+</li>
+<li><a name="0989">sensor</a><a href="javascript:void(0)" onclick="ltoggle('t-0989')"> toggle </a>
+<div id="t-0989"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2373">relative_sensor_azimuth_angle</a></li>
+<li><a href="../parsed.html#2561">sensor_azimuth_angle</a></li>
+<li><a href="../parsed.html#2562">sensor_band_central_radiation_frequency</a></li>
+<li><a href="../parsed.html#2563">sensor_band_central_radiation_wavelength</a></li>
+<li><a href="../parsed.html#2564">sensor_band_central_radiation_wavenumber</a></li>
+<li><a href="../parsed.html#2565">sensor_band_identifier</a></li>
+<li><a href="../parsed.html#2566">sensor_view_angle</a></li>
+<li><a href="../parsed.html#2567">sensor_zenith_angle</a></li>
+</ul></div>
+</li>
+<li><a name="0990">solar</a><a href="javascript:void(0)" onclick="ltoggle('t-0990')"> toggle </a>
+<div id="t-0990"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2603">solar_azimuth_angle</a></li>
+<li><a href="../parsed.html#2604">solar_elevation_angle</a></li>
+<li><a href="../parsed.html#2605">solar_irradiance</a></li>
+<li><a href="../parsed.html#2606">solar_irradiance_per_unit_wavelength</a></li>
+<li><a href="../parsed.html#2607">solar_zenith_angle</a></li>
+</ul></div>
+</li>
+<li><a name="0991">sun</a><a href="javascript:void(0)" onclick="ltoggle('t-0991')"> toggle </a>
+<div id="t-0991"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0439">distance_from_sun</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>

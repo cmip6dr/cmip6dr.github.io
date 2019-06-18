@@ -1,0 +1,1925 @@
+<html><head><link rel="stylesheet" type="text/css" href="snParse.css" />
+</head><body>
+<div class="plain"><script>
+function ltoggle(targ001)
+            {
+                // check for the existence of the help tr object for this target
+                var thisTarg = document.getElementById(targ001);
+
+                if (thisTarg)
+                {
+                    if (thisTarg.style.display != 'none')
+                    {
+                        thisTarg.style.display = 'none';
+                    }
+                    else
+                    {
+                        thisTarg.style.display = '';
+                    }
+                }
+            };
+
+function sortMeasure() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('m').localeCompare(b.getAttribute('m'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+function sortName() {
+  Array.prototype.slice.call(document.querySelectorAll('.listitems li')).sort(function(a, b) {
+    return a.getAttribute('n').localeCompare(b.getAttribute('n'));
+  }).forEach(function(currValue) {
+    currValue.parentNode.appendChild(currValue);
+  });
+};
+</script></div>
+
+
+<h1>due</h1>
+<ul>
+<li><a name="0532">_due_to_accretion_to_rain</a><a href="javascript:void(0)" onclick="ltoggle('t-0532')"> toggle </a>
+<div id="t-0532"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3899">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_accretion_to_rain</a></li>
+</ul></div>
+</li>
+<li><a name="0533">_due_to_accretion_to_snow</a><a href="javascript:void(0)" onclick="ltoggle('t-0533')"> toggle </a>
+<div id="t-0533"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3881">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_accretion_to_snow</a></li>
+<li><a href="../parsed.html#3900">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_accretion_to_snow</a></li>
+</ul></div>
+</li>
+<li><a name="0534">_due_to_advection</a><a href="javascript:void(0)" onclick="ltoggle('t-0534')"> toggle </a>
+<div id="t-0534"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0371">change_over_time_in_atmosphere_mass_content_of_water_due_to_advection</a></li>
+<li><a href="../parsed.html#1098">magnitude_of_heat_flux_in_sea_water_due_to_advection</a></li>
+<li><a href="../parsed.html#1860">ocean_mass_x_transport_due_to_advection</a></li>
+<li><a href="../parsed.html#1863">ocean_mass_y_transport_due_to_advection</a></li>
+<li><a href="../parsed.html#3251">tendency_of_air_temperature_due_to_advection</a></li>
+<li><a href="../parsed.html#3273">tendency_of_atmosphere_enthalpy_content_due_to_advection</a></li>
+<li><a href="../parsed.html#3274">tendency_of_atmosphere_kinetic_energy_content_due_to_advection</a></li>
+<li><a href="../parsed.html#3707">tendency_of_atmosphere_mass_content_of_water_due_to_advection</a></li>
+<li><a href="../parsed.html#3709">tendency_of_atmosphere_mass_content_of_water_vapor_due_to_advection</a></li>
+<li><a href="../parsed.html#3730">tendency_of_atmosphere_mass_per_unit_area_due_to_advection</a></li>
+<li><a href="../parsed.html#3831">tendency_of_atmosphere_potential_energy_content_due_to_advection</a></li>
+<li><a href="../parsed.html#3838">tendency_of_eastward_wind_due_to_advection</a></li>
+<li><a href="../parsed.html#3848">tendency_of_enthalpy_content_of_atmosphere_layer_due_to_advection</a></li>
+<li><a href="../parsed.html#3850">tendency_of_kinetic_energy_content_of_atmosphere_layer_due_to_advection</a></li>
+<li><a href="../parsed.html#3865">tendency_of_mass_fraction_of_cloud_condensed_water_in_air_due_to_advection</a></li>
+<li><a href="../parsed.html#3867">tendency_of_mass_fraction_of_cloud_ice_in_air_due_to_advection</a></li>
+<li><a href="../parsed.html#3870">tendency_of_mass_fraction_of_cloud_liquid_water_in_air_due_to_advection</a></li>
+<li><a href="../parsed.html#3873">tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_advection</a></li>
+<li><a href="../parsed.html#3882">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_advection</a></li>
+<li><a href="../parsed.html#3901">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_advection</a></li>
+<li><a href="../parsed.html#3950">tendency_of_northward_wind_due_to_advection</a></li>
+<li><a href="../parsed.html#3995">tendency_of_potential_energy_content_of_atmosphere_layer_due_to_advection</a></li>
+<li><a href="../parsed.html#4029">tendency_of_sea_water_salinity_due_to_advection</a></li>
+<li><a href="../parsed.html#4042">tendency_of_sea_water_temperature_due_to_advection</a></li>
+<li><a href="../parsed.html#4049">tendency_of_specific_humidity_due_to_advection</a></li>
+<li><a href="../parsed.html#4071">tendency_of_upward_air_velocity_due_to_advection</a></li>
+<li><a href="../parsed.html#4285">x_heat_flux_in_sea_water_due_to_advection</a></li>
+<li><a href="../parsed.html#4289">y_heat_flux_in_sea_water_due_to_advection</a></li>
+</ul></div>
+</li>
+<li><a name="0535">_due_to_advection_and_parameterized_eddy_advection</a><a href="javascript:void(0)" onclick="ltoggle('t-0535')"> toggle </a>
+<div id="t-0535"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1861">ocean_mass_x_transport_due_to_advection_and_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#1864">ocean_mass_y_transport_due_to_advection_and_parameterized_eddy_advection</a></li>
+</ul></div>
+</li>
+<li><a name="0536">_due_to_advection_by_northward_transformed_eulerian_mean_air_velocity</a><a href="javascript:void(0)" onclick="ltoggle('t-0536')"> toggle </a>
+<div id="t-0536"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3839">tendency_of_eastward_wind_due_to_advection_by_northward_transformed_eulerian_mean_air_velocity</a></li>
+</ul></div>
+</li>
+<li><a name="0537">_due_to_advection_by_upward_transformed_eulerian_mean_air_velocity</a><a href="javascript:void(0)" onclick="ltoggle('t-0537')"> toggle </a>
+<div id="t-0537"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3840">tendency_of_eastward_wind_due_to_advection_by_upward_transformed_eulerian_mean_air_velocity</a></li>
+</ul></div>
+</li>
+<li><a name="0538">_due_to_aggregation</a><a href="javascript:void(0)" onclick="ltoggle('t-0538')"> toggle </a>
+<div id="t-0538"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3883">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_aggregation</a></li>
+</ul></div>
+</li>
+<li><a name="0539">_due_to_air_pressure_and_wind_at_high_frequency</a><a href="javascript:void(0)" onclick="ltoggle('t-0539')"> toggle </a>
+<div id="t-0539"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2442">sea_surface_height_correction_due_to_air_pressure_and_wind_at_high_frequency</a></li>
+</ul></div>
+</li>
+<li><a name="0540">_due_to_air_pressure_at_low_frequency</a><a href="javascript:void(0)" onclick="ltoggle('t-0540')"> toggle </a>
+<div id="t-0540"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2443">sea_surface_height_correction_due_to_air_pressure_at_low_frequency</a></li>
+</ul></div>
+</li>
+<li><a name="0541">_due_to_all_land_processes</a><a href="javascript:void(0)" onclick="ltoggle('t-0541')"> toggle </a>
+<div id="t-0541"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2775">surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_13C_due_to_all_land_processes</a></li>
+<li><a href="../parsed.html#2776">surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_14C_due_to_all_land_processes</a></li>
+<li><a href="../parsed.html#2777">surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes</a></li>
+</ul></div>
+</li>
+<li><a name="0542">_due_to_all_land_processes_excluding_anthropogenic_land_use_change</a><a href="javascript:void(0)" onclick="ltoggle('t-0542')"> toggle </a>
+<div id="t-0542"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2778">surface_net_downward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_all_land_processes_excluding_anthropogenic_land_use_change</a></li>
+</ul></div>
+</li>
+<li><a name="0543">_due_to_all_land_processes_excluding_fires</a><a href="javascript:void(0)" onclick="ltoggle('t-0543')"> toggle </a>
+<div id="t-0543"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3211">surface_upward_mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_due_to_all_land_processes_excluding_fires</a></li>
+</ul></div>
+</li>
+<li><a name="0544">_due_to_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0544')"> toggle </a>
+<div id="t-0544"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0048">atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#0305">atmosphere_optical_thickness_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#1921">optical_thickness_of_atmosphere_layer_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#2570">single_scattering_albedo_in_air_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#2667">stratosphere_optical_thickness_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#4224">volume_extinction_coefficient_in_air_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#4237">volume_scattering_coefficient_of_radiative_flux_in_air_due_to_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#4240">volume_scattering_function_of_radiative_flux_in_air_due_to_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0545">_due_to_ammonium_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0545')"> toggle </a>
+<div id="t-0545"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0306">atmosphere_optical_thickness_due_to_ammonium_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0546">_due_to_anthropogenic_emission</a><a href="javascript:void(0)" onclick="ltoggle('t-0546')"> toggle </a>
+<div id="t-0546"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3338">tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_emission</a></li>
+<li><a href="../parsed.html#3516">tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_anthropogenic_emission</a></li>
+</ul></div>
+</li>
+<li><a name="0547">_due_to_anthropogenic_energy_consumption</a><a href="javascript:void(0)" onclick="ltoggle('t-0547')"> toggle </a>
+<div id="t-0547"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3179">surface_upward_heat_flux_due_to_anthropogenic_energy_consumption</a></li>
+</ul></div>
+</li>
+<li><a name="0548">_due_to_anthropogenic_land_use_or_land_cover_change</a><a href="javascript:void(0)" onclick="ltoggle('t-0548')"> toggle </a>
+<div id="t-0548"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0361">carbon_mass_flux_into_forestry_and_agricultural_products_due_to_anthropogenic_land_use_or_land_cover_change</a></li>
+<li><a href="../parsed.html#0362">carbon_mass_flux_into_soil_and_litter_due_to_anthropogenic_land_use_or_land_cover_change</a></li>
+<li><a href="../parsed.html#1774">nitrogen_mass_flux_into_forestry_and_agricultural_products_due_to_anthropogenic_land_use_or_land_cover_change</a></li>
+<li><a href="../parsed.html#3188">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_land_use_or_land_cover_change</a></li>
+<li><a href="../parsed.html#3517">tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_anthropogenic_land_use_or_land_cover_change</a></li>
+</ul></div>
+</li>
+<li><a name="0549">_due_to_anthropogenic_land_use_or_land_cover_change_excluding_forestry_and_agricultural_products</a><a href="javascript:void(0)" onclick="ltoggle('t-0549')"> toggle </a>
+<div id="t-0549"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3189">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_anthropogenic_land_use_or_land_cover_change_excluding_forestry_and_agricultural_products</a></li>
+</ul></div>
+</li>
+<li><a name="0550">_due_to_aqueous_phase_net_chemical_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0550')"> toggle </a>
+<div id="t-0550"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3672">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_aqueous_phase_net_chemical_production</a></li>
+</ul></div>
+</li>
+<li><a name="0551">_due_to_autoconversion</a><a href="javascript:void(0)" onclick="ltoggle('t-0551')"> toggle </a>
+<div id="t-0551"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3902">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_autoconversion</a></li>
+</ul></div>
+</li>
+<li><a name="0552">_due_to_autoconversion_to_rain</a><a href="javascript:void(0)" onclick="ltoggle('t-0552')"> toggle </a>
+<div id="t-0552"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3874">tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_autoconversion_to_rain</a></li>
+</ul></div>
+</li>
+<li><a name="0553">_due_to_autoconversion_to_snow</a><a href="javascript:void(0)" onclick="ltoggle('t-0553')"> toggle </a>
+<div id="t-0553"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3875">tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_autoconversion_to_snow</a></li>
+</ul></div>
+</li>
+<li><a name="0554">_due_to_background</a><a href="javascript:void(0)" onclick="ltoggle('t-0554')"> toggle </a>
+<div id="t-0554"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1900">ocean_vertical_momentum_diffusivity_due_to_background</a></li>
+<li><a href="../parsed.html#1906">ocean_vertical_tracer_diffusivity_due_to_background</a></li>
+<li><a href="../parsed.html#3993">tendency_of_ocean_potential_energy_content_due_to_background</a></li>
+</ul></div>
+</li>
+<li><a name="0555">_due_to_basal_mass_balance</a><a href="javascript:void(0)" onclick="ltoggle('t-0555')"> toggle </a>
+<div id="t-0555"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3851">tendency_of_land_ice_mass_due_to_basal_mass_balance</a></li>
+</ul></div>
+</li>
+<li><a name="0556">_due_to_basal_melting</a><a href="javascript:void(0)" onclick="ltoggle('t-0556')"> toggle </a>
+<div id="t-0556"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3998">tendency_of_sea_ice_amount_due_to_basal_melting</a></li>
+</ul></div>
+</li>
+<li><a name="0557">_due_to_bergeron_findeisen_process_from_cloud_liquid</a><a href="javascript:void(0)" onclick="ltoggle('t-0557')"> toggle </a>
+<div id="t-0557"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3884">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_bergeron_findeisen_process_from_cloud_liquid</a></li>
+</ul></div>
+</li>
+<li><a name="0558">_due_to_bergeron_findeisen_process_to_cloud_ice</a><a href="javascript:void(0)" onclick="ltoggle('t-0558')"> toggle </a>
+<div id="t-0558"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3903">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_bergeron_findeisen_process_to_cloud_ice</a></li>
+</ul></div>
+</li>
+<li><a name="0559">_due_to_bidirectional_surface_exchange</a><a href="javascript:void(0)" onclick="ltoggle('t-0559')"> toggle </a>
+<div id="t-0559"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2774">surface_net_downward_mass_flux_of_ammonia_due_to_bidirectional_surface_exchange</a></li>
+</ul></div>
+</li>
+<li><a name="0560">_due_to_biological_processes</a><a href="javascript:void(0)" onclick="ltoggle('t-0560')"> toggle </a>
+<div id="t-0560"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0628">integral_wrt_depth_of_tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3928">tendency_of_mole_concentration_of_dissolved_inorganic_carbon_in_sea_water_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3929">tendency_of_mole_concentration_of_dissolved_inorganic_iron_in_sea_water_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3930">tendency_of_mole_concentration_of_dissolved_inorganic_nitrogen_in_sea_water_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3931">tendency_of_mole_concentration_of_dissolved_inorganic_phosphorus_in_sea_water_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3932">tendency_of_mole_concentration_of_dissolved_inorganic_silicon_in_sea_water_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3963">tendency_of_ocean_mole_content_of_dissolved_inorganic_carbon_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3965">tendency_of_ocean_mole_content_of_dissolved_inorganic_iron_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3967">tendency_of_ocean_mole_content_of_dissolved_inorganic_nitrogen_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3969">tendency_of_ocean_mole_content_of_dissolved_inorganic_phosphorus_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#3971">tendency_of_ocean_mole_content_of_dissolved_inorganic_silicon_due_to_biological_processes</a></li>
+<li><a href="../parsed.html#4013">tendency_of_sea_water_alkalinity_expressed_as_mole_equivalent_due_to_biological_processes</a></li>
+</ul></div>
+</li>
+<li><a name="0561">_due_to_biological_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0561')"> toggle </a>
+<div id="t-0561"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3924">tendency_of_mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3926">tendency_of_mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3936">tendency_of_mole_concentration_of_iron_in_sea_water_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3948">tendency_of_mole_concentration_of_silicon_in_sea_water_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3958">tendency_of_ocean_mole_content_of_aragonite_expressed_as_carbon_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3959">tendency_of_ocean_mole_content_of_calcite_expressed_as_carbon_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3978">tendency_of_ocean_mole_content_of_iron_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3981">tendency_of_ocean_mole_content_of_nitrogen_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3987">tendency_of_ocean_mole_content_of_phosphorus_due_to_biological_production</a></li>
+<li><a href="../parsed.html#3991">tendency_of_ocean_mole_content_of_silicon_due_to_biological_production</a></li>
+</ul></div>
+</li>
+<li><a name="0562">_due_to_black_carbon_ambient_aerosol</a><a href="javascript:void(0)" onclick="ltoggle('t-0562')"> toggle </a>
+<div id="t-0562"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0049">atmosphere_absorption_optical_thickness_due_to_black_carbon_ambient_aerosol</a></li>
+<li><a href="../parsed.html#0307">atmosphere_optical_thickness_due_to_black_carbon_ambient_aerosol</a></li>
+</ul></div>
+</li>
+<li><a name="0563">_due_to_boundary_layer_mixing</a><a href="javascript:void(0)" onclick="ltoggle('t-0563')"> toggle </a>
+<div id="t-0563"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2695">surface_downward_eastward_stress_due_to_boundary_layer_mixing</a></li>
+<li><a href="../parsed.html#2715">surface_downward_northward_stress_due_to_boundary_layer_mixing</a></li>
+<li><a href="../parsed.html#3252">tendency_of_air_temperature_due_to_boundary_layer_mixing</a></li>
+<li><a href="../parsed.html#3876">tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_boundary_layer_mixing</a></li>
+<li><a href="../parsed.html#3885">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_boundary_layer_mixing</a></li>
+<li><a href="../parsed.html#3904">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_boundary_layer_mixing</a></li>
+<li><a href="../parsed.html#4050">tendency_of_specific_humidity_due_to_boundary_layer_mixing</a></li>
+</ul></div>
+</li>
+<li><a name="0564">_due_to_calving</a><a href="javascript:void(0)" onclick="ltoggle('t-0564')"> toggle </a>
+<div id="t-0564"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1041">land_ice_specific_mass_flux_due_to_calving</a></li>
+<li><a href="../parsed.html#3852">tendency_of_land_ice_mass_due_to_calving</a></li>
+</ul></div>
+</li>
+<li><a name="0565">_due_to_calving_and_ice_front_melting</a><a href="javascript:void(0)" onclick="ltoggle('t-0565')"> toggle </a>
+<div id="t-0565"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1042">land_ice_specific_mass_flux_due_to_calving_and_ice_front_melting</a></li>
+</ul></div>
+</li>
+<li><a name="0566">_due_to_change_in_sigma_coordinate_wrt_surface_pressure</a><a href="javascript:void(0)" onclick="ltoggle('t-0566')"> toggle </a>
+<div id="t-0566"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0367">change_in_atmosphere_energy_content_due_to_change_in_sigma_coordinate_wrt_surface_pressure</a></li>
+<li><a href="../parsed.html#0368">change_in_energy_content_of_atmosphere_layer_due_to_change_in_sigma_coordinate_wrt_surface_pressure</a></li>
+</ul></div>
+</li>
+<li><a name="0567">_due_to_chemical_and_photolytic_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0567')"> toggle </a>
+<div id="t-0567"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3937">tendency_of_mole_concentration_of_ox_in_air_due_to_chemical_and_photolytic_production</a></li>
+</ul></div>
+</li>
+<li><a name="0568">_due_to_chemical_destruction</a><a href="javascript:void(0)" onclick="ltoggle('t-0568')"> toggle </a>
+<div id="t-0568"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3731">tendency_of_atmosphere_mole_concentration_of_carbon_monoxide_due_to_chemical_destruction</a></li>
+<li><a href="../parsed.html#3732">tendency_of_atmosphere_mole_concentration_of_methane_due_to_chemical_destruction</a></li>
+<li><a href="../parsed.html#3733">tendency_of_atmosphere_mole_concentration_of_nitrous_oxide_due_to_chemical_destruction</a></li>
+<li><a href="../parsed.html#3734">tendency_of_atmosphere_mole_concentration_of_ozone_due_to_chemical_destruction</a></li>
+<li><a href="../parsed.html#3938">tendency_of_mole_concentration_of_ox_in_air_due_to_chemical_destruction</a></li>
+</ul></div>
+</li>
+<li><a name="0569">_due_to_chemical_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0569')"> toggle </a>
+<div id="t-0569"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3735">tendency_of_atmosphere_mole_concentration_of_ozone_due_to_chemical_production</a></li>
+</ul></div>
+</li>
+<li><a name="0570">_due_to_cloud</a><a href="javascript:void(0)" onclick="ltoggle('t-0570')"> toggle </a>
+<div id="t-0570"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0308">atmosphere_optical_thickness_due_to_cloud</a></li>
+</ul></div>
+</li>
+<li><a name="0571">_due_to_cloud_microphysics</a><a href="javascript:void(0)" onclick="ltoggle('t-0571')"> toggle </a>
+<div id="t-0571"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3877">tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_cloud_microphysics</a></li>
+<li><a href="../parsed.html#3886">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_cloud_microphysics</a></li>
+<li><a href="../parsed.html#3905">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_cloud_microphysics</a></li>
+</ul></div>
+</li>
+<li><a name="0572">_due_to_cloud_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0572')"> toggle </a>
+<div id="t-0572"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4225">volume_extinction_coefficient_in_air_due_to_cloud_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0573">_due_to_condensation_and_evaporation</a><a href="javascript:void(0)" onclick="ltoggle('t-0573')"> toggle </a>
+<div id="t-0573"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3878">tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_condensation_and_evaporation</a></li>
+<li><a href="../parsed.html#3906">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation</a></li>
+</ul></div>
+</li>
+<li><a name="0574">_due_to_condensation_and_evaporation_from_boundary_layer_mixing</a><a href="javascript:void(0)" onclick="ltoggle('t-0574')"> toggle </a>
+<div id="t-0574"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3907">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_boundary_layer_mixing</a></li>
+</ul></div>
+</li>
+<li><a name="0575">_due_to_condensation_and_evaporation_from_convection</a><a href="javascript:void(0)" onclick="ltoggle('t-0575')"> toggle </a>
+<div id="t-0575"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3908">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_convection</a></li>
+</ul></div>
+</li>
+<li><a name="0576">_due_to_condensation_and_evaporation_from_longwave_heating</a><a href="javascript:void(0)" onclick="ltoggle('t-0576')"> toggle </a>
+<div id="t-0576"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3909">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_longwave_heating</a></li>
+</ul></div>
+</li>
+<li><a name="0577">_due_to_condensation_and_evaporation_from_pressure_change</a><a href="javascript:void(0)" onclick="ltoggle('t-0577')"> toggle </a>
+<div id="t-0577"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3910">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_pressure_change</a></li>
+</ul></div>
+</li>
+<li><a name="0578">_due_to_condensation_and_evaporation_from_shortwave_heating</a><a href="javascript:void(0)" onclick="ltoggle('t-0578')"> toggle </a>
+<div id="t-0578"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3911">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_shortwave_heating</a></li>
+</ul></div>
+</li>
+<li><a name="0579">_due_to_condensation_and_evaporation_from_turbulence</a><a href="javascript:void(0)" onclick="ltoggle('t-0579')"> toggle </a>
+<div id="t-0579"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3912">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_condensation_and_evaporation_from_turbulence</a></li>
+</ul></div>
+</li>
+<li><a name="0580">_due_to_congelation_ice_accumulation</a><a href="javascript:void(0)" onclick="ltoggle('t-0580')"> toggle </a>
+<div id="t-0580"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3999">tendency_of_sea_ice_amount_due_to_congelation_ice_accumulation</a></li>
+</ul></div>
+</li>
+<li><a name="0581">_due_to_convection</a><a href="javascript:void(0)" onclick="ltoggle('t-0581')"> toggle </a>
+<div id="t-0581"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1901">ocean_vertical_momentum_diffusivity_due_to_convection</a></li>
+<li><a href="../parsed.html#1907">ocean_vertical_tracer_diffusivity_due_to_convection</a></li>
+<li><a href="../parsed.html#3253">tendency_of_air_temperature_due_to_convection</a></li>
+<li><a href="../parsed.html#3710">tendency_of_atmosphere_mass_content_of_water_vapor_due_to_convection</a></li>
+<li><a href="../parsed.html#3841">tendency_of_eastward_wind_due_to_convection</a></li>
+<li><a href="../parsed.html#3860">tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_convection</a></li>
+<li><a href="../parsed.html#3951">tendency_of_northward_wind_due_to_convection</a></li>
+<li><a href="../parsed.html#3996">tendency_of_potential_energy_content_of_ocean_layer_due_to_convection</a></li>
+<li><a href="../parsed.html#4051">tendency_of_specific_humidity_due_to_convection</a></li>
+<li><a href="../parsed.html#4073">tendency_of_wind_speed_due_to_convection</a></li>
+<li><a href="../parsed.html#4174">upward_heat_flux_in_sea_water_due_to_convection</a></li>
+</ul></div>
+</li>
+<li><a name="0582">_due_to_convective_cloud</a><a href="javascript:void(0)" onclick="ltoggle('t-0582')"> toggle </a>
+<div id="t-0582"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0309">atmosphere_optical_thickness_due_to_convective_cloud</a></li>
+</ul></div>
+</li>
+<li><a name="0583">_due_to_convective_detrainment</a><a href="javascript:void(0)" onclick="ltoggle('t-0583')"> toggle </a>
+<div id="t-0583"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3887">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_convective_detrainment</a></li>
+<li><a href="../parsed.html#3913">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_convective_detrainment</a></li>
+</ul></div>
+</li>
+<li><a name="0584">_due_to_conversion_of_snow_to_sea_ice</a><a href="javascript:void(0)" onclick="ltoggle('t-0584')"> toggle </a>
+<div id="t-0584"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4000">tendency_of_sea_ice_amount_due_to_conversion_of_snow_to_sea_ice</a></li>
+<li><a href="../parsed.html#4059">tendency_of_surface_snow_amount_due_to_conversion_of_snow_to_sea_ice</a></li>
+</ul></div>
+</li>
+<li><a name="0585">_due_to_coriolis_effect</a><a href="javascript:void(0)" onclick="ltoggle('t-0585')"> toggle </a>
+<div id="t-0585"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2419">sea_ice_x_force_per_unit_area_due_to_coriolis_effect</a></li>
+<li><a href="../parsed.html#2425">sea_ice_y_force_per_unit_area_due_to_coriolis_effect</a></li>
+</ul></div>
+</li>
+<li><a name="0586">_due_to_crop_harvesting</a><a href="javascript:void(0)" onclick="ltoggle('t-0586')"> toggle </a>
+<div id="t-0586"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1260">mass_flux_of_carbon_into_forestry_and_agricultural_products_due_to_crop_harvesting</a></li>
+</ul></div>
+</li>
+<li><a name="0587">_due_to_deep_convection</a><a href="javascript:void(0)" onclick="ltoggle('t-0587')"> toggle </a>
+<div id="t-0587"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3711">tendency_of_atmosphere_mass_content_of_water_vapor_due_to_deep_convection</a></li>
+<li><a href="../parsed.html#3861">tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_deep_convection</a></li>
+</ul></div>
+</li>
+<li><a name="0588">_due_to_denitrification_and_sedimentation</a><a href="javascript:void(0)" onclick="ltoggle('t-0588')"> toggle </a>
+<div id="t-0588"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1462">minus_tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_denitrification_and_sedimentation</a></li>
+<li><a href="../parsed.html#3972">tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_denitrification_and_sedimentation</a></li>
+</ul></div>
+</li>
+<li><a name="0589">_due_to_deposition</a><a href="javascript:void(0)" onclick="ltoggle('t-0589')"> toggle </a>
+<div id="t-0589"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1444">minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_deposition</a></li>
+<li><a href="../parsed.html#1449">minus_tendency_of_atmosphere_mass_content_of_insoluble_dust_dry_aerosol_particles_due_to_deposition</a></li>
+<li><a href="../parsed.html#1450">minus_tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition</a></li>
+<li><a href="../parsed.html#3371">tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_deposition</a></li>
+<li><a href="../parsed.html#3471">tendency_of_atmosphere_mass_content_of_insoluble_dust_dry_aerosol_particles_due_to_deposition</a></li>
+<li><a href="../parsed.html#3518">tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition</a></li>
+<li><a href="../parsed.html#3580">tendency_of_atmosphere_mass_content_of_oxidized_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition</a></li>
+<li><a href="../parsed.html#3658">tendency_of_atmosphere_mass_content_of_reduced_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition</a></li>
+<li><a href="../parsed.html#3984">tendency_of_ocean_mole_content_of_oxidized_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition</a></li>
+<li><a href="../parsed.html#3988">tendency_of_ocean_mole_content_of_reduced_nitrogen_compounds_expressed_as_nitrogen_due_to_deposition</a></li>
+</ul></div>
+</li>
+<li><a name="0590">_due_to_deposition_and_fixation_and_runoff</a><a href="javascript:void(0)" onclick="ltoggle('t-0590')"> toggle </a>
+<div id="t-0590"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3973">tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_deposition_and_fixation_and_runoff</a></li>
+</ul></div>
+</li>
+<li><a name="0591">_due_to_deposition_and_runoff_and_sediment_dissolution</a><a href="javascript:void(0)" onclick="ltoggle('t-0591')"> toggle </a>
+<div id="t-0591"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3979">tendency_of_ocean_mole_content_of_iron_due_to_deposition_and_runoff_and_sediment_dissolution</a></li>
+</ul></div>
+</li>
+<li><a name="0592">_due_to_deposition_and_sublimation</a><a href="javascript:void(0)" onclick="ltoggle('t-0592')"> toggle </a>
+<div id="t-0592"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3888">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_deposition_and_sublimation</a></li>
+</ul></div>
+</li>
+<li><a name="0593">_due_to_diabatic_processes</a><a href="javascript:void(0)" onclick="ltoggle('t-0593')"> toggle </a>
+<div id="t-0593"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3254">tendency_of_air_temperature_due_to_diabatic_processes</a></li>
+</ul></div>
+</li>
+<li><a name="0594">_due_to_diffusion</a><a href="javascript:void(0)" onclick="ltoggle('t-0594')"> toggle </a>
+<div id="t-0594"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0444">downward_dry_static_energy_flux_due_to_diffusion</a></li>
+<li><a href="../parsed.html#0446">downward_eastward_momentum_flux_in_air_due_to_diffusion</a></li>
+<li><a href="../parsed.html#0456">downward_northward_momentum_flux_in_air_due_to_diffusion</a></li>
+<li><a href="../parsed.html#0459">downward_water_vapor_flux_in_air_due_to_diffusion</a></li>
+<li><a href="../parsed.html#1793">northward_ocean_freshwater_transport_due_to_diffusion</a></li>
+<li><a href="../parsed.html#1798">northward_ocean_heat_transport_due_to_diffusion</a></li>
+<li><a href="../parsed.html#1806">northward_ocean_salt_transport_due_to_diffusion</a></li>
+<li><a href="../parsed.html#1848">ocean_heat_x_transport_due_to_diffusion</a></li>
+<li><a href="../parsed.html#1851">ocean_heat_y_transport_due_to_diffusion</a></li>
+<li><a href="../parsed.html#3255">tendency_of_air_temperature_due_to_diffusion</a></li>
+<li><a href="../parsed.html#3842">tendency_of_eastward_wind_due_to_diffusion</a></li>
+<li><a href="../parsed.html#3868">tendency_of_mass_fraction_of_cloud_ice_in_air_due_to_diffusion</a></li>
+<li><a href="../parsed.html#3871">tendency_of_mass_fraction_of_cloud_liquid_water_in_air_due_to_diffusion</a></li>
+<li><a href="../parsed.html#3952">tendency_of_northward_wind_due_to_diffusion</a></li>
+<li><a href="../parsed.html#3997">tendency_of_potential_energy_content_of_ocean_layer_due_to_diffusion</a></li>
+<li><a href="../parsed.html#4052">tendency_of_specific_humidity_due_to_diffusion</a></li>
+<li><a href="../parsed.html#4163">upward_dry_static_energy_flux_due_to_diffusion</a></li>
+<li><a href="../parsed.html#4186">upward_water_vapor_flux_in_air_due_to_diffusion</a></li>
+</ul></div>
+</li>
+<li><a name="0595">_due_to_dissipation_of_nonorographic_gravity_waves</a><a href="javascript:void(0)" onclick="ltoggle('t-0595')"> toggle </a>
+<div id="t-0595"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3256">tendency_of_air_temperature_due_to_dissipation_of_nonorographic_gravity_waves</a></li>
+</ul></div>
+</li>
+<li><a name="0596">_due_to_dissipation_of_orographic_gravity_waves</a><a href="javascript:void(0)" onclick="ltoggle('t-0596')"> toggle </a>
+<div id="t-0596"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3257">tendency_of_air_temperature_due_to_dissipation_of_orographic_gravity_waves</a></li>
+</ul></div>
+</li>
+<li><a name="0597">_due_to_dissolution</a><a href="javascript:void(0)" onclick="ltoggle('t-0597')"> toggle </a>
+<div id="t-0597"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3925">tendency_of_mole_concentration_of_aragonite_expressed_as_carbon_in_sea_water_due_to_dissolution</a></li>
+<li><a href="../parsed.html#3927">tendency_of_mole_concentration_of_calcite_expressed_as_carbon_in_sea_water_due_to_dissolution</a></li>
+</ul></div>
+</li>
+<li><a name="0598">_due_to_dissolution_from_inorganic_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0598')"> toggle </a>
+<div id="t-0598"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3933">tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_dissolution_from_inorganic_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0599">_due_to_dissolved_organic_matter</a><a href="javascript:void(0)" onclick="ltoggle('t-0599')"> toggle </a>
+<div id="t-0599"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4216">volume_absorption_coefficient_of_radiative_flux_in_sea_water_due_to_dissolved_organic_matter</a></li>
+</ul></div>
+</li>
+<li><a name="0600">_due_to_dried_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0600')"> toggle </a>
+<div id="t-0600"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4214">volume_absorption_coefficient_in_air_due_to_dried_aerosol_particles</a></li>
+<li><a href="../parsed.html#4220">volume_backwards_scattering_coefficient_in_air_due_to_dried_aerosol_particles</a></li>
+<li><a href="../parsed.html#4238">volume_scattering_coefficient_of_radiative_flux_in_air_due_to_dried_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0601">_due_to_drifting_into_sea</a><a href="javascript:void(0)" onclick="ltoggle('t-0601')"> toggle </a>
+<div id="t-0601"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4060">tendency_of_surface_snow_amount_due_to_drifting_into_sea</a></li>
+</ul></div>
+</li>
+<li><a name="0602">_due_to_dry_convection</a><a href="javascript:void(0)" onclick="ltoggle('t-0602')"> toggle </a>
+<div id="t-0602"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3258">tendency_of_air_temperature_due_to_dry_convection</a></li>
+</ul></div>
+</li>
+<li><a name="0603">_due_to_dry_deposition</a><a href="javascript:void(0)" onclick="ltoggle('t-0603')"> toggle </a>
+<div id="t-0603"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1440">minus_tendency_of_atmosphere_mass_content_of_ammonia_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1442">minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1445">minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1447">minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1451">minus_tendency_of_atmosphere_mass_content_of_noy_expressed_as_nitrogen_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1453">minus_tendency_of_atmosphere_mass_content_of_ozone_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1454">minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1456">minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1458">minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#1460">minus_tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3275">tendency_of_atmosphere_mass_content_of_acetaldehyde_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3278">tendency_of_atmosphere_mass_content_of_acetic_acid_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3280">tendency_of_atmosphere_mass_content_of_aceto_nitrile_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3291">tendency_of_atmosphere_mass_content_of_aldehydes_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3295">tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3300">tendency_of_atmosphere_mass_content_of_ammonia_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3311">tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3341">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3366">tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3372">tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3377">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3435">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3447">tendency_of_atmosphere_mass_content_of_formic_acid_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3449">tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3452">tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3463">tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3467">tendency_of_atmosphere_mass_content_of_hydrogen_cyanide_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3469">tendency_of_atmosphere_mass_content_of_hydrogen_peroxide_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3487">tendency_of_atmosphere_mass_content_of_mercury_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3502">tendency_of_atmosphere_mass_content_of_methanesulfonic_acid_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3506">tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3511">tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3514">tendency_of_atmosphere_mass_content_of_nitric_acid_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3519">tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3521">tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3536">tendency_of_atmosphere_mass_content_of_nitrous_acid_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3539">tendency_of_atmosphere_mass_content_of_nitrous_oxide_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3566">tendency_of_atmosphere_mass_content_of_noy_expressed_as_nitrogen_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3576">tendency_of_atmosphere_mass_content_of_organic_nitrates_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3578">tendency_of_atmosphere_mass_content_of_organic_peroxides_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3581">tendency_of_atmosphere_mass_content_of_oxidized_nitrogen_compounds_expressed_as_nitrogen_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3583">tendency_of_atmosphere_mass_content_of_ozone_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3585">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3591">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3612">tendency_of_atmosphere_mass_content_of_peroxyacetyl_nitrate_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3613">tendency_of_atmosphere_mass_content_of_peroxynitric_acid_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3614">tendency_of_atmosphere_mass_content_of_pm10_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3617">tendency_of_atmosphere_mass_content_of_pm10_dust_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3620">tendency_of_atmosphere_mass_content_of_pm10_sea_salt_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3623">tendency_of_atmosphere_mass_content_of_pm2p5_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3626">tendency_of_atmosphere_mass_content_of_pm2p5_dust_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3629">tendency_of_atmosphere_mass_content_of_pm2p5_sea_salt_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3632">tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3659">tendency_of_atmosphere_mass_content_of_reduced_nitrogen_compounds_expressed_as_nitrogen_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3661">tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3666">tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3673">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3677">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_expressed_as_sulfur_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3680">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3827">tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3985">tendency_of_ocean_mole_content_of_oxidized_nitrogen_compounds_expressed_as_nitrogen_due_to_dry_deposition</a></li>
+<li><a href="../parsed.html#3989">tendency_of_ocean_mole_content_of_reduced_nitrogen_compounds_expressed_as_nitrogen_due_to_dry_deposition</a></li>
+</ul></div>
+</li>
+<li><a name="0604">_due_to_dry_deposition_into_stomata</a><a href="javascript:void(0)" onclick="ltoggle('t-0604')"> toggle </a>
+<div id="t-0604"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3584">tendency_of_atmosphere_mass_content_of_ozone_due_to_dry_deposition_into_stomata</a></li>
+</ul></div>
+</li>
+<li><a name="0605">_due_to_dry_troposphere</a><a href="javascript:void(0)" onclick="ltoggle('t-0605')"> toggle </a>
+<div id="t-0605"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0025">altimeter_range_correction_due_to_dry_troposphere</a></li>
+</ul></div>
+</li>
+<li><a name="0606">_due_to_dust_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0606')"> toggle </a>
+<div id="t-0606"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0050">atmosphere_absorption_optical_thickness_due_to_dust_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#0310">atmosphere_optical_thickness_due_to_dust_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0607">_due_to_dust_dry_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0607')"> toggle </a>
+<div id="t-0607"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0311">atmosphere_optical_thickness_due_to_dust_dry_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0608">_due_to_dynamics</a><a href="javascript:void(0)" onclick="ltoggle('t-0608')"> toggle </a>
+<div id="t-0608"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4007">tendency_of_sea_ice_area_fraction_due_to_dynamics</a></li>
+<li><a href="../parsed.html#4010">tendency_of_sea_ice_thickness_due_to_dynamics</a></li>
+</ul></div>
+</li>
+<li><a name="0609">_due_to_earth_tide</a><a href="javascript:void(0)" onclick="ltoggle('t-0609')"> toggle </a>
+<div id="t-0609"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2436">sea_surface_height_amplitude_due_to_earth_tide</a></li>
+</ul></div>
+</li>
+<li><a name="0610">_due_to_eddy_advection</a><a href="javascript:void(0)" onclick="ltoggle('t-0610')"> toggle </a>
+<div id="t-0610"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1787">northward_heat_flux_in_air_due_to_eddy_advection</a></li>
+</ul></div>
+</li>
+<li><a name="0611">_due_to_eliassen_palm_flux_divergence</a><a href="javascript:void(0)" onclick="ltoggle('t-0611')"> toggle </a>
+<div id="t-0611"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3843">tendency_of_eastward_wind_due_to_eliassen_palm_flux_divergence</a></li>
+</ul></div>
+</li>
+<li><a name="0612">_due_to_emission</a><a href="javascript:void(0)" onclick="ltoggle('t-0612')"> toggle </a>
+<div id="t-0612"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3276">tendency_of_atmosphere_mass_content_of_acetaldehyde_due_to_emission</a></li>
+<li><a href="../parsed.html#3281">tendency_of_atmosphere_mass_content_of_acetone_due_to_emission</a></li>
+<li><a href="../parsed.html#3293">tendency_of_atmosphere_mass_content_of_alkanes_due_to_emission</a></li>
+<li><a href="../parsed.html#3294">tendency_of_atmosphere_mass_content_of_alkenes_due_to_emission</a></li>
+<li><a href="../parsed.html#3296">tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_emission</a></li>
+<li><a href="../parsed.html#3299">tendency_of_atmosphere_mass_content_of_alpha_pinene_due_to_emission</a></li>
+<li><a href="../parsed.html#3301">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission</a></li>
+<li><a href="../parsed.html#3313">tendency_of_atmosphere_mass_content_of_aromatic_compounds_due_to_emission</a></li>
+<li><a href="../parsed.html#3314">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission</a></li>
+<li><a href="../parsed.html#3324">tendency_of_atmosphere_mass_content_of_beta_pinene_due_to_emission</a></li>
+<li><a href="../parsed.html#3325">tendency_of_atmosphere_mass_content_of_biogenic_nmvoc_expressed_as_carbon_due_to_emission</a></li>
+<li><a href="../parsed.html#3326">tendency_of_atmosphere_mass_content_of_butane_due_to_emission</a></li>
+<li><a href="../parsed.html#3337">tendency_of_atmosphere_mass_content_of_carbon_dioxide_due_to_emission</a></li>
+<li><a href="../parsed.html#3342">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission</a></li>
+<li><a href="../parsed.html#3354">tendency_of_atmosphere_mass_content_of_carbon_tetrachloride_due_to_emission</a></li>
+<li><a href="../parsed.html#3355">tendency_of_atmosphere_mass_content_of_cfc113_due_to_emission</a></li>
+<li><a href="../parsed.html#3356">tendency_of_atmosphere_mass_content_of_cfc113a_due_to_emission</a></li>
+<li><a href="../parsed.html#3357">tendency_of_atmosphere_mass_content_of_cfc114_due_to_emission</a></li>
+<li><a href="../parsed.html#3358">tendency_of_atmosphere_mass_content_of_cfc115_due_to_emission</a></li>
+<li><a href="../parsed.html#3359">tendency_of_atmosphere_mass_content_of_cfc11_due_to_emission</a></li>
+<li><a href="../parsed.html#3360">tendency_of_atmosphere_mass_content_of_cfc12_due_to_emission</a></li>
+<li><a href="../parsed.html#3367">tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_emission</a></li>
+<li><a href="../parsed.html#3373">tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3378">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3394">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission</a></li>
+<li><a href="../parsed.html#3405">tendency_of_atmosphere_mass_content_of_ethanol_due_to_emission</a></li>
+<li><a href="../parsed.html#3406">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission</a></li>
+<li><a href="../parsed.html#3424">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission</a></li>
+<li><a href="../parsed.html#3436">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission</a></li>
+<li><a href="../parsed.html#3450">tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_emission</a></li>
+<li><a href="../parsed.html#3453">tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_emission</a></li>
+<li><a href="../parsed.html#3455">tendency_of_atmosphere_mass_content_of_halon1202_due_to_emission</a></li>
+<li><a href="../parsed.html#3456">tendency_of_atmosphere_mass_content_of_halon1211_due_to_emission</a></li>
+<li><a href="../parsed.html#3457">tendency_of_atmosphere_mass_content_of_halon1301_due_to_emission</a></li>
+<li><a href="../parsed.html#3458">tendency_of_atmosphere_mass_content_of_halon2402_due_to_emission</a></li>
+<li><a href="../parsed.html#3459">tendency_of_atmosphere_mass_content_of_hcc140a_due_to_emission</a></li>
+<li><a href="../parsed.html#3460">tendency_of_atmosphere_mass_content_of_hcfc141b_due_to_emission</a></li>
+<li><a href="../parsed.html#3461">tendency_of_atmosphere_mass_content_of_hcfc142b_due_to_emission</a></li>
+<li><a href="../parsed.html#3462">tendency_of_atmosphere_mass_content_of_hcfc22_due_to_emission</a></li>
+<li><a href="../parsed.html#3464">tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_emission</a></li>
+<li><a href="../parsed.html#3468">tendency_of_atmosphere_mass_content_of_hydrogen_cyanide_due_to_emission</a></li>
+<li><a href="../parsed.html#3472">tendency_of_atmosphere_mass_content_of_isoprene_due_to_emission</a></li>
+<li><a href="../parsed.html#3485">tendency_of_atmosphere_mass_content_of_limonene_due_to_emission</a></li>
+<li><a href="../parsed.html#3486">tendency_of_atmosphere_mass_content_of_mercury_dry_aerosol_due_to_emission</a></li>
+<li><a href="../parsed.html#3489">tendency_of_atmosphere_mass_content_of_methane_due_to_emission</a></li>
+<li><a href="../parsed.html#3503">tendency_of_atmosphere_mass_content_of_methanol_due_to_emission</a></li>
+<li><a href="../parsed.html#3504">tendency_of_atmosphere_mass_content_of_methyl_bromide_due_to_emission</a></li>
+<li><a href="../parsed.html#3505">tendency_of_atmosphere_mass_content_of_methyl_chloride_due_to_emission</a></li>
+<li><a href="../parsed.html#3507">tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_emission</a></li>
+<li><a href="../parsed.html#3510">tendency_of_atmosphere_mass_content_of_monoterpenes_due_to_emission</a></li>
+<li><a href="../parsed.html#3522">tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_emission</a></li>
+<li><a href="../parsed.html#3525">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission</a></li>
+<li><a href="../parsed.html#3537">tendency_of_atmosphere_mass_content_of_nitrous_acid_due_to_emission</a></li>
+<li><a href="../parsed.html#3540">tendency_of_atmosphere_mass_content_of_nitrous_oxide_due_to_emission</a></li>
+<li><a href="../parsed.html#3541">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission</a></li>
+<li><a href="../parsed.html#3553">tendency_of_atmosphere_mass_content_of_nmvoc_expressed_as_carbon_due_to_emission</a></li>
+<li><a href="../parsed.html#3554">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_due_to_emission</a></li>
+<li><a href="../parsed.html#3586">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3592">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission</a></li>
+<li><a href="../parsed.html#3615">tendency_of_atmosphere_mass_content_of_pm10_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3618">tendency_of_atmosphere_mass_content_of_pm10_dust_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3621">tendency_of_atmosphere_mass_content_of_pm10_sea_salt_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3624">tendency_of_atmosphere_mass_content_of_pm2p5_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3627">tendency_of_atmosphere_mass_content_of_pm2p5_dust_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3630">tendency_of_atmosphere_mass_content_of_pm2p5_sea_salt_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3633">tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3635">tendency_of_atmosphere_mass_content_of_propane_due_to_emission</a></li>
+<li><a href="../parsed.html#3646">tendency_of_atmosphere_mass_content_of_propene_due_to_emission</a></li>
+<li><a href="../parsed.html#3657">tendency_of_atmosphere_mass_content_of_radon_due_to_emission</a></li>
+<li><a href="../parsed.html#3662">tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3667">tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3670">tendency_of_atmosphere_mass_content_of_sesquiterpenes_due_to_emission</a></li>
+<li><a href="../parsed.html#3674">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_emission</a></li>
+<li><a href="../parsed.html#3681">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission</a></li>
+<li><a href="../parsed.html#3694">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission</a></li>
+<li><a href="../parsed.html#3717">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission</a></li>
+</ul></div>
+</li>
+<li><a name="0613">_due_to_emission_from_agricultural_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0613')"> toggle </a>
+<div id="t-0613"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3282">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3302">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3315">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3327">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3343">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3395">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3407">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3417">tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3425">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3437">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3475">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3490">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3526">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3542">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3555">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3568">tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3603">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3636">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3647">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3695">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_agricultural_production</a></li>
+<li><a href="../parsed.html#3718">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_agricultural_production</a></li>
+</ul></div>
+</li>
+<li><a name="0614">_due_to_emission_from_agricultural_waste_burning</a><a href="javascript:void(0)" onclick="ltoggle('t-0614')"> toggle </a>
+<div id="t-0614"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3283">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3303">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3316">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3328">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3344">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3379">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3396">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3408">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3426">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3438">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3476">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3491">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3527">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3543">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3556">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3569">tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3593">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3604">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3637">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3648">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3682">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3696">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_agricultural_waste_burning</a></li>
+<li><a href="../parsed.html#3719">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_agricultural_waste_burning</a></li>
+</ul></div>
+</li>
+<li><a name="0615">_due_to_emission_from_anthropogenic_land_use_change</a><a href="javascript:void(0)" onclick="ltoggle('t-0615')"> toggle </a>
+<div id="t-0615"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2785">surface_net_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_anthropogenic_land_use_change</a></li>
+</ul></div>
+</li>
+<li><a name="0616">_due_to_emission_from_aviation</a><a href="javascript:void(0)" onclick="ltoggle('t-0616')"> toggle </a>
+<div id="t-0616"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3855">tendency_of_mass_concentration_of_elemental_carbon_dry_aerosol_particles_in_air_due_to_emission_from_aviation</a></li>
+<li><a href="../parsed.html#3856">tendency_of_mass_concentration_of_nitrogen_dioxide_in_air_due_to_emission_from_aviation</a></li>
+<li><a href="../parsed.html#3857">tendency_of_mass_concentration_of_nitrogen_monoxide_in_air_due_to_emission_from_aviation</a></li>
+<li><a href="../parsed.html#3858">tendency_of_mass_concentration_of_nox_expressed_as_nitrogen_monoxide_in_air_due_to_emission_from_aviation</a></li>
+</ul></div>
+</li>
+<li><a name="0617">_due_to_emission_from_crop_harvesting</a><a href="javascript:void(0)" onclick="ltoggle('t-0617')"> toggle </a>
+<div id="t-0617"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3190">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_crop_harvesting</a></li>
+</ul></div>
+</li>
+<li><a name="0618">_due_to_emission_from_energy_production_and_distribution</a><a href="javascript:void(0)" onclick="ltoggle('t-0618')"> toggle </a>
+<div id="t-0618"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3284">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3304">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3317">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3329">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3345">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3380">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3397">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3409">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3427">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3439">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3477">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3492">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3528">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3544">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3557">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3570">tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3594">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3638">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3649">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3683">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3697">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3706">tendency_of_atmosphere_mass_content_of_trimethylbenzene_due_to_emission_from_energy_production_and_distribution</a></li>
+<li><a href="../parsed.html#3720">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_energy_production_and_distribution</a></li>
+</ul></div>
+</li>
+<li><a name="0619">_due_to_emission_from_fires</a><a href="javascript:void(0)" onclick="ltoggle('t-0619')"> toggle </a>
+<div id="t-0619"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3191">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires</a></li>
+<li><a href="../parsed.html#3212">surface_upward_mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_due_to_emission_from_fires</a></li>
+</ul></div>
+</li>
+<li><a name="0620">_due_to_emission_from_fires_excluding_anthropogenic_land_use_change</a><a href="javascript:void(0)" onclick="ltoggle('t-0620')"> toggle </a>
+<div id="t-0620"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3192">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fires_excluding_anthropogenic_land_use_change</a></li>
+</ul></div>
+</li>
+<li><a name="0621">_due_to_emission_from_forest_fires</a><a href="javascript:void(0)" onclick="ltoggle('t-0621')"> toggle </a>
+<div id="t-0621"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3285">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3305">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3318">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3330">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3346">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3361">tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3368">tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3381">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3398">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3410">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3418">tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3428">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3440">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3473">tendency_of_atmosphere_mass_content_of_isoprene_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3478">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3493">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3508">tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3523">tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3529">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3545">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3558">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3571">tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3595">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3605">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3639">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3650">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3684">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3692">tendency_of_atmosphere_mass_content_of_terpenes_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3698">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_forest_fires</a></li>
+<li><a href="../parsed.html#3721">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_forest_fires</a></li>
+</ul></div>
+</li>
+<li><a name="0622">_due_to_emission_from_forestry_and_agricultural_products</a><a href="javascript:void(0)" onclick="ltoggle('t-0622')"> toggle </a>
+<div id="t-0622"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3339">tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_forestry_and_agricultural_products</a></li>
+</ul></div>
+</li>
+<li><a name="0623">_due_to_emission_from_fossil_fuel_combustion</a><a href="javascript:void(0)" onclick="ltoggle('t-0623')"> toggle </a>
+<div id="t-0623"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3340">tendency_of_atmosphere_mass_content_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_fossil_fuel_combustion</a></li>
+</ul></div>
+</li>
+<li><a name="0624">_due_to_emission_from_grazing</a><a href="javascript:void(0)" onclick="ltoggle('t-0624')"> toggle </a>
+<div id="t-0624"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3193">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_grazing</a></li>
+</ul></div>
+</li>
+<li><a name="0625">_due_to_emission_from_industrial_processes_and_combustion</a><a href="javascript:void(0)" onclick="ltoggle('t-0625')"> toggle </a>
+<div id="t-0625"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3286">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3306">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3319">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3331">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3347">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3382">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3399">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3411">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3429">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3441">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3479">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3494">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3530">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3546">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3559">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3572">tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3596">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3606">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3640">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3651">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3685">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3699">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_industrial_processes_and_combustion</a></li>
+<li><a href="../parsed.html#3722">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_industrial_processes_and_combustion</a></li>
+</ul></div>
+</li>
+<li><a name="0626">_due_to_emission_from_land_transport</a><a href="javascript:void(0)" onclick="ltoggle('t-0626')"> toggle </a>
+<div id="t-0626"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3307">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3320">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3332">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3348">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3362">tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3383">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3391">tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3400">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3412">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3419">tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3430">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3442">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3480">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3495">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3531">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3547">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3560">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3597">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3607">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3641">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3652">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3686">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3700">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_land_transport</a></li>
+<li><a href="../parsed.html#3723">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_land_transport</a></li>
+</ul></div>
+</li>
+<li><a name="0627">_due_to_emission_from_litter_in_fires</a><a href="javascript:void(0)" onclick="ltoggle('t-0627')"> toggle </a>
+<div id="t-0627"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3194">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_litter_in_fires</a></li>
+</ul></div>
+</li>
+<li><a name="0628">_due_to_emission_from_maritime_transport</a><a href="javascript:void(0)" onclick="ltoggle('t-0628')"> toggle </a>
+<div id="t-0628"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3333">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3349">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3384">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3401">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3413">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3431">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3496">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3532">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3548">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3561">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3598">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3608">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3642">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3653">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3687">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3701">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_maritime_transport</a></li>
+<li><a href="../parsed.html#3724">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_maritime_transport</a></li>
+</ul></div>
+</li>
+<li><a name="0629">_due_to_emission_from_natural_fires</a><a href="javascript:void(0)" onclick="ltoggle('t-0629')"> toggle </a>
+<div id="t-0629"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3195">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_natural_fires</a></li>
+</ul></div>
+</li>
+<li><a name="0630">_due_to_emission_from_natural_sources</a><a href="javascript:void(0)" onclick="ltoggle('t-0630')"> toggle </a>
+<div id="t-0630"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3196">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_natural_sources</a></li>
+</ul></div>
+</li>
+<li><a name="0631">_due_to_emission_from_residential_and_commercial_combustion</a><a href="javascript:void(0)" onclick="ltoggle('t-0631')"> toggle </a>
+<div id="t-0631"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3287">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3308">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3321">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3334">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3350">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3385">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3402">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3414">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3420">tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3432">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3443">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3481">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3497">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3533">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3549">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3562">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3573">tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3599">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3609">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3643">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3654">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3688">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3702">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_residential_and_commercial_combustion</a></li>
+<li><a href="../parsed.html#3725">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_residential_and_commercial_combustion</a></li>
+</ul></div>
+</li>
+<li><a name="0632">_due_to_emission_from_savanna_and_grassland_fires</a><a href="javascript:void(0)" onclick="ltoggle('t-0632')"> toggle </a>
+<div id="t-0632"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3288">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3309">tendency_of_atmosphere_mass_content_of_ammonia_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3322">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3335">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3351">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3363">tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3369">tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3386">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3403">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3415">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3421">tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3433">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3444">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3474">tendency_of_atmosphere_mass_content_of_isoprene_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3482">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3498">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3509">tendency_of_atmosphere_mass_content_of_molecular_hydrogen_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3524">tendency_of_atmosphere_mass_content_of_nitrogen_dioxide_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3534">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3550">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3563">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3574">tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3600">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3610">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3644">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3655">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3689">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3693">tendency_of_atmosphere_mass_content_of_terpenes_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3703">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_savanna_and_grassland_fires</a></li>
+<li><a href="../parsed.html#3726">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_savanna_and_grassland_fires</a></li>
+</ul></div>
+</li>
+<li><a name="0633">_due_to_emission_from_soil</a><a href="javascript:void(0)" onclick="ltoggle('t-0633')"> toggle </a>
+<div id="t-0633"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3564">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_soil</a></li>
+</ul></div>
+</li>
+<li><a name="0634">_due_to_emission_from_solvent_production_and_use</a><a href="javascript:void(0)" onclick="ltoggle('t-0634')"> toggle </a>
+<div id="t-0634"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3289">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_solvent_production_and_use</a></li>
+<li><a href="../parsed.html#3352">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_solvent_production_and_use</a></li>
+<li><a href="../parsed.html#3364">tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_solvent_production_and_use</a></li>
+<li><a href="../parsed.html#3392">tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_solvent_production_and_use</a></li>
+<li><a href="../parsed.html#3422">tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_solvent_production_and_use</a></li>
+<li><a href="../parsed.html#3483">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_solvent_production_and_use</a></li>
+<li><a href="../parsed.html#3551">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_solvent_production_and_use</a></li>
+<li><a href="../parsed.html#3704">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_solvent_production_and_use</a></li>
+<li><a href="../parsed.html#3727">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_solvent_production_and_use</a></li>
+</ul></div>
+</li>
+<li><a name="0635">_due_to_emission_from_vegetation_in_fires</a><a href="javascript:void(0)" onclick="ltoggle('t-0635')"> toggle </a>
+<div id="t-0635"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3197">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_emission_from_vegetation_in_fires</a></li>
+</ul></div>
+</li>
+<li><a name="0636">_due_to_emission_from_waste_treatment_and_disposal</a><a href="javascript:void(0)" onclick="ltoggle('t-0636')"> toggle </a>
+<div id="t-0636"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3290">tendency_of_atmosphere_mass_content_of_alcohols_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3323">tendency_of_atmosphere_mass_content_of_benzene_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3336">tendency_of_atmosphere_mass_content_of_butane_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3353">tendency_of_atmosphere_mass_content_of_carbon_monoxide_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3365">tendency_of_atmosphere_mass_content_of_chlorinated_hydrocarbons_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3387">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3393">tendency_of_atmosphere_mass_content_of_esters_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3404">tendency_of_atmosphere_mass_content_of_ethane_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3416">tendency_of_atmosphere_mass_content_of_ethene_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3423">tendency_of_atmosphere_mass_content_of_ethers_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3434">tendency_of_atmosphere_mass_content_of_ethyne_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3445">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3484">tendency_of_atmosphere_mass_content_of_ketones_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3499">tendency_of_atmosphere_mass_content_of_methane_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3535">tendency_of_atmosphere_mass_content_of_nitrogen_monoxide_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3552">tendency_of_atmosphere_mass_content_of_nmvoc_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3565">tendency_of_atmosphere_mass_content_of_nox_expressed_as_nitrogen_monoxide_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3575">tendency_of_atmosphere_mass_content_of_organic_acids_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3601">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3611">tendency_of_atmosphere_mass_content_of_pentane_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3645">tendency_of_atmosphere_mass_content_of_propane_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3656">tendency_of_atmosphere_mass_content_of_propene_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3690">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3705">tendency_of_atmosphere_mass_content_of_toluene_due_to_emission_from_waste_treatment_and_disposal</a></li>
+<li><a href="../parsed.html#3728">tendency_of_atmosphere_mass_content_of_xylene_due_to_emission_from_waste_treatment_and_disposal</a></li>
+</ul></div>
+</li>
+<li><a name="0637">_due_to_emission_from_wetland_biological_processes</a><a href="javascript:void(0)" onclick="ltoggle('t-0637')"> toggle </a>
+<div id="t-0637"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2786">surface_net_upward_mass_flux_of_methane_due_to_emission_from_wetland_biological_processes</a></li>
+</ul></div>
+</li>
+<li><a name="0638">_due_to_emission_from_wetland_biological_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0638')"> toggle </a>
+<div id="t-0638"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3209">surface_upward_mass_flux_of_methane_due_to_emission_from_wetland_biological_production</a></li>
+</ul></div>
+</li>
+<li><a name="0639">_due_to_equilibrium_ocean_tide</a><a href="javascript:void(0)" onclick="ltoggle('t-0639')"> toggle </a>
+<div id="t-0639"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2437">sea_surface_height_amplitude_due_to_equilibrium_ocean_tide</a></li>
+</ul></div>
+</li>
+<li><a name="0640">_due_to_evaporation</a><a href="javascript:void(0)" onclick="ltoggle('t-0640')"> toggle </a>
+<div id="t-0640"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4207">virtual_salt_flux_into_sea_water_due_to_evaporation</a></li>
+</ul></div>
+</li>
+<li><a name="0641">_due_to_evaporation_expressed_as_heat_flux_out_of_sea_water</a><a href="javascript:void(0)" onclick="ltoggle('t-0641')"> toggle </a>
+<div id="t-0641"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3243">temperature_flux_due_to_evaporation_expressed_as_heat_flux_out_of_sea_water</a></li>
+</ul></div>
+</li>
+<li><a name="0642">_due_to_evaporation_of_intercepted_precipitation</a><a href="javascript:void(0)" onclick="ltoggle('t-0642')"> toggle </a>
+<div id="t-0642"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3833">tendency_of_canopy_water_amount_due_to_evaporation_of_intercepted_precipitation</a></li>
+</ul></div>
+</li>
+<li><a name="0643">_due_to_evaporation_of_melting_ice</a><a href="javascript:void(0)" onclick="ltoggle('t-0643')"> toggle </a>
+<div id="t-0643"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3889">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_evaporation_of_melting_ice</a></li>
+</ul></div>
+</li>
+<li><a name="0644">_due_to_fertilization</a><a href="javascript:void(0)" onclick="ltoggle('t-0644')"> toggle </a>
+<div id="t-0644"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4047">tendency_of_soil_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_fertilization</a></li>
+</ul></div>
+</li>
+<li><a name="0645">_due_to_fixation</a><a href="javascript:void(0)" onclick="ltoggle('t-0645')"> toggle </a>
+<div id="t-0645"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3974">tendency_of_ocean_mole_content_of_elemental_nitrogen_due_to_fixation</a></li>
+<li><a href="../parsed.html#4046">tendency_of_soil_and_vegetation_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_fixation</a></li>
+<li><a href="../parsed.html#4072">tendency_of_vegetation_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_fixation</a></li>
+</ul></div>
+</li>
+<li><a name="0646">_due_to_form_drag</a><a href="javascript:void(0)" onclick="ltoggle('t-0646')"> toggle </a>
+<div id="t-0646"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1902">ocean_vertical_momentum_diffusivity_due_to_form_drag</a></li>
+</ul></div>
+</li>
+<li><a name="0647">_due_to_frazil_ice_accumulation_in_leads</a><a href="javascript:void(0)" onclick="ltoggle('t-0647')"> toggle </a>
+<div id="t-0647"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4001">tendency_of_sea_ice_amount_due_to_frazil_ice_accumulation_in_leads</a></li>
+</ul></div>
+</li>
+<li><a name="0648">_due_to_freezing_of_frazil_ice</a><a href="javascript:void(0)" onclick="ltoggle('t-0648')"> toggle </a>
+<div id="t-0648"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0599">heat_flux_into_sea_water_due_to_freezing_of_frazil_ice</a></li>
+</ul></div>
+</li>
+<li><a name="0649">_due_to_gaseous_phase_net_chemical_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0649')"> toggle </a>
+<div id="t-0649"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3675">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_gaseous_phase_net_chemical_production</a></li>
+</ul></div>
+</li>
+<li><a name="0650">_due_to_geocentric_ocean_tide</a><a href="javascript:void(0)" onclick="ltoggle('t-0650')"> toggle </a>
+<div id="t-0650"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2438">sea_surface_height_amplitude_due_to_geocentric_ocean_tide</a></li>
+</ul></div>
+</li>
+<li><a name="0651">_due_to_gravitational_settling</a><a href="javascript:void(0)" onclick="ltoggle('t-0651')"> toggle </a>
+<div id="t-0651"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3374">tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_gravitational_settling</a></li>
+<li><a href="../parsed.html#3388">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_gravitational_settling</a></li>
+<li><a href="../parsed.html#3587">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_gravitational_settling</a></li>
+<li><a href="../parsed.html#3663">tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_gravitational_settling</a></li>
+<li><a href="../parsed.html#3678">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_expressed_as_sulfur_due_to_gravitational_settling</a></li>
+<li><a href="../parsed.html#3828">tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_gravitational_settling</a></li>
+</ul></div>
+</li>
+<li><a name="0652">_due_to_gravity_wave_drag</a><a href="javascript:void(0)" onclick="ltoggle('t-0652')"> toggle </a>
+<div id="t-0652"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0062">atmosphere_eastward_stress_due_to_gravity_wave_drag</a></li>
+<li><a href="../parsed.html#0301">atmosphere_northward_stress_due_to_gravity_wave_drag</a></li>
+<li><a href="../parsed.html#3844">tendency_of_eastward_wind_due_to_gravity_wave_drag</a></li>
+<li><a href="../parsed.html#3953">tendency_of_northward_wind_due_to_gravity_wave_drag</a></li>
+<li><a href="../parsed.html#4074">tendency_of_wind_speed_due_to_gravity_wave_drag</a></li>
+</ul></div>
+</li>
+<li><a name="0653">_due_to_grazing_of_phytoplankton</a><a href="javascript:void(0)" onclick="ltoggle('t-0653')"> toggle </a>
+<div id="t-0653"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3934">tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_grazing_of_phytoplankton</a></li>
+<li><a href="../parsed.html#3939">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_grazing_of_phytoplankton</a></li>
+</ul></div>
+</li>
+<li><a name="0654">_due_to_gyre</a><a href="javascript:void(0)" onclick="ltoggle('t-0654')"> toggle </a>
+<div id="t-0654"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1794">northward_ocean_freshwater_transport_due_to_gyre</a></li>
+<li><a href="../parsed.html#1799">northward_ocean_heat_transport_due_to_gyre</a></li>
+<li><a href="../parsed.html#1807">northward_ocean_salt_transport_due_to_gyre</a></li>
+</ul></div>
+</li>
+<li><a name="0655">_due_to_heterogeneous_nucleation</a><a href="javascript:void(0)" onclick="ltoggle('t-0655')"> toggle </a>
+<div id="t-0655"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3914">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_heterogeneous_nucleation</a></li>
+</ul></div>
+</li>
+<li><a name="0656">_due_to_heterogeneous_nucleation_from_cloud_liquid_water</a><a href="javascript:void(0)" onclick="ltoggle('t-0656')"> toggle </a>
+<div id="t-0656"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3890">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_heterogeneous_nucleation_from_cloud_liquid_water</a></li>
+</ul></div>
+</li>
+<li><a name="0657">_due_to_heterogeneous_nucleation_from_water_vapor</a><a href="javascript:void(0)" onclick="ltoggle('t-0657')"> toggle </a>
+<div id="t-0657"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3891">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_heterogeneous_nucleation_from_water_vapor</a></li>
+</ul></div>
+</li>
+<li><a name="0658">_due_to_heterotrophic_respiration</a><a href="javascript:void(0)" onclick="ltoggle('t-0658')"> toggle </a>
+<div id="t-0658"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3184">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_13C_due_to_heterotrophic_respiration</a></li>
+<li><a href="../parsed.html#3186">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_14C_due_to_heterotrophic_respiration</a></li>
+<li><a href="../parsed.html#3198">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_heterotrophic_respiration</a></li>
+</ul></div>
+</li>
+<li><a name="0659">_due_to_heterotrophic_respiration_in_litter</a><a href="javascript:void(0)" onclick="ltoggle('t-0659')"> toggle </a>
+<div id="t-0659"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3207">surface_upward_mass_flux_of_carbon_due_to_heterotrophic_respiration_in_litter</a></li>
+</ul></div>
+</li>
+<li><a name="0660">_due_to_heterotrophic_respiration_in_soil</a><a href="javascript:void(0)" onclick="ltoggle('t-0660')"> toggle </a>
+<div id="t-0660"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3208">surface_upward_mass_flux_of_carbon_due_to_heterotrophic_respiration_in_soil</a></li>
+</ul></div>
+</li>
+<li><a name="0661">_due_to_homogeneous_nucleation</a><a href="javascript:void(0)" onclick="ltoggle('t-0661')"> toggle </a>
+<div id="t-0661"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3892">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_homogeneous_nucleation</a></li>
+<li><a href="../parsed.html#3915">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_homogeneous_nucleation</a></li>
+</ul></div>
+</li>
+<li><a name="0662">_due_to_horizontal_mixing</a><a href="javascript:void(0)" onclick="ltoggle('t-0662')"> toggle </a>
+<div id="t-0662"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4030">tendency_of_sea_water_salinity_due_to_horizontal_mixing</a></li>
+<li><a href="../parsed.html#4043">tendency_of_sea_water_temperature_due_to_horizontal_mixing</a></li>
+</ul></div>
+</li>
+<li><a name="0663">_due_to_iceberg_thermodynamics</a><a href="javascript:void(0)" onclick="ltoggle('t-0663')"> toggle </a>
+<div id="t-0663"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0600">heat_flux_into_sea_water_due_to_iceberg_thermodynamics</a></li>
+</ul></div>
+</li>
+<li><a name="0664">_due_to_icefall</a><a href="javascript:void(0)" onclick="ltoggle('t-0664')"> toggle </a>
+<div id="t-0664"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3879">tendency_of_mass_fraction_of_stratiform_cloud_condensed_water_in_air_due_to_icefall</a></li>
+<li><a href="../parsed.html#3893">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_icefall</a></li>
+</ul></div>
+</li>
+<li><a name="0665">_due_to_immobilisation_and_remineralization</a><a href="javascript:void(0)" onclick="ltoggle('t-0665')"> toggle </a>
+<div id="t-0665"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1269">mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_out_of_litter_and_soil_due_to_immobilisation_and_remineralization</a></li>
+</ul></div>
+</li>
+<li><a name="0666">_due_to_intercalibration</a><a href="javascript:void(0)" onclick="ltoggle('t-0666')"> toggle </a>
+<div id="t-0666"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4101">toa_brightness_temperature_bias_at_standard_scene_due_to_intercalibration</a></li>
+</ul></div>
+</li>
+<li><a name="0667">_due_to_ionosphere</a><a href="javascript:void(0)" onclick="ltoggle('t-0667')"> toggle </a>
+<div id="t-0667"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0026">altimeter_range_correction_due_to_ionosphere</a></li>
+</ul></div>
+</li>
+<li><a name="0668">_due_to_irrigation</a><a href="javascript:void(0)" onclick="ltoggle('t-0668')"> toggle </a>
+<div id="t-0668"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2708">surface_downward_mass_flux_of_water_due_to_irrigation</a></li>
+</ul></div>
+</li>
+<li><a name="0669">_due_to_isostatic_adjustment</a><a href="javascript:void(0)" onclick="ltoggle('t-0669')"> toggle </a>
+<div id="t-0669"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0343">bedrock_altitude_change_due_to_isostatic_adjustment</a></li>
+</ul></div>
+</li>
+<li><a name="0670">_due_to_lateral_growth_of_ice_floes</a><a href="javascript:void(0)" onclick="ltoggle('t-0670')"> toggle </a>
+<div id="t-0670"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4002">tendency_of_sea_ice_amount_due_to_lateral_growth_of_ice_floes</a></li>
+</ul></div>
+</li>
+<li><a name="0671">_due_to_lateral_melting</a><a href="javascript:void(0)" onclick="ltoggle('t-0671')"> toggle </a>
+<div id="t-0671"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4003">tendency_of_sea_ice_amount_due_to_lateral_melting</a></li>
+</ul></div>
+</li>
+<li><a name="0672">_due_to_leaching_and_runoff</a><a href="javascript:void(0)" onclick="ltoggle('t-0672')"> toggle </a>
+<div id="t-0672"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1267">mass_flux_of_carbon_out_of_soil_due_to_leaching_and_runoff</a></li>
+<li><a href="../parsed.html#1270">mass_flux_of_nitrogen_compounds_expressed_as_nitrogen_out_of_vegetation_and_litter_and_soil_due_to_leaching_and_runoff</a></li>
+</ul></div>
+</li>
+<li><a name="0673">_due_to_longwave_heating</a><a href="javascript:void(0)" onclick="ltoggle('t-0673')"> toggle </a>
+<div id="t-0673"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3259">tendency_of_air_temperature_due_to_longwave_heating</a></li>
+<li><a href="../parsed.html#3260">tendency_of_air_temperature_due_to_longwave_heating_assuming_clear_sky</a></li>
+</ul></div>
+</li>
+<li><a name="0674">_due_to_longwave_heating_from_volcanic_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0674')"> toggle </a>
+<div id="t-0674"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3261">tendency_of_air_temperature_due_to_longwave_heating_from_volcanic_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0675">_due_to_melting_from_cloud_ice</a><a href="javascript:void(0)" onclick="ltoggle('t-0675')"> toggle </a>
+<div id="t-0675"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3916">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_melting_from_cloud_ice</a></li>
+</ul></div>
+</li>
+<li><a name="0676">_due_to_melting_to_cloud_liquid_water</a><a href="javascript:void(0)" onclick="ltoggle('t-0676')"> toggle </a>
+<div id="t-0676"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3894">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_melting_to_cloud_liquid_water</a></li>
+</ul></div>
+</li>
+<li><a name="0677">_due_to_melting_to_rain</a><a href="javascript:void(0)" onclick="ltoggle('t-0677')"> toggle </a>
+<div id="t-0677"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3895">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_melting_to_rain</a></li>
+</ul></div>
+</li>
+<li><a name="0678">_due_to_model_physics</a><a href="javascript:void(0)" onclick="ltoggle('t-0678')"> toggle </a>
+<div id="t-0678"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3262">tendency_of_air_temperature_due_to_model_physics</a></li>
+<li><a href="../parsed.html#4053">tendency_of_specific_humidity_due_to_model_physics</a></li>
+</ul></div>
+</li>
+<li><a name="0679">_due_to_moist_convection</a><a href="javascript:void(0)" onclick="ltoggle('t-0679')"> toggle </a>
+<div id="t-0679"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3263">tendency_of_air_temperature_due_to_moist_convection</a></li>
+</ul></div>
+</li>
+<li><a name="0680">_due_to_mortality</a><a href="javascript:void(0)" onclick="ltoggle('t-0680')"> toggle </a>
+<div id="t-0680"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1262">mass_flux_of_carbon_into_litter_from_vegetation_due_to_mortality</a></li>
+<li><a href="../parsed.html#1265">mass_flux_of_carbon_into_soil_from_vegetation_due_to_mortality</a></li>
+</ul></div>
+</li>
+<li><a name="0681">_due_to_net_chemical_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0681')"> toggle </a>
+<div id="t-0681"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3500">tendency_of_atmosphere_mass_content_of_methanesulfonic_acid_dry_aerosol_particles_due_to_net_chemical_production</a></li>
+<li><a href="../parsed.html#3512">tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_net_chemical_production</a></li>
+<li><a href="../parsed.html#3668">tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles_due_to_net_chemical_production</a></li>
+</ul></div>
+</li>
+<li><a name="0682">_due_to_net_chemical_production_and_emission</a><a href="javascript:void(0)" onclick="ltoggle('t-0682')"> toggle </a>
+<div id="t-0682"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3588">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_net_chemical_production_and_emission</a></li>
+</ul></div>
+</li>
+<li><a name="0683">_due_to_net_primary_production</a><a href="javascript:void(0)" onclick="ltoggle('t-0683')"> toggle </a>
+<div id="t-0683"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3940">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production</a></li>
+</ul></div>
+</li>
+<li><a name="0684">_due_to_net_primary_production_by_calcareous_phytoplankton</a><a href="javascript:void(0)" onclick="ltoggle('t-0684')"> toggle </a>
+<div id="t-0684"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3941">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_calcareous_phytoplankton</a></li>
+</ul></div>
+</li>
+<li><a name="0685">_due_to_net_primary_production_by_diatoms</a><a href="javascript:void(0)" onclick="ltoggle('t-0685')"> toggle </a>
+<div id="t-0685"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3942">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diatoms</a></li>
+</ul></div>
+</li>
+<li><a name="0686">_due_to_net_primary_production_by_diazotrophs</a><a href="javascript:void(0)" onclick="ltoggle('t-0686')"> toggle </a>
+<div id="t-0686"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3943">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_diazotrophs</a></li>
+</ul></div>
+</li>
+<li><a name="0687">_due_to_net_primary_production_by_miscellaneous_phytoplankton</a><a href="javascript:void(0)" onclick="ltoggle('t-0687')"> toggle </a>
+<div id="t-0687"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3944">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_miscellaneous_phytoplankton</a></li>
+</ul></div>
+</li>
+<li><a name="0688">_due_to_net_primary_production_by_picophytoplankton</a><a href="javascript:void(0)" onclick="ltoggle('t-0688')"> toggle </a>
+<div id="t-0688"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3945">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_net_primary_production_by_picophytoplankton</a></li>
+</ul></div>
+</li>
+<li><a name="0689">_due_to_newtonian_relaxation</a><a href="javascript:void(0)" onclick="ltoggle('t-0689')"> toggle </a>
+<div id="t-0689"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0601">heat_flux_into_sea_water_due_to_newtonian_relaxation</a></li>
+<li><a href="../parsed.html#4208">virtual_salt_flux_into_sea_water_due_to_newtonian_relaxation</a></li>
+<li><a href="../parsed.html#4258">water_flux_out_of_sea_water_due_to_newtonian_relaxation</a></li>
+</ul></div>
+</li>
+<li><a name="0690">_due_to_nitrate_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0690')"> toggle </a>
+<div id="t-0690"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0312">atmosphere_optical_thickness_due_to_nitrate_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0691">_due_to_nitrate_utilization</a><a href="javascript:void(0)" onclick="ltoggle('t-0691')"> toggle </a>
+<div id="t-0691"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1753">net_primary_mole_productivity_of_biomass_expressed_as_carbon_due_to_nitrate_utilization</a></li>
+<li><a href="../parsed.html#3946">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_nitrate_utilization</a></li>
+</ul></div>
+</li>
+<li><a name="0692">_due_to_non_equilibrium_ocean_tide</a><a href="javascript:void(0)" onclick="ltoggle('t-0692')"> toggle </a>
+<div id="t-0692"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2439">sea_surface_height_amplitude_due_to_non_equilibrium_ocean_tide</a></li>
+</ul></div>
+</li>
+<li><a name="0693">_due_to_nonorographic_eastward_gravity_waves</a><a href="javascript:void(0)" onclick="ltoggle('t-0693')"> toggle </a>
+<div id="t-0693"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4164">upward_eastward_momentum_flux_in_air_due_to_nonorographic_eastward_gravity_waves</a></li>
+</ul></div>
+</li>
+<li><a name="0694">_due_to_nonorographic_gravity_wave_drag</a><a href="javascript:void(0)" onclick="ltoggle('t-0694')"> toggle </a>
+<div id="t-0694"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3845">tendency_of_eastward_wind_due_to_nonorographic_gravity_wave_drag</a></li>
+<li><a href="../parsed.html#3954">tendency_of_northward_wind_due_to_nonorographic_gravity_wave_drag</a></li>
+</ul></div>
+</li>
+<li><a name="0695">_due_to_nonorographic_westward_gravity_waves</a><a href="javascript:void(0)" onclick="ltoggle('t-0695')"> toggle </a>
+<div id="t-0695"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4165">upward_eastward_momentum_flux_in_air_due_to_nonorographic_westward_gravity_waves</a></li>
+</ul></div>
+</li>
+<li><a name="0696">_due_to_numerical_artefacts</a><a href="javascript:void(0)" onclick="ltoggle('t-0696')"> toggle </a>
+<div id="t-0696"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3846">tendency_of_eastward_wind_due_to_numerical_artefacts</a></li>
+</ul></div>
+</li>
+<li><a name="0697">_due_to_orographic_gravity_wave_drag</a><a href="javascript:void(0)" onclick="ltoggle('t-0697')"> toggle </a>
+<div id="t-0697"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3847">tendency_of_eastward_wind_due_to_orographic_gravity_wave_drag</a></li>
+<li><a href="../parsed.html#3955">tendency_of_northward_wind_due_to_orographic_gravity_wave_drag</a></li>
+</ul></div>
+</li>
+<li><a name="0698">_due_to_orographic_gravity_waves</a><a href="javascript:void(0)" onclick="ltoggle('t-0698')"> toggle </a>
+<div id="t-0698"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4166">upward_eastward_momentum_flux_in_air_due_to_orographic_gravity_waves</a></li>
+</ul></div>
+</li>
+<li><a name="0699">_due_to_overturning</a><a href="javascript:void(0)" onclick="ltoggle('t-0699')"> toggle </a>
+<div id="t-0699"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1795">northward_ocean_freshwater_transport_due_to_overturning</a></li>
+<li><a href="../parsed.html#1800">northward_ocean_heat_transport_due_to_overturning</a></li>
+<li><a href="../parsed.html#1808">northward_ocean_salt_transport_due_to_overturning</a></li>
+</ul></div>
+</li>
+<li><a name="0700">_due_to_parameterized_eddy_advection</a><a href="javascript:void(0)" onclick="ltoggle('t-0700')"> toggle </a>
+<div id="t-0700"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1796">northward_ocean_freshwater_transport_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#1801">northward_ocean_heat_transport_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#1809">northward_ocean_salt_transport_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#1849">ocean_heat_x_transport_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#1852">ocean_heat_y_transport_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#1866">ocean_meridional_overturning_mass_streamfunction_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#1916">ocean_y_overturning_mass_streamfunction_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#3957">tendency_of_ocean_eddy_kinetic_energy_content_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#4015">tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#4022">tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#4031">tendency_of_sea_water_salinity_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#4035">tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_eddy_advection</a></li>
+<li><a href="../parsed.html#4044">tendency_of_sea_water_temperature_due_to_parameterized_eddy_advection</a></li>
+</ul></div>
+</li>
+<li><a name="0701">_due_to_parameterized_eddy_dianeutral_mixing</a><a href="javascript:void(0)" onclick="ltoggle('t-0701')"> toggle </a>
+<div id="t-0701"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4016">tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_eddy_dianeutral_mixing</a></li>
+<li><a href="../parsed.html#4023">tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_eddy_dianeutral_mixing</a></li>
+<li><a href="../parsed.html#4036">tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_eddy_dianeutral_mixing</a></li>
+</ul></div>
+</li>
+<li><a name="0702">_due_to_parameterized_mesoscale_eddies</a><a href="javascript:void(0)" onclick="ltoggle('t-0702')"> toggle </a>
+<div id="t-0702"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0511">eastward_sea_water_velocity_due_to_parameterized_mesoscale_eddies</a></li>
+<li><a href="../parsed.html#1814">northward_sea_water_velocity_due_to_parameterized_mesoscale_eddies</a></li>
+<li><a href="../parsed.html#2557">sea_water_x_velocity_due_to_parameterized_mesoscale_eddies</a></li>
+<li><a href="../parsed.html#2559">sea_water_y_velocity_due_to_parameterized_mesoscale_eddies</a></li>
+<li><a href="../parsed.html#4181">upward_sea_water_velocity_due_to_parameterized_mesoscale_eddies</a></li>
+</ul></div>
+</li>
+<li><a name="0703">_due_to_parameterized_mesoscale_eddy_advection</a><a href="javascript:void(0)" onclick="ltoggle('t-0703')"> toggle </a>
+<div id="t-0703"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1802">northward_ocean_heat_transport_due_to_parameterized_mesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#1867">ocean_meridional_overturning_mass_streamfunction_due_to_parameterized_mesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#1890">ocean_tracer_biharmonic_diffusivity_due_to_parameterized_mesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#1891">ocean_tracer_diffusivity_due_to_parameterized_mesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#1894">ocean_tracer_laplacian_diffusivity_due_to_parameterized_mesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#1917">ocean_y_overturning_mass_streamfunction_due_to_parameterized_mesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#4017">tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#4024">tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#4037">tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_mesoscale_eddy_advection</a></li>
+</ul></div>
+</li>
+<li><a name="0704">_due_to_parameterized_mesoscale_eddy_diffusion</a><a href="javascript:void(0)" onclick="ltoggle('t-0704')"> toggle </a>
+<div id="t-0704"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1803">northward_ocean_heat_transport_due_to_parameterized_mesoscale_eddy_diffusion</a></li>
+<li><a href="../parsed.html#4018">tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion</a></li>
+<li><a href="../parsed.html#4025">tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_mesoscale_eddy_diffusion</a></li>
+<li><a href="../parsed.html#4038">tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_mesoscale_eddy_diffusion</a></li>
+</ul></div>
+</li>
+<li><a name="0705">_due_to_parameterized_submesoscale_eddy_advection</a><a href="javascript:void(0)" onclick="ltoggle('t-0705')"> toggle </a>
+<div id="t-0705"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1804">northward_ocean_heat_transport_due_to_parameterized_submesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#1868">ocean_meridional_overturning_mass_streamfunction_due_to_parameterized_submesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#1918">ocean_y_overturning_mass_streamfunction_due_to_parameterized_submesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#4019">tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_parameterized_submesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#4026">tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_parameterized_submesoscale_eddy_advection</a></li>
+<li><a href="../parsed.html#4039">tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_parameterized_submesoscale_eddy_advection</a></li>
+</ul></div>
+</li>
+<li><a name="0706">_due_to_particulate_organic_matter_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0706')"> toggle </a>
+<div id="t-0706"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0051">atmosphere_absorption_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#0313">atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0707">_due_to_plant_respiration</a><a href="javascript:void(0)" onclick="ltoggle('t-0707')"> toggle </a>
+<div id="t-0707"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3185">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_13C_due_to_plant_respiration</a></li>
+<li><a href="../parsed.html#3187">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_14C_due_to_plant_respiration</a></li>
+<li><a href="../parsed.html#3199">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration</a></li>
+</ul></div>
+</li>
+<li><a name="0708">_due_to_plant_respiration_for_biomass_growth</a><a href="javascript:void(0)" onclick="ltoggle('t-0708')"> toggle </a>
+<div id="t-0708"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3200">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_for_biomass_growth</a></li>
+</ul></div>
+</li>
+<li><a name="0709">_due_to_plant_respiration_for_biomass_maintenance</a><a href="javascript:void(0)" onclick="ltoggle('t-0709')"> toggle </a>
+<div id="t-0709"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3201">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_for_biomass_maintenance</a></li>
+</ul></div>
+</li>
+<li><a name="0710">_due_to_plant_respiration_in_leaves</a><a href="javascript:void(0)" onclick="ltoggle('t-0710')"> toggle </a>
+<div id="t-0710"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3202">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_leaves</a></li>
+</ul></div>
+</li>
+<li><a name="0711">_due_to_plant_respiration_in_miscellaneous_living_matter</a><a href="javascript:void(0)" onclick="ltoggle('t-0711')"> toggle </a>
+<div id="t-0711"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3203">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_miscellaneous_living_matter</a></li>
+</ul></div>
+</li>
+<li><a name="0712">_due_to_plant_respiration_in_roots</a><a href="javascript:void(0)" onclick="ltoggle('t-0712')"> toggle </a>
+<div id="t-0712"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3204">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_roots</a></li>
+</ul></div>
+</li>
+<li><a name="0713">_due_to_plant_respiration_in_stems</a><a href="javascript:void(0)" onclick="ltoggle('t-0713')"> toggle </a>
+<div id="t-0713"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3205">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_plant_respiration_in_stems</a></li>
+</ul></div>
+</li>
+<li><a name="0714">_due_to_pm10_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0714')"> toggle </a>
+<div id="t-0714"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0314">atmosphere_optical_thickness_due_to_pm10_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0715">_due_to_pm1_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0715')"> toggle </a>
+<div id="t-0715"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0315">atmosphere_optical_thickness_due_to_pm1_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0716">_due_to_pm2p5_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0716')"> toggle </a>
+<div id="t-0716"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0316">atmosphere_optical_thickness_due_to_pm2p5_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0717">_due_to_pole_tide</a><a href="javascript:void(0)" onclick="ltoggle('t-0717')"> toggle </a>
+<div id="t-0717"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2440">sea_surface_height_amplitude_due_to_pole_tide</a></li>
+</ul></div>
+</li>
+<li><a name="0718">_due_to_radiative_heating</a><a href="javascript:void(0)" onclick="ltoggle('t-0718')"> toggle </a>
+<div id="t-0718"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3264">tendency_of_air_temperature_due_to_radiative_heating</a></li>
+</ul></div>
+</li>
+<li><a name="0719">_due_to_rainfall</a><a href="javascript:void(0)" onclick="ltoggle('t-0719')"> toggle </a>
+<div id="t-0719"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4209">virtual_salt_flux_into_sea_water_due_to_rainfall</a></li>
+</ul></div>
+</li>
+<li><a name="0720">_due_to_rainfall_expressed_as_heat_flux_into_sea_water</a><a href="javascript:void(0)" onclick="ltoggle('t-0720')"> toggle </a>
+<div id="t-0720"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3244">temperature_flux_due_to_rainfall_expressed_as_heat_flux_into_sea_water</a></li>
+</ul></div>
+</li>
+<li><a name="0721">_due_to_rainfall_temperature_excess_above_freezing</a><a href="javascript:void(0)" onclick="ltoggle('t-0721')"> toggle </a>
+<div id="t-0721"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4062">tendency_of_thermal_energy_content_of_surface_snow_due_to_rainfall_temperature_excess_above_freezing</a></li>
+</ul></div>
+</li>
+<li><a name="0722">_due_to_re_emission</a><a href="javascript:void(0)" onclick="ltoggle('t-0722')"> toggle </a>
+<div id="t-0722"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3297">tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_re_emission</a></li>
+<li><a href="../parsed.html#3465">tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_re_emission</a></li>
+</ul></div>
+</li>
+<li><a name="0723">_due_to_reaction_with_nmvoc</a><a href="javascript:void(0)" onclick="ltoggle('t-0723')"> toggle </a>
+<div id="t-0723"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2361">rate_of_hydroxyl_radical_destruction_due_to_reaction_with_nmvoc</a></li>
+</ul></div>
+</li>
+<li><a name="0724">_due_to_remineralization</a><a href="javascript:void(0)" onclick="ltoggle('t-0724')"> toggle </a>
+<div id="t-0724"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3947">tendency_of_mole_concentration_of_particulate_organic_matter_expressed_as_carbon_in_sea_water_due_to_remineralization</a></li>
+</ul></div>
+</li>
+<li><a name="0725">_due_to_residual_mean_advection</a><a href="javascript:void(0)" onclick="ltoggle('t-0725')"> toggle </a>
+<div id="t-0725"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4020">tendency_of_sea_water_conservative_temperature_expressed_as_heat_content_due_to_residual_mean_advection</a></li>
+<li><a href="../parsed.html#4027">tendency_of_sea_water_potential_temperature_expressed_as_heat_content_due_to_residual_mean_advection</a></li>
+<li><a href="../parsed.html#4040">tendency_of_sea_water_salinity_expressed_as_salt_content_due_to_residual_mean_advection</a></li>
+</ul></div>
+</li>
+<li><a name="0726">_due_to_respiration_in_soil</a><a href="javascript:void(0)" onclick="ltoggle('t-0726')"> toggle </a>
+<div id="t-0726"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3206">surface_upward_mass_flux_of_carbon_dioxide_expressed_as_carbon_due_to_respiration_in_soil</a></li>
+</ul></div>
+</li>
+<li><a name="0727">_due_to_ridging</a><a href="javascript:void(0)" onclick="ltoggle('t-0727')"> toggle </a>
+<div id="t-0727"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4008">tendency_of_sea_ice_area_fraction_due_to_ridging</a></li>
+</ul></div>
+</li>
+<li><a name="0728">_due_to_riming</a><a href="javascript:void(0)" onclick="ltoggle('t-0728')"> toggle </a>
+<div id="t-0728"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3917">tendency_of_mass_fraction_of_stratiform_cloud_liquid_water_in_air_due_to_riming</a></li>
+</ul></div>
+</li>
+<li><a name="0729">_due_to_riming_from_cloud_liquid_water</a><a href="javascript:void(0)" onclick="ltoggle('t-0729')"> toggle </a>
+<div id="t-0729"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3896">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_riming_from_cloud_liquid_water</a></li>
+</ul></div>
+</li>
+<li><a name="0730">_due_to_riming_from_rain</a><a href="javascript:void(0)" onclick="ltoggle('t-0730')"> toggle </a>
+<div id="t-0730"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3897">tendency_of_mass_fraction_of_stratiform_cloud_ice_in_air_due_to_riming_from_rain</a></li>
+</ul></div>
+</li>
+<li><a name="0731">_due_to_runoff_and_sediment_dissolution</a><a href="javascript:void(0)" onclick="ltoggle('t-0731')"> toggle </a>
+<div id="t-0731"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3960">tendency_of_ocean_mole_content_of_carbon_due_to_runoff_and_sediment_dissolution</a></li>
+<li><a href="../parsed.html#3976">tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_runoff_and_sediment_dissolution</a></li>
+<li><a href="../parsed.html#3982">tendency_of_ocean_mole_content_of_organic_carbon_due_to_runoff_and_sediment_dissolution</a></li>
+</ul></div>
+</li>
+<li><a name="0732">_due_to_runoff_expressed_as_heat_flux_into_sea_water</a><a href="javascript:void(0)" onclick="ltoggle('t-0732')"> toggle </a>
+<div id="t-0732"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3245">temperature_flux_due_to_runoff_expressed_as_heat_flux_into_sea_water</a></li>
+</ul></div>
+</li>
+<li><a name="0733">_due_to_scavenging_by_inorganic_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0733')"> toggle </a>
+<div id="t-0733"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3935">tendency_of_mole_concentration_of_dissolved_iron_in_sea_water_due_to_scavenging_by_inorganic_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0734">_due_to_sea_ice_dynamics</a><a href="javascript:void(0)" onclick="ltoggle('t-0734')"> toggle </a>
+<div id="t-0734"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2581">snow_transport_across_line_due_to_sea_ice_dynamics</a></li>
+<li><a href="../parsed.html#4004">tendency_of_sea_ice_amount_due_to_sea_ice_dynamics</a></li>
+<li><a href="../parsed.html#4061">tendency_of_surface_snow_amount_due_to_sea_ice_dynamics</a></li>
+</ul></div>
+</li>
+<li><a name="0735">_due_to_sea_ice_thermodynamics</a><a href="javascript:void(0)" onclick="ltoggle('t-0735')"> toggle </a>
+<div id="t-0735"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0602">heat_flux_into_sea_water_due_to_sea_ice_thermodynamics</a></li>
+<li><a href="../parsed.html#2381">salt_flux_into_sea_water_due_to_sea_ice_thermodynamics</a></li>
+<li><a href="../parsed.html#4005">tendency_of_sea_ice_amount_due_to_sea_ice_thermodynamics</a></li>
+<li><a href="../parsed.html#4032">tendency_of_sea_water_salinity_due_to_sea_ice_thermodynamics</a></li>
+<li><a href="../parsed.html#4210">virtual_salt_flux_into_sea_water_due_to_sea_ice_thermodynamics</a></li>
+<li><a href="../parsed.html#4249">water_flux_into_sea_water_due_to_sea_ice_thermodynamics</a></li>
+<li><a href="../parsed.html#4259">water_flux_out_of_sea_water_due_to_sea_ice_thermodynamics</a></li>
+</ul></div>
+</li>
+<li><a name="0736">_due_to_sea_salt_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0736')"> toggle </a>
+<div id="t-0736"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0052">atmosphere_absorption_optical_thickness_due_to_sea_salt_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#0317">atmosphere_optical_thickness_due_to_sea_salt_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0737">_due_to_sea_surface_roughness</a><a href="javascript:void(0)" onclick="ltoggle('t-0737')"> toggle </a>
+<div id="t-0737"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2441">sea_surface_height_bias_due_to_sea_surface_roughness</a></li>
+</ul></div>
+</li>
+<li><a name="0738">_due_to_sea_surface_tilt</a><a href="javascript:void(0)" onclick="ltoggle('t-0738')"> toggle </a>
+<div id="t-0738"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2420">sea_ice_x_force_per_unit_area_due_to_sea_surface_tilt</a></li>
+<li><a href="../parsed.html#2426">sea_ice_y_force_per_unit_area_due_to_sea_surface_tilt</a></li>
+</ul></div>
+</li>
+<li><a name="0739">_due_to_sea_water</a><a href="javascript:void(0)" onclick="ltoggle('t-0739')"> toggle </a>
+<div id="t-0739"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2538">sea_water_pressure_due_to_sea_water</a></li>
+</ul></div>
+</li>
+<li><a name="0740">_due_to_sedimentation</a><a href="javascript:void(0)" onclick="ltoggle('t-0740')"> toggle </a>
+<div id="t-0740"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1463">minus_tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_sedimentation</a></li>
+<li><a href="../parsed.html#1464">minus_tendency_of_ocean_mole_content_of_iron_due_to_sedimentation</a></li>
+<li><a href="../parsed.html#1465">minus_tendency_of_ocean_mole_content_of_organic_carbon_due_to_sedimentation</a></li>
+<li><a href="../parsed.html#3961">tendency_of_ocean_mole_content_of_carbon_due_to_sedimentation</a></li>
+<li><a href="../parsed.html#3977">tendency_of_ocean_mole_content_of_inorganic_carbon_due_to_sedimentation</a></li>
+<li><a href="../parsed.html#3980">tendency_of_ocean_mole_content_of_iron_due_to_sedimentation</a></li>
+<li><a href="../parsed.html#3983">tendency_of_ocean_mole_content_of_organic_carbon_due_to_sedimentation</a></li>
+</ul></div>
+</li>
+<li><a name="0741">_due_to_senescence</a><a href="javascript:void(0)" onclick="ltoggle('t-0741')"> toggle </a>
+<div id="t-0741"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1263">mass_flux_of_carbon_into_litter_from_vegetation_due_to_senescence</a></li>
+<li><a href="../parsed.html#1266">mass_flux_of_carbon_into_soil_from_vegetation_due_to_senescence</a></li>
+</ul></div>
+</li>
+<li><a name="0742">_due_to_shallow_convection</a><a href="javascript:void(0)" onclick="ltoggle('t-0742')"> toggle </a>
+<div id="t-0742"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3712">tendency_of_atmosphere_mass_content_of_water_vapor_due_to_shallow_convection</a></li>
+<li><a href="../parsed.html#3862">tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_shallow_convection</a></li>
+</ul></div>
+</li>
+<li><a name="0743">_due_to_shortwave_heating</a><a href="javascript:void(0)" onclick="ltoggle('t-0743')"> toggle </a>
+<div id="t-0743"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3265">tendency_of_air_temperature_due_to_shortwave_heating</a></li>
+<li><a href="../parsed.html#3266">tendency_of_air_temperature_due_to_shortwave_heating_assuming_clear_sky</a></li>
+</ul></div>
+</li>
+<li><a name="0744">_due_to_shortwave_heating_from_volcanic_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0744')"> toggle </a>
+<div id="t-0744"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3267">tendency_of_air_temperature_due_to_shortwave_heating_from_volcanic_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0745">_due_to_snow_thermodynamics</a><a href="javascript:void(0)" onclick="ltoggle('t-0745')"> toggle </a>
+<div id="t-0745"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0603">heat_flux_into_sea_water_due_to_snow_thermodynamics</a></li>
+</ul></div>
+</li>
+<li><a name="0746">_due_to_solar_irradiance</a><a href="javascript:void(0)" onclick="ltoggle('t-0746')"> toggle </a>
+<div id="t-0746"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0588">growth_limitation_of_calcareous_phytoplankton_due_to_solar_irradiance</a></li>
+<li><a href="../parsed.html#0589">growth_limitation_of_diatoms_due_to_solar_irradiance</a></li>
+<li><a href="../parsed.html#0590">growth_limitation_of_diazotrophs_due_to_solar_irradiance</a></li>
+<li><a href="../parsed.html#0591">growth_limitation_of_miscellaneous_phytoplankton_due_to_solar_irradiance</a></li>
+<li><a href="../parsed.html#0592">growth_limitation_of_picophytoplankton_due_to_solar_irradiance</a></li>
+</ul></div>
+</li>
+<li><a name="0747">_due_to_stratiform_cloud</a><a href="javascript:void(0)" onclick="ltoggle('t-0747')"> toggle </a>
+<div id="t-0747"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0318">atmosphere_optical_thickness_due_to_stratiform_cloud</a></li>
+</ul></div>
+</li>
+<li><a name="0748">_due_to_stratiform_cloud_and_precipitation</a><a href="javascript:void(0)" onclick="ltoggle('t-0748')"> toggle </a>
+<div id="t-0748"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3268">tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation</a></li>
+<li><a href="../parsed.html#4054">tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation</a></li>
+</ul></div>
+</li>
+<li><a name="0749">_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing</a><a href="javascript:void(0)" onclick="ltoggle('t-0749')"> toggle </a>
+<div id="t-0749"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3269">tendency_of_air_temperature_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing</a></li>
+<li><a href="../parsed.html#4055">tendency_of_specific_humidity_due_to_stratiform_cloud_and_precipitation_and_boundary_layer_mixing</a></li>
+</ul></div>
+</li>
+<li><a name="0750">_due_to_stratiform_precipitation</a><a href="javascript:void(0)" onclick="ltoggle('t-0750')"> toggle </a>
+<div id="t-0750"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3270">tendency_of_air_temperature_due_to_stratiform_precipitation</a></li>
+<li><a href="../parsed.html#4056">tendency_of_specific_humidity_due_to_stratiform_precipitation</a></li>
+</ul></div>
+</li>
+<li><a name="0751">_due_to_sublimation</a><a href="javascript:void(0)" onclick="ltoggle('t-0751')"> toggle </a>
+<div id="t-0751"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3182">surface_upward_latent_heat_flux_due_to_sublimation</a></li>
+</ul></div>
+</li>
+<li><a name="0752">_due_to_sublimation_of_surface_ice</a><a href="javascript:void(0)" onclick="ltoggle('t-0752')"> toggle </a>
+<div id="t-0752"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3713">tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_ice</a></li>
+</ul></div>
+</li>
+<li><a name="0753">_due_to_sublimation_of_surface_snow</a><a href="javascript:void(0)" onclick="ltoggle('t-0753')"> toggle </a>
+<div id="t-0753"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3714">tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow</a></li>
+</ul></div>
+</li>
+<li><a name="0754">_due_to_sublimation_of_surface_snow_and_ice</a><a href="javascript:void(0)" onclick="ltoggle('t-0754')"> toggle </a>
+<div id="t-0754"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3715">tendency_of_atmosphere_mass_content_of_water_vapor_due_to_sublimation_of_surface_snow_and_ice</a></li>
+</ul></div>
+</li>
+<li><a name="0755">_due_to_sulfate_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0755')"> toggle </a>
+<div id="t-0755"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0053">atmosphere_absorption_optical_thickness_due_to_sulfate_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#0319">atmosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#2668">stratosphere_optical_thickness_due_to_sulfate_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0756">_due_to_surface_drainage</a><a href="javascript:void(0)" onclick="ltoggle('t-0756')"> toggle </a>
+<div id="t-0756"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4250">water_flux_into_sea_water_due_to_surface_drainage</a></li>
+</ul></div>
+</li>
+<li><a name="0757">_due_to_surface_mass_balance</a><a href="javascript:void(0)" onclick="ltoggle('t-0757')"> toggle </a>
+<div id="t-0757"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3853">tendency_of_land_ice_mass_due_to_surface_mass_balance</a></li>
+</ul></div>
+</li>
+<li><a name="0758">_due_to_surface_melting</a><a href="javascript:void(0)" onclick="ltoggle('t-0758')"> toggle </a>
+<div id="t-0758"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4006">tendency_of_sea_ice_amount_due_to_surface_melting</a></li>
+</ul></div>
+</li>
+<li><a name="0759">_due_to_surface_snow_melt</a><a href="javascript:void(0)" onclick="ltoggle('t-0759')"> toggle </a>
+<div id="t-0759"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1067">liquid_water_mass_flux_into_soil_due_to_surface_snow_melt</a></li>
+</ul></div>
+</li>
+<li><a name="0760">_due_to_thermodynamics</a><a href="javascript:void(0)" onclick="ltoggle('t-0760')"> toggle </a>
+<div id="t-0760"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4009">tendency_of_sea_ice_area_fraction_due_to_thermodynamics</a></li>
+<li><a href="../parsed.html#4011">tendency_of_sea_ice_thickness_due_to_thermodynamics</a></li>
+</ul></div>
+</li>
+<li><a name="0761">_due_to_tides</a><a href="javascript:void(0)" onclick="ltoggle('t-0761')"> toggle </a>
+<div id="t-0761"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1903">ocean_vertical_momentum_diffusivity_due_to_tides</a></li>
+<li><a href="../parsed.html#1908">ocean_vertical_tracer_diffusivity_due_to_tides</a></li>
+<li><a href="../parsed.html#3994">tendency_of_ocean_potential_energy_content_due_to_tides</a></li>
+</ul></div>
+</li>
+<li><a name="0762">_due_to_turbulence</a><a href="javascript:void(0)" onclick="ltoggle('t-0762')"> toggle </a>
+<div id="t-0762"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3271">tendency_of_air_temperature_due_to_turbulence</a></li>
+<li><a href="../parsed.html#3716">tendency_of_atmosphere_mass_content_of_water_vapor_due_to_turbulence</a></li>
+<li><a href="../parsed.html#3863">tendency_of_mass_content_of_water_vapor_in_atmosphere_layer_due_to_turbulence</a></li>
+</ul></div>
+</li>
+<li><a name="0763">_due_to_turbulent_deposition</a><a href="javascript:void(0)" onclick="ltoggle('t-0763')"> toggle </a>
+<div id="t-0763"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3375">tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_turbulent_deposition</a></li>
+<li><a href="../parsed.html#3389">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_turbulent_deposition</a></li>
+<li><a href="../parsed.html#3589">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_turbulent_deposition</a></li>
+<li><a href="../parsed.html#3664">tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_turbulent_deposition</a></li>
+<li><a href="../parsed.html#3679">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_expressed_as_sulfur_due_to_turbulent_deposition</a></li>
+</ul></div>
+</li>
+<li><a name="0764">_due_to_turbulent_depostion</a><a href="javascript:void(0)" onclick="ltoggle('t-0764')"> toggle </a>
+<div id="t-0764"  style="display: none;" ><ul>
+<li><a href="../parsed.html#3829">tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_turbulent_depostion</a></li>
+</ul></div>
+</li>
+<li><a name="0765">_due_to_vertical_friction</a><a href="javascript:void(0)" onclick="ltoggle('t-0765')"> toggle </a>
+<div id="t-0765"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1854">ocean_kinetic_energy_dissipation_per_unit_area_due_to_vertical_friction</a></li>
+</ul></div>
+</li>
+<li><a name="0766">_due_to_vertical_mixing</a><a href="javascript:void(0)" onclick="ltoggle('t-0766')"> toggle </a>
+<div id="t-0766"  style="display: none;" ><ul>
+<li><a href="../parsed.html#4033">tendency_of_sea_water_salinity_due_to_vertical_mixing</a></li>
+<li><a href="../parsed.html#4045">tendency_of_sea_water_temperature_due_to_vertical_mixing</a></li>
+</ul></div>
+</li>
+<li><a name="0767">_due_to_volcanic_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0767')"> toggle </a>
+<div id="t-0767"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2669">stratosphere_optical_thickness_due_to_volcanic_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#2724">surface_downwelling_longwave_flux_in_air_due_to_volcanic_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#2747">surface_downwelling_shortwave_flux_in_air_due_to_volcanic_ambient_aerosol_particles</a></li>
+<li><a href="../parsed.html#4120">toa_outgoing_longwave_flux_due_to_volcanic_ambient_aerosol_particles_assuming_clear_sky</a></li>
+<li><a href="../parsed.html#4131">toa_outgoing_shortwave_flux_due_to_volcanic_ambient_aerosol_particles_assuming_clear_sky</a></li>
+</ul></div>
+</li>
+<li><a name="0768">_due_to_water_in_ambient_aerosol_particles</a><a href="javascript:void(0)" onclick="ltoggle('t-0768')"> toggle </a>
+<div id="t-0768"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0320">atmosphere_optical_thickness_due_to_water_in_ambient_aerosol_particles</a></li>
+</ul></div>
+</li>
+<li><a name="0769">_due_to_wet_deposition</a><a href="javascript:void(0)" onclick="ltoggle('t-0769')"> toggle </a>
+<div id="t-0769"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1441">minus_tendency_of_atmosphere_mass_content_of_ammonia_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#1443">minus_tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#1446">minus_tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#1448">minus_tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#1452">minus_tendency_of_atmosphere_mass_content_of_noy_expressed_as_nitrogen_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#1455">minus_tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#1457">minus_tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#1459">minus_tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#1461">minus_tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3277">tendency_of_atmosphere_mass_content_of_acetaldehyde_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3279">tendency_of_atmosphere_mass_content_of_acetic_acid_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3292">tendency_of_atmosphere_mass_content_of_aldehydes_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3298">tendency_of_atmosphere_mass_content_of_alpha_hexachlorocyclohexane_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3310">tendency_of_atmosphere_mass_content_of_ammonia_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3312">tendency_of_atmosphere_mass_content_of_ammonium_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3370">tendency_of_atmosphere_mass_content_of_dimethyl_sulfide_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3376">tendency_of_atmosphere_mass_content_of_dust_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3390">tendency_of_atmosphere_mass_content_of_elemental_carbon_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3446">tendency_of_atmosphere_mass_content_of_formaldehyde_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3448">tendency_of_atmosphere_mass_content_of_formic_acid_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3451">tendency_of_atmosphere_mass_content_of_gaseous_divalent_mercury_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3454">tendency_of_atmosphere_mass_content_of_gaseous_elemental_mercury_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3466">tendency_of_atmosphere_mass_content_of_hexachlorobiphenyl_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3470">tendency_of_atmosphere_mass_content_of_hydrogen_peroxide_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3488">tendency_of_atmosphere_mass_content_of_mercury_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3501">tendency_of_atmosphere_mass_content_of_methanesulfonic_acid_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3513">tendency_of_atmosphere_mass_content_of_nitrate_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3515">tendency_of_atmosphere_mass_content_of_nitric_acid_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3520">tendency_of_atmosphere_mass_content_of_nitrogen_compounds_expressed_as_nitrogen_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3538">tendency_of_atmosphere_mass_content_of_nitrous_acid_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3567">tendency_of_atmosphere_mass_content_of_noy_expressed_as_nitrogen_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3577">tendency_of_atmosphere_mass_content_of_organic_nitrates_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3579">tendency_of_atmosphere_mass_content_of_organic_peroxides_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3582">tendency_of_atmosphere_mass_content_of_oxidized_nitrogen_compounds_expressed_as_nitrogen_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3590">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3602">tendency_of_atmosphere_mass_content_of_particulate_organic_matter_dry_aerosol_particles_expressed_as_carbon_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3616">tendency_of_atmosphere_mass_content_of_pm10_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3619">tendency_of_atmosphere_mass_content_of_pm10_dust_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3622">tendency_of_atmosphere_mass_content_of_pm10_sea_salt_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3625">tendency_of_atmosphere_mass_content_of_pm2p5_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3628">tendency_of_atmosphere_mass_content_of_pm2p5_dust_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3631">tendency_of_atmosphere_mass_content_of_pm2p5_sea_salt_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3634">tendency_of_atmosphere_mass_content_of_primary_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3660">tendency_of_atmosphere_mass_content_of_reduced_nitrogen_compounds_expressed_as_nitrogen_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3665">tendency_of_atmosphere_mass_content_of_sea_salt_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3669">tendency_of_atmosphere_mass_content_of_secondary_particulate_organic_matter_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3671">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_expressed_as_sulfur_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3676">tendency_of_atmosphere_mass_content_of_sulfate_dry_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3691">tendency_of_atmosphere_mass_content_of_sulfur_dioxide_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3830">tendency_of_atmosphere_number_content_of_aerosol_particles_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3986">tendency_of_ocean_mole_content_of_oxidized_nitrogen_compounds_expressed_as_nitrogen_due_to_wet_deposition</a></li>
+<li><a href="../parsed.html#3990">tendency_of_ocean_mole_content_of_reduced_nitrogen_compounds_expressed_as_nitrogen_due_to_wet_deposition</a></li>
+</ul></div>
+</li>
+<li><a name="0770">_due_to_wet_troposphere</a><a href="javascript:void(0)" onclick="ltoggle('t-0770')"> toggle </a>
+<div id="t-0770"  style="display: none;" ><ul>
+<li><a href="../parsed.html#0027">altimeter_range_correction_due_to_wet_troposphere</a></li>
+</ul></div>
+</li>
+<li><a name="0771">_due_to_wetland_biological_consumption</a><a href="javascript:void(0)" onclick="ltoggle('t-0771')"> toggle </a>
+<div id="t-0771"  style="display: none;" ><ul>
+<li><a href="../parsed.html#2707">surface_downward_mass_flux_of_methane_due_to_wetland_biological_consumption</a></li>
+</ul></div>
+</li>
+<li><a name="0772">_due_to_wind_mixing</a><a href="javascript:void(0)" onclick="ltoggle('t-0772')"> toggle </a>
+<div id="t-0772"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1909">ocean_vertical_tracer_diffusivity_due_to_wind_mixing</a></li>
+</ul></div>
+</li>
+<li><a name="0773">_due_to_xy_friction</a><a href="javascript:void(0)" onclick="ltoggle('t-0773')"> toggle </a>
+<div id="t-0773"  style="display: none;" ><ul>
+<li><a href="../parsed.html#1855">ocean_kinetic_energy_dissipation_per_unit_area_due_to_xy_friction</a></li>
+</ul></div>
+</li>
+</ul>
+</body>
+</html>
