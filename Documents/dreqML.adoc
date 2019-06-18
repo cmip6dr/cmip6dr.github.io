@@ -1,10 +1,12 @@
 = Data Request XML format =
 
+:page-layout: main
+
 :dreq-core: http://clipc-services.ceda.ac.uk/dreq/index/__core__.html
 :dreq-main: http://clipc-services.ceda.ac.uk/dreq/index/__main__.html
 :dreq-sect: http://clipc-services.ceda.ac.uk/dreq/index/__sect__.html
 
-Martin Juckes, October 15^th^, 2018.
+Martin Juckes, June 18^th^, 2019.
 
 [[executive-summary]]
 [[anchor]]Executive Summary
