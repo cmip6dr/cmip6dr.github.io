@@ -46,11 +46,9 @@ request document.
 
 The broad objectives of the data request are:
 
-\(1) Define variables, together with technical information required for
-generation of output files;
+\(1) Define variables, together with technical information required for generation of output files;
 
-\(2) Define collections of variables, from specified experiments, which
-are needed for or relevant to specific scientific objectives;
+\(2) Define collections of variables, from specified experiments, which are needed for or relevant to specific scientific objectives;
 
 [[files]]
 Files
@@ -121,7 +119,7 @@ item attribute is defined using the following configuration attributes:
 * type: the xsd content type (e.g. “XS:STRING”);
 * techNote: to support automation. e.g. if class is “internalLink”, this
 attribute should be set to the name of the intended section:
-* required: indicates whether the attribute is required;footnote:[New in 01.beta.17]
+* required: indicates whether the attribute is required;footnote:
 * usage: notes on the usage of the attribute.^1^
 +
 
