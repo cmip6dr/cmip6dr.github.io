@@ -19,10 +19,9 @@ rm -rf ../cmip6dr.github.io.master
 git clone https://${GH_TOKEN}@github.com/cmip6dr/cmip6dr.github.io.git ../cmip6dr.github.io.master
 
 # copy generated HTML site to `master' branch
-cp -fR _site/* ../cmip6dr.github.io.master
+cp -R _site/* ../cmip6dr.github.io.master
 
 ls -lt ../cmip6dr.github.io.master/Documents
-ls -lt Documents
 
 # commit and push generated content to `master' branch
 # since repository was cloned in write mode with token auth - we can push there
