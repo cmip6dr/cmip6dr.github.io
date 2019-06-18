@@ -4,18 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Data Request XML format | CMIP6 Data Request</title>
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Data Request XML format" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Providing technical metadata for diagnostics of the climate system to promote exchange of re-usable data" />
 <meta property="og:description" content="Providing technical metadata for diagnostics of the climate system to promote exchange of re-usable data" />
-<link rel="canonical" href="http://localhost:4000/Documents/dreqML.html" />
-<meta property="og:url" content="http://localhost:4000/Documents/dreqML.html" />
 <meta property="og:site_name" content="CMIP6 Data Request" />
 <script type="application/ld+json">
-{"description":"Providing technical metadata for diagnostics of the climate system to promote exchange of re-usable data","@type":"WebPage","url":"http://localhost:4000/Documents/dreqML.html","headline":"Data Request XML format","@context":"http://schema.org"}</script>
+{"description":"Providing technical metadata for diagnostics of the climate system to promote exchange of re-usable data","url":"/Documents/dreqML.html","headline":"Data Request XML format","@type":"WebPage","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -45,7 +43,7 @@
       <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Martin Juckes, October 15<sup>th</sup>, 2018.</p>
+<p>Martin Juckes, June 18<sup>th</sup>, 2019.</p>
 </div>
 </div>
 </div>
@@ -95,12 +93,10 @@ request document.</p>
 <p>The broad objectives of the data request are:</p>
 </div>
 <div class="paragraph">
-<p>\(1) Define variables, together with technical information required for
-generation of output files;</p>
+<p>\(1) Define variables, together with technical information required for generation of output files;</p>
 </div>
 <div class="paragraph">
-<p>\(2) Define collections of variables, from specified experiments, which
-are needed for or relevant to specific scientific objectives;</p>
+<p>\(2) Define collections of variables, from specified experiments, which are needed for or relevant to specific scientific objectives;</p>
 </div>
 </div>
 </div>
@@ -227,7 +223,7 @@ item attribute is defined using the following configuration attributes:</p>
 attribute should be set to the name of the intended section:</p>
 </li>
 <li>
-<p>required: indicates whether the attribute is required;<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup></p>
+<p>required: indicates whether the attribute is required;footnote:</p>
 </li>
 <li>
 <p>usage: notes on the usage of the attribute.<sup>1</sup></p>
@@ -258,7 +254,7 @@ python API);<sup>1</sup></p>
 <p>st__floatList: a list of integers;<sup>1</sup></p>
 </li>
 <li>
-<p>st__stringList: a list of words;<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup></p>
+<p>st__stringList: a list of words;<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
 </li>
 <li>
 <p>st__attLabel_def: a string composed of characters “a” to “z”, “A” to
@@ -419,9 +415,9 @@ data request attributes and diagnostics.</p>
 <h3 id="content-file-dreq.xml"><a id="anchor-4"></a>Content file (dreq.xml)</h3>
 <div class="paragraph">
 <p>The content file contains three elements at the top level: “prologue”,
-“main” and “annex”<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</sup>. The “prologue” contains
+“main” and “annex”<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>. The “prologue” contains
 Dublin Core metadata describing the document and a PAV version attribute
-holding the document version<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</sup>. The “main” element has the
+holding the document version<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>. The “main” element has the
 sections specified in the configuration file, and within each section a
 list of records (“item” elements). Each item element has attributes as
 specified in the configuration file, a different set of attributes for
@@ -582,7 +578,7 @@ experiment or group of experiments, and a temporal range for output. The
 “esid” attribute links to an experiment, and experiment group or a MIP.
 In the latter case, the request applies to all experiments defined by
 that MIP. The Request Item includes a “Tier Reset” attribute
-(“treset”)<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</sup> which can override the Tier
+(“treset”)<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> which can override the Tier
 assigned to the experiments identified by “esid”. Has an optional link
 to a time slice<sup>3</sup>.</p>
 </div>
@@ -675,7 +671,7 @@ full duration of the experiment is not required).</p>
 to aid automated processing.</p>
 </div>
 <div id="relations-between-cmor-variables-varrelations" class="paragraph">
-<p>6.2 Relations between CMOR variables [varRelations]<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnote_6" title="View footnote.">6</a>]</sup></p>
+<p>6.2 Relations between CMOR variables [varRelations]<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p>
 </div>
 <div class="paragraph">
 <p>Provides structured information about the difference between variables
@@ -721,9 +717,9 @@ in CMIP5 provided the parameter.</p>
 </div>
 <div class="paragraph">
 <p>Further discussion is available in a draft document on Quality Control
-range<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnote_7" title="View footnote.">7</a>]</sup>, and web pages presenting a review of CMIP5 ranges shows the
+range<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>, and web pages presenting a review of CMIP5 ranges shows the
 information being used to construct the control
-values<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnote_8" title="View footnote.">8</a>]</sup>.</p>
+values<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup>.</p>
 </div>
 </div>
 <div class="sect4">
@@ -808,29 +804,26 @@ coordinators, and there may be adjustments to variable priorities.</p>
 </div>
 <div id="footnotes">
 <hr>
-<div class="footnote" id="_footnote_1">
-<a href="#_footnoteref_1">1</a>. New in 01.beta.17
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. New in 01.beta.19
 </div>
-<div class="footnote" id="_footnote_2">
-<a href="#_footnoteref_2">2</a>. New in 01.beta.19
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. New in 01.beta.16
 </div>
-<div class="footnote" id="_footnote_3">
-<a href="#_footnoteref_3">3</a>. New in 01.beta.16
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. New in 01.beta.29 (<a href="http://purl.org/pav/2.3">purl.org/pav/2.3</a>)
 </div>
-<div class="footnote" id="_footnote_4">
-<a href="#_footnoteref_4">4</a>. New in 01.beta.29 (<a href="http://purl.org/pav/2.3">purl.org/pav/2.3</a>)
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. New in 01.beta.17
 </div>
-<div class="footnote" id="_footnote_5">
-<a href="#_footnoteref_5">5</a>. New in 01.beta.17
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. There appear to be a number of broken links in this area .. the use of these records is under development.
 </div>
-<div class="footnote" id="_footnote_6">
-<a href="#_footnoteref_6">6</a>. There appear to be a number of broken links in this area .. the use of these records is under development.
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. <a href="https://docs.google.com/document/d/1cvSphy3Hb07t92BJvtqEBM9DMbsOSdENbwLJxw4AmH8/" class="bare">https://docs.google.com/document/d/1cvSphy3Hb07t92BJvtqEBM9DMbsOSdENbwLJxw4AmH8/</a>
 </div>
-<div class="footnote" id="_footnote_7">
-<a href="#_footnoteref_7">7</a>. <a href="https://docs.google.com/document/d/1cvSphy3Hb07t92BJvtqEBM9DMbsOSdENbwLJxw4AmH8/" class="bare">https://docs.google.com/document/d/1cvSphy3Hb07t92BJvtqEBM9DMbsOSdENbwLJxw4AmH8/</a>
-</div>
-<div class="footnote" id="_footnote_8">
-<a href="#_footnoteref_8">8</a>. <a href="http://clipc-services.ceda.ac.uk/ranges/" class="bare">http://clipc-services.ceda.ac.uk/ranges/</a> or <a href="http://w3id.org/cmip6dr/ranges/day_clt.html" class="bare">http://w3id.org/cmip6dr/ranges/day_clt.html</a> for a direct link to a single variable.
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. <a href="http://clipc-services.ceda.ac.uk/ranges/" class="bare">http://clipc-services.ceda.ac.uk/ranges/</a> or <a href="http://w3id.org/cmip6dr/ranges/day_clt.html" class="bare">http://w3id.org/cmip6dr/ranges/day_clt.html</a> for a direct link to a single variable.
 </div>
 </div>
 
