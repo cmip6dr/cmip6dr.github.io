@@ -1,0 +1,10 @@
+language: ruby
+script: "./build.sh"
+branches:
+  only:
+  - master
+rvm:
+- 2.1.2
+env:
+  global:
+    secure: eCKqujxpbm/EFANbPfWFtzNgChpMlPCblpHXXrR7nMBUtexl8Se6ofZVmlaCOjM5/9Pd8j7szo3bj8oSWrCahBm0vefj4sZBARGmSHLbO+HcRLrK/KF5lSU8rmdLx3zfsuUYV4uA11JV8/js8rpyPTclxPAK2RVIa2woDJn3V2DiauGd8cTvZnlbkdq1z6GOZsnKGOqB/RRcFac6Qb5x/nnkLYejA2dsjjPZv/S9Q+Qh/PDL4gk1YiKj3ZG7+ZCjuCnWnHfc5iV8KtdsU7VtSYB5i458O9dofivR78ZWBEh6pRiGgG+a17wEGe7jK8rxotFMph+j8S1zwjwkMICLQityUI34YrzQLYVY7WIv08v/OvsEALA5s+A4sq9lR9SgWq+zQl+iqAuUwhuHe1oPFvnnhL3p6KrWJSnp8fo1Y07twi1lE0nZWB1fQODdKc7Evg4rfmMrZJmVdKJm8TI5eNBGw5e7HJDlsvVBEsnaW9Gu+7bPVTHMtBGtKeE0FOdFgoEZrXZNqLtXV/nbOGid0FlroO36wEbu008NiCkJ5NLApj117aN/Zv3JWckd2WVHeTT2kWLD71nw5DAKut4aSdZhL0JINfruG5oTnXyfAqVIXBauz6Xjfjs9mX9tbRBCgt/IceKEyEhKjtIRmm4N2PDD2DvbMtZrNZUBl1LbT9E=
