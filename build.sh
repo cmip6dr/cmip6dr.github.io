@@ -15,6 +15,8 @@ jekyll build
 # cleanup
 rm -rf ../cmip6dr.github.io.master
 
+ls -lt ../cmip6dr.github.io.master/Documents
+
 #clone `master' branch of the repository using encrypted GH_TOKEN for authentification
 git clone https://${GH_TOKEN}@github.com/cmip6dr/cmip6dr.github.io.git ../cmip6dr.github.io.master
 
