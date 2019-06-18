@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Data Request XML format | CMIP6 Data Request</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Data Request XML format" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Providing technical metadata for diagnostics of the climate system to promote exchange of re-usable data" />
+<meta property="og:description" content="Providing technical metadata for diagnostics of the climate system to promote exchange of re-usable data" />
+<link rel="canonical" href="http://localhost:4000/Documents/dreqML.html" />
+<meta property="og:url" content="http://localhost:4000/Documents/dreqML.html" />
+<meta property="og:site_name" content="CMIP6 Data Request" />
+<script type="application/ld+json">
+{"description":"Providing technical metadata for diagnostics of the climate system to promote exchange of re-usable data","@type":"WebPage","url":"http://localhost:4000/Documents/dreqML.html","headline":"Data Request XML format","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <script src="/assets/js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header >
+        <h1>CMIP6 Data Request</h1>
+        
+          <p><i>Providing technical metadata for diagnostics of the climate system to promote exchange of re-usable data</i></p>
+        
+        <p class="view"><a href="">View the Project on GitHub <small></small></a></p>
+        <ul>
+        
+          <li><a href="">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+
+      <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Martin Juckes, October 15<sup>th</sup>, 2018.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="executive-summary"><a id="anchor"></a>Executive Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Data Request defines the diagnostics which are requested from
+modelling centres participating in the sixth phase of the Climate Model
+Inter-comparison Project (CMIP6).</p>
+</div>
+<div class="paragraph">
+<p>The Data Request is presented as two XML files: a configuration file and
+the content. Each file has an associated XSD schema. The XSD schema for
+the content file is generated automatically from the configuration file.
+For many users it will be more convenient to deal with the python
+interface or web and spreadsheet versions of the request, which will be
+described in a separate document. The transformation to an XML format
+from the traditional spreadsheet format is designed to deal with a
+number of issues associated with growing complexity and a need to
+support automation driven by the scale of the request. In order to
+preserve continuity, many of the records in the XML files will have a
+direct relation to spreadsheet rows in the traditional format.</p>
+</div>
+<div class="paragraph">
+<p>A separate document describes a simple python API for the data request.</p>
+</div>
+<div class="paragraph">
+<p>The variables are now also listed in a spreadsheet of MIP tables:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/CMIP6_MIP_tables.xlsx">proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/CMIP6_MIP_tables.xlsx</a></p>
+</div>
+<div class="paragraph">
+<p>In release 01.beta.27 a supplement was added, containing records on
+quality control and (under development) information about physical
+relationships between variables. The supplement is presented as a
+separate file in order to simplify the version management of the main
+request document.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="objectives"><a id="anchor-1"></a>Objectives</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The broad objectives of the data request are:</p>
+</div>
+<div class="paragraph">
+<p>\(1) Define variables, together with technical information required for
+generation of output files;</p>
+</div>
+<div class="paragraph">
+<p>\(2) Define collections of variables, from specified experiments, which
+are needed for or relevant to specific scientific objectives;</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="files">Files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The framework schema:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/vocabFrameworkSchema_01beta.xsd" class="bare">http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/vocabFrameworkSchema_01beta.xsd</a></p>
+</div>
+<div class="paragraph">
+<p>Configuration file:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq2Defn.xml" class="bare">http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq2Defn.xml</a></p>
+</div>
+<div class="paragraph">
+<p>Data request schema:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq2Schema.xsd" class="bare">http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq2Schema.xsd</a></p>
+</div>
+<div class="paragraph">
+<p>Data request XML:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq.xml" class="bare">http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq.xml</a></p>
+</div>
+<div class="paragraph">
+<p>Supplement schema:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSuppSchema.xsd" class="bare">http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSuppSchema.xsd</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Supplement</strong>:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSupp.xml" class="bare">http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSupp.xml</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="overview"><a id="anchor-2"></a>Overview</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="configuration-file"><a id="anchor-3"></a>Configuration file</h3>
+<div class="paragraph">
+<p>The XML Data Request is presented as a configuration file and a content file.</p>
+</div>
+<div class="paragraph">
+<p>The configuration file contains three types of information:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Layout information which is used to generate the content schema;</p>
+</li>
+<li>
+<p>Comments on the purpose and intent of attributes;</p>
+</li>
+<li>
+<p>Technical labels to facilitate automated navigation of the contents.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If users wish to exploit the XML files directly it is recommended that
+they make use of the configuration file, as the information types (2)
+and (3) are not embedded in the content file.</p>
+</div>
+<div class="paragraph">
+<p>Each section of the document is defined by a “table” element with the
+following attributes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>label (e.g. 'var'): a name for a section of the content – will be used as the XML element name;</p>
+</li>
+<li>
+<p>title (e.g. 'MIP variable”): a longer, human readable string;</p>
+</li>
+<li>
+<p>id: an opaque name;</p>
+</li>
+<li>
+<p>itemLabelMode: specifies whether the “label” attribute of records in this section should permit use of '-';</p>
+</li>
+<li>
+<p>level: an integer, designed to assisted automated processing by giving an indication of the structure of the request;</p>
+</li>
+<li>
+<p>maxOccurs: maximum number of times the section is allowed;</p>
+</li>
+<li>
+<p>labUnique [Yes|No]: set to yes if label values for records are unique within each section.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Within each section there are definitions for attributes of items. Each
+item attribute is defined using the following configuration attributes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>label: this will be the attribute name;</p>
+</li>
+<li>
+<p>title: a longer string explaining usage;</p>
+</li>
+<li>
+<p>class: the class supports automation. e.g. attributes which refer to another record in the document will have the class set to
+“internalLink”;</p>
+</li>
+<li>
+<p>type: the xsd content type (e.g. “XS:STRING”);</p>
+</li>
+<li>
+<p>techNote: to support automation. e.g. if class is “internalLink”, this
+attribute should be set to the name of the intended section:</p>
+</li>
+<li>
+<p>required: indicates whether the attribute is required;<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</sup></p>
+</li>
+<li>
+<p>usage: notes on the usage of the attribute.<sup>1</sup></p>
+<div class="paragraph">
+<p>Since 01.beta.33 all properties (title, valid_max, valid_min, etc) in
+all sections have been given a valid title to aid legibility of the
+document: the titles of the attributes can be used, for instance, to
+provide help notes in a web display of the data request.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In addition to the standard XSD content types “string”, “boolean”,
+“integer”, “duration” and “float”, the following types are defined:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>st__integerList: a list of integers;<sup>1</sup></p>
+</li>
+<li>
+<p>st__integerListMonInc: a monotonic increasing list of integers
+(monotonicity is not checked by the XSD schema, but is verified by the
+python API);<sup>1</sup></p>
+</li>
+<li>
+<p>st__floatList: a list of integers;<sup>1</sup></p>
+</li>
+<li>
+<p>st__stringList: a list of words;<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</sup></p>
+</li>
+<li>
+<p>st__attLabel_def: a string composed of characters “a” to “z”, “A” to
+“Z”, “0” to “9” and “-”;</p>
+</li>
+<li>
+<p>st__attLabel_und: a string composed of characters “a” to “z”, “A” to
+“Z”, “0” to “9” and “_”;</p>
+</li>
+<li>
+<p>st__attLabel_an: a string composed of characters “a” to “z”, “A” to
+“Z”, “0” to “9”;</p>
+</li>
+<li>
+<p>st__uid: a-zA-Z0-9:_.+-</p>
+</li>
+<li>
+<p>st__fortranType : string defining a variable type: “real”, “integer”,
+“character” or “double”;</p>
+</li>
+<li>
+<p>st__configurationType : a string defining a model configuration option
+: “size”, “category”, “ioOption”, “capability”.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following table summarises the specifications of the core
+attributes:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 80%;">
+<colgroup>
+<col style="width: 17.647%;">
+<col style="width: 11.7647%;">
+<col style="width: 11.7647%;">
+<col style="width: 58.8236%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">label</th>
+<th class="tableblock halign-center valign-top">title</th>
+<th class="tableblock halign-center valign-top">description</th>
+<th class="tableblock halign-left valign-top">usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">label</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Record Label</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A single word, with restricted character set</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A
+short mnemonic word which is potentially meaningful but also concise and
+suitable for use in a programming environment</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">uid</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Record Identifier</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Unique identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Must be unique in the data
+request. For well known concepts this may be related to the label, but
+for items such as simple links between concepts an a random string will
+be used.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">title</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Record Title</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">A few words describing the object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A short phrase,
+suitable for use as a section heading</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Record Description</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">An extended description of the
+object/concept.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">useClass</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Record Class</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The class: value should be from a defined
+vocabulary. All records in the schema definition section must have class
+set to ''<em>core</em>''.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The useClass declared for an attribute can affect
+its interpretation in the Python package. For example, attributes
+labelled as “useClass=internalLink” should refer to another data request
+record.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Record Type</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The type specifies the XSD value type constraint,
+e.g. xs:string.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">techNote</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Technical Note</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Additional technical information which can be
+used to specify additional properties.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">superclass</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Superclass</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">States what class the property is derived from</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Alternative identifier</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Alternative identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For sections, the
+id provides a short alias for the section label.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">itemLabelMode</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Item Label Mode</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Item Label Mode</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">level</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Level</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Level</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redundant</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maxOccurs</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Maximum number of permissible occurrences of this section</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Maximum number of permissible occurrences of this section</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used in
+defining sections. In the CMIP6 Data Request each section only occurs
+once.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">labUnique</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Set true if label of each record is unique within section</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Set true if label of each record is unique within section</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used in
+defining sections.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">usage</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Usage notes</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Notes on the usage of the predicate/concept defined
+by this node</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The above attributes provide the framework for detailed description of
+data request attributes and diagnostics.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="content-file-dreq.xml"><a id="anchor-4"></a>Content file (dreq.xml)</h3>
+<div class="paragraph">
+<p>The content file contains three elements at the top level: “prologue”,
+“main” and “annex”<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnote_3" title="View footnote.">3</a>]</sup>. The “prologue” contains
+Dublin Core metadata describing the document and a PAV version attribute
+holding the document version<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnote_4" title="View footnote.">4</a>]</sup>. The “main” element has the
+sections specified in the configuration file, and within each section a
+list of records (“item” elements). Each item element has attributes as
+specified in the configuration file, a different set of attributes for
+each section. There are no child elements or text content, all the
+information is in the defined attributes. Every item, across all
+sections, will have at least these 3 common attributes which are
+intended to give basic information about the item, thus enabling
+standardisation in error tracking:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>uid: an identifier which is unique within the document;</p>
+</li>
+<li>
+<p>label: a short name, using only the characters a-z, A-Z, 0-9 and '-'
+(in some sections the '-' is disallowed);</p>
+</li>
+<li>
+<p>title: a longer name.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The “annex” element also contains a list of sections with the same
+structure as in the “main” element. The “annex” has been introduced to
+allow some flexibility in the version management.</p>
+</div>
+<div class="sect3">
+<h4 id="sections"><a id="anchor-5"></a>Sections</h4>
+<div class="paragraph">
+<p>There are 35 sections in the current document, 6 of which contain
+information about variables, output format and their priorities. An
+index to the request sections is available here:
+<a href="http://clipc-services.ceda.ac.uk/dreq/index.html" class="bare">http://clipc-services.ceda.ac.uk/dreq/index.html</a> .</p>
+</div>
+<div class="paragraph">
+<p>The sections, with section numbers, are listed below:</p>
+</div>
+<div id="model-intercomparison-project-mip" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/mip.html">1.1 Model Intercomparison Project \[mip]</a></p>
+</div>
+<div id="mip-variable-var" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/var.html">1.2 MIP Variable \[var]</a></p>
+</div>
+<div class="paragraph">
+<p>Each MIP variable record defines a MIP variable name, associated with a
+CF Standard Name.</p>
+</div>
+<div id="cmor-variable-cmorvar" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/CMORvar.html">1.3 CMOR Variable \[CMORvar]</a></p>
+</div>
+<div class="paragraph">
+<p>Each Output variable record corresponds to a MIP table variable
+specification. In a change from the August draft, this record does not
+contain the “priority” attribute: the priority is now set in the
+“Request Variable” record. The other change is that a collection of
+attributes specifying dimensions have been moved into the “structure”
+record, and each “CMOR Variable” record links to one structure record.
+This will fa­cilitate provision of clear and consistent definitions of
+output formats. A “processing” attribute provides additional guidance on
+processing in some cases.</p>
+</div>
+<div id="request-variable-carrying-priority-and-link-to-group-requestvar" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/requestVar.html">1.4 Request
+variable (carrying priority and link to group) \[requestVar]</a></p>
+</div>
+<div class="paragraph">
+<p>The request variable is now a short record which combines a CMOR
+variable with a priority and assigns it to a request group. The request
+variable records define the contents of each request group.</p>
+</div>
+<div id="experiments-experiment" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/experiment.html">1.5 Experiments \[experiment]</a></p>
+</div>
+<div class="paragraph">
+<p>The experiment record contains the key information from the “Experiment”
+sheet of the request template, including the tier of the experiment, the
+duration and start/end dates. The default ensemble size is specifed by
+“ensz”; some MIPs may request data from more than the default number of
+ensemble members.</p>
+</div>
+<div id="scientific-objectives-objective" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/objective.html">1.6 Scientific objectives \[objective]</a></p>
+</div>
+<div class="paragraph">
+<p>The objectives defined by each MIP can be used to select data requirements.</p>
+</div>
+<div id="specification-of-dimensions-grids" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/grids.html">1.7 Specification of dimensions \[grids]</a></p>
+</div>
+<div class="paragraph">
+<p>A section for the CMOR dimensions specifies the structure of the axes of
+the requested diagnostics.</p>
+</div>
+<div id="cf-standard-names-standardname" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/standardname.html">1.8 CF
+St</a>http://clipc-services.ceda.ac.uk/dreq/index/standardname.html[andard Names \[standardname\]]</p>
+</div>
+<div class="paragraph">
+<p>The reference list of CF standard names is provided at
+cfconventions.org, but the definitions of terms used in the data request
+are copied into this section so that the detailed definitions are easily
+accessible to data request users.</p>
+</div>
+<div id="experiment-group-exptgroup" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/exptgroup.html">1.9 Experiment Group \[exptgroup]</a></p>
+</div>
+<div class="paragraph">
+<p>The experiment group defines a collection of experiments within a MIP
+which might be part of a collective data request.</p>
+</div>
+<div id="spatial-dimensions-spatialshape" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/spatialShape.html">2.1
+Spatial dimensions \[spatialShape]</a></p>
+</div>
+<div class="paragraph">
+<p>The spatial shape record contains the spatial dimensions of the field,
+and also, for convenience, an integer specifying the number of levels if
+that number is specified. A boolean level flag is set to “true” if the
+number of vertical levels is specified.</p>
+</div>
+<div id="temporal-dimension-temporalshape" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/temporalShape.html">2.2
+Temporal dimension \[temporalShape]</a></p>
+</div>
+<div class="paragraph">
+<p>The temporal shape record contains the temporal dimensions.</p>
+</div>
+<div id="dimensions-and-related-information-structure" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/structure.html">2.3
+Dimensions and related information \[structure]</a></p>
+</div>
+<div class="paragraph">
+<p>The structure record combines specification of dimensions, cell_measures
+and cell_methods attributes. Spatial and temporal dimensions are
+specified through links to “spatialshape” and “temporalshape” records.</p>
+</div>
+<div id="mip-tables-miptable" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/miptable.html">2.4 MIP tables
+\[miptable]</a></p>
+</div>
+<div id="request-variable-group-a-collection-of-request-variables-requestvargroup" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/requestVarGroup.html">3.1
+Request variable group: a collection of request variables
+\[requestVarGroup]</a></p>
+</div>
+<div class="paragraph">
+<p>The request variable groups collect variables.</p>
+</div>
+<div id="request-item-specifying-the-number-of-years-for-an-experiment-requestitem" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/requestItem.html">3.2 Request
+Item: specifying the number of years for an experiment \[requestItem]</a></p>
+</div>
+<div class="paragraph">
+<p>The request item links a collection of variables with a specific
+experiment or group of experiments, and a temporal range for output. The
+“esid” attribute links to an experiment, and experiment group or a MIP.
+In the latter case, the request applies to all experiments defined by
+that MIP. The Request Item includes a “Tier Reset” attribute
+(“treset”)<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnote_5" title="View footnote.">5</a>]</sup> which can override the Tier
+assigned to the experiments identified by “esid”. Has an optional link
+to a time slice<sup>3</sup>.</p>
+</div>
+<div class="paragraph">
+<p>There is an “nenmax” attribute which specifies the number of ensemble
+members that the request applies to. A value of -1 implies that data is
+wanted from all ensemble members. If “nenmax” is greater than “ensz” it
+implies that the requesting MIP wants more simulations than the default
+ensemeble size.</p>
+</div>
+<div id="request-link-linking-a-set-of-variables-and-a-set-of-experiments-requestlink" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/requestLink.html">3.3 Request
+link: linking a set of variables and a set of experiments \[requestLink]</a></p>
+</div>
+<div class="paragraph">
+<p>The request link records specify some additional information about
+variable groups, concerning shared output requirements and objectives.</p>
+</div>
+<div id="cmor-table-sections-tablesection" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/tableSection.html">3.4 CMOR
+Table Sections \[tableSection]</a></p>
+</div>
+<div id="model-configuration-options-modelconfig" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/modelConfig.html">3.5 Model
+configuration options \[modelConfig]</a></p>
+</div>
+<div id="links-a-variable-to-a-choice-element-varchoicelinkc" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/varChoiceLinkC.html">3.6
+Links a variable to a choice element \[varChoiceLinkC]</a></p>
+</div>
+<div class="paragraph">
+<p>Presence of a link indicates that there is a choice of different
+representations for a diagnostic.</p>
+</div>
+<div id="link-between-scientific-objectives-and-requests-objectivelink" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/objectiveLink.html">3.7 Link
+between scientific objectives and requests \[objectiveLink]</a></p>
+</div>
+<div class="paragraph">
+<p>Each objective link record joins one objective to one request link. Some
+requests are linked to multiple objectives and most objectives are
+linked to multiple requests.</p>
+</div>
+<div id="remarks-about-other-items-remarks" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/remarks.html">3.08 Remarks
+about other items \[remarks]</a></p>
+</div>
+<div class="paragraph">
+<p>The remarks section contains additional comments about other records. It
+can be used to add detail without adding to the complexity of the other
+sections.</p>
+</div>
+<div id="links-a-variable-to-a-choice-element-varchoicelinkr" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/varChoiceLinkR.html">3.09
+Links a variable to a choice element \[varChoiceLinkR]</a></p>
+</div>
+<div class="paragraph">
+<p>Indicates that there is a ranked choice of variables, and that only one
+of the ranked list is required.</p>
+</div>
+<div id="indicates-variables-for-which-a-there-is-a-range-of-potential-cmor-varibles-varchoice" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/varChoice.html">3.10
+Indicates variables for which a there is a range of potential CMOR
+Varibles \[varChoice]</a></p>
+</div>
+<div class="paragraph">
+<p>There are several instances where variables defined in the tables are
+mutually exclusive options of which only one should be requested. The
+varChoice section is designed to hold this information, but is not yet
+complete. Examples are between ocean cell volume on a fixed grid for
+some models and monthly means for others, or between 6 hourly pressure
+level data on 8 levels vs. 4 levels for different objectives in the
+HighResMIP request.</p>
+</div>
+<div id="time-slices-for-output-requests-timeslice" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/timeSlice.html">3.11 Time
+Slices for Output Requests \[timeSlice]</a></p>
+</div>
+<div class="paragraph">
+<p>Specifies time slices (i.e. subsets of an experiment when data for the
+full duration of the experiment is not required).</p>
+</div>
+<div class="paragraph">
+<p>4-5: section omitted for possible later use.</p>
+</div>
+<div class="sect4">
+<h5 id="tags">6.1 Tags</h5>
+<div class="paragraph">
+<p>Tags related to processing requirements associated with some diagnostics
+to aid automated processing.</p>
+</div>
+<div id="relations-between-cmor-variables-varrelations" class="paragraph">
+<p>6.2 Relations between CMOR variables [varRelations]<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnote_6" title="View footnote.">6</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>Provides structured information about the difference between variables
+of the same name and frequency in different tables. E.g. different
+masking, temporal mean vs. point, different vertical structure (model
+levels vs. pressure levels).</p>
+</div>
+<div id="variable-relation-link-varrellnk" class="paragraph">
+<p>6.3 Variable relation link &#91;varRelLnk&#93;</p>
+</div>
+<div class="paragraph">
+<p>Provides links between CMOR variables and varRelation records.</p>
+</div>
+<div id="cell-methods-cellmethods" class="paragraph">
+<p>7.1 Cell Methods &#91;cellMethods&#93;</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="quality-control-ranges-in-supplement">Quality Control Ranges [in supplement]</h5>
+<div class="paragraph">
+<p>Extends the information provided in the valid_min, valid_max,
+ok_mean_min_abs, ok_mean_max_abs attributes which were present in the
+CMIP5 CMOR tables. In this section there are also attributes
+valid_max_status etc which indicate the level of confidence in the
+suggested limits:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a id="anchor-6"></a><strong>robust</strong>: A well characterised limit based on a rigorous
+constraint (e.g. and area fraction must be between 0 and 1) or on a
+large ensemble of consistent model results.</p>
+</li>
+<li>
+<p><strong>suggested</strong>: A limit which may not be reliable, but which is based
+on a range of models or plausible arguments.</p>
+</li>
+<li>
+<p><strong>tentative</strong>: Very limited information – e.g. only one or two models
+in CMIP5 provided the parameter.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Further discussion is available in a draft document on Quality Control
+range<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnote_7" title="View footnote.">7</a>]</sup>, and web pages presenting a review of CMIP5 ranges shows the
+information being used to construct the control
+values<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnote_8" title="View footnote.">8</a>]</sup>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="places-states-or-reservoirs-places">Places, States or Reservoirs [places]</h5>
+
+</div>
+<div class="sect4">
+<h5 id="transfers-of-material-transfers">Transfers of Material [transfers]</h5>
+
+</div>
+<div class="sect4">
+<h5 id="units-units">Units [units]</h5>
+<div id="x.1-core-attributes-__core__" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/__core__.html">X.1 Core Attributes &#91;<em>core</em>&#93;</a></p>
+</div>
+<div class="paragraph">
+<p>The attributes listed in table 1 above.</p>
+</div>
+<div id="x.2-data-request-attributes-__main__" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/__main__.html">X.2 Data Request Attributes \[<em>main</em>]</a></p>
+</div>
+<div class="paragraph">
+<p>Attributes used to in the content records, such as “units”, “valid_max”.
+Each record in this section defines one of these attributes, specifying
+its type and other properties used in the python API.</p>
+</div>
+<div id="x.3-section-attributes-__sect__" class="paragraph">
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/__sect__.html">X.3 Section Attributes [__sect__]</a></p>
+</div>
+<div class="paragraph">
+<p>Defines the attributes which are used to describe each section.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="diagrammatic-view-of-data-request-sections">Diagrammatic view of Data Request sections</h5>
+<div class="paragraph">
+<p>The following diagram illustrates the links between the different
+sections.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="discussion"><a id="anchor-7"></a>Discussion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The layout of the variable definitions has been rationalised into 5
+sections: the “MIP variables” defining the physical parameters,
+“structure”, “spatialShape” and “temporalShape” defining output
+configuration and a “CMOR Variable” bringing all these together. The
+Request Variable table then links CMOR variables together in Request
+Groups. The request groups give the MIP coordinators the ability to pick
+and choose precisely the variables needed for each analysis, avoiding
+requests for unnecessary data. This will result in request groups which
+contain overlapping data requirements. The use of links back to CMOR
+variables make it possible to unambiguously determine the union of any
+set of request groups.</p>
+</div>
+<div class="paragraph">
+<p>The sections on structure and shape separate out different aspects of
+the CMOR variable specification and make it possible to ensure that
+terms are used consistently. The contents if these sections in this
+draft have been created by scanning the CMOR tables, and there is some
+duplication (e.g. the cell_measures variable attribute is set for some
+variables and omitted for others, creating two sets of structure records
+which are identical except for this distinction. In CMIP6 the
+cell_measures attribute will always be set).</p>
+</div>
+<div class="paragraph">
+<p>The link between the request items and the experiment definitions is not
+fully implemented in this version, but the links through to the
+variables are. This means it is possible to gain an estimate of the data
+volumes for each MIP and for combinations of MIPs, but not yet to select
+specific tiers in a clean way (see dreqPy.pdf for more details). The
+data volumes given by the current version should be treated with
+caution. The contents may not fully reflect the intentions of the MIP
+coordinators, and there may be adjustments to variable priorities.</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a>. New in 01.beta.17
+</div>
+<div class="footnote" id="_footnote_2">
+<a href="#_footnoteref_2">2</a>. New in 01.beta.19
+</div>
+<div class="footnote" id="_footnote_3">
+<a href="#_footnoteref_3">3</a>. New in 01.beta.16
+</div>
+<div class="footnote" id="_footnote_4">
+<a href="#_footnoteref_4">4</a>. New in 01.beta.29 (<a href="http://purl.org/pav/2.3">purl.org/pav/2.3</a>)
+</div>
+<div class="footnote" id="_footnote_5">
+<a href="#_footnoteref_5">5</a>. New in 01.beta.17
+</div>
+<div class="footnote" id="_footnote_6">
+<a href="#_footnoteref_6">6</a>. There appear to be a number of broken links in this area .. the use of these records is under development.
+</div>
+<div class="footnote" id="_footnote_7">
+<a href="#_footnoteref_7">7</a>. <a href="https://docs.google.com/document/d/1cvSphy3Hb07t92BJvtqEBM9DMbsOSdENbwLJxw4AmH8/" class="bare">https://docs.google.com/document/d/1cvSphy3Hb07t92BJvtqEBM9DMbsOSdENbwLJxw4AmH8/</a>
+</div>
+<div class="footnote" id="_footnote_8">
+<a href="#_footnoteref_8">8</a>. <a href="http://clipc-services.ceda.ac.uk/ranges/" class="bare">http://clipc-services.ceda.ac.uk/ranges/</a> or <a href="http://w3id.org/cmip6dr/ranges/day_clt.html" class="bare">http://w3id.org/cmip6dr/ranges/day_clt.html</a> for a direct link to a single variable.
+</div>
+</div>
+
+      </section>
+    </div>
+    <footer>
+    
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    
+  </body>
+</html>
