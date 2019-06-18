@@ -15,13 +15,14 @@ jekyll build
 # cleanup
 rm -rf ../cmip6dr.github.io.master
 
-ls -lt ../cmip6dr.github.io.master/Documents
 
 #clone `master' branch of the repository using encrypted GH_TOKEN for authentification
 git clone https://${GH_TOKEN}@github.com/cmip6dr/cmip6dr.github.io.git ../cmip6dr.github.io.master
 
 # copy generated HTML site to `master' branch
 cp -R _site/* ../cmip6dr.github.io.master
+
+ls -lt ../cmip6dr.github.io.master/Documents
 
 # commit and push generated content to `master' branch
 # since repository was cloned in write mode with token auth - we can push there
