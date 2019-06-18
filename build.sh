@@ -24,7 +24,7 @@ rm -rf ../cmip6dr.github.io.master
 git clone https://${GH_TOKEN}@github.com/cmip6dr/cmip6dr.github.io.git ../cmip6dr.github.io.master
 
 # copy generated HTML site to `master' branch
-cp -fR _site/* ../cmip6dr.github.io.master
+cp -fR _site/Documents/adoc/*.html ../cmip6dr.github.io.master/Documents
 
 ls -lt ../cmip6dr.github.io.master/Documents
 ls -lt Documents
