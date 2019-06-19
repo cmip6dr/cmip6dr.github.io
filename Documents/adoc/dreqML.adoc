@@ -51,37 +51,26 @@ request document.
 
 The broad objectives of the data request are:
 
-\(1) Define variables, together with technical information required for generation of output files;
-
-\(2) Define collections of variables, from specified experiments, which are needed for or relevant to specific scientific objectives;
+[role="shortlist"]
+. Define variables, together with technical information required for generation of output files;
+. Define collections of variables, from specified experiments, which are needed for or relevant to specific scientific objectives;
 
 [[files]]
 Files
 -----
 
-The framework schema:
-
-http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/vocabFrameworkSchema_01beta.xsd
-
-Configuration file:
-
-http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq2Defn.xml
-
-Data request schema:
-
-http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq2Schema.xsd
-
-Data request XML:
-
-http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq.xml
-
-Supplement schema:
-
-http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSuppSchema.xsd
-
-**Supplement**:
-
-http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSupp.xml
+Framework schema::
+    http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/vocabFrameworkSchema_01beta.xsd
+Configuration file::
+    http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq2Defn.xml
+Data request schema::
+    http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq2Schema.xsd
+Data request XML::
+    http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreq.xml
+Supplement schema::
+    http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSuppSchema.xsd
+**Supplement**::
+    http://proj.badc.rl.ac.uk/svn/exarch/CMIP6dreq/tags/latest/dreqPy/docs/dreqSupp.xml
 
 [[overview]]
 [[anchor-2]]Overview
