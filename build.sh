@@ -29,5 +29,9 @@ cd ../cmip6dr.github.io.master
 git config user.email "martin.juckes@stfc.ac.uk"
 git config user.name "Martin Juckes"
 git add -A .
-git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --quiet origin master > /dev/null 2>&1
+if git commit --dry-run ;   then 
+  git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+  git push --quiet origin master > /dev/null 2>&1
+else 
+  echo NO files built
+fi
