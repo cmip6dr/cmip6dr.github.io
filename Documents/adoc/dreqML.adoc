@@ -157,10 +157,9 @@ python API);^1^
 The following table summarises the specifications of the core
 attributes:
 
-[table,role="vocablist"]
-[width="80%",cols="<2s,^2,^8,6",options="header",role="vocab"]
+[width="80%",cols="<2s,^2,^10,8e",options="header",role="vocab"]
 |=======================================================================
-|label |title |description |usage
+|Label |Title |Description |Usage
 
 |label |Record Label |A single word, with restricted character set |A
 short mnemonic word which is potentially meaningful but also concise and
@@ -421,7 +420,7 @@ of the ranked list is required.
 [[indicates-variables-for-which-a-there-is-a-range-of-potential-cmor-varibles-varchoice]]
 http://clipc-services.ceda.ac.uk/dreq/index/varChoice.html[3.10
 Indicates variables for which a there is a range of potential CMOR
-Varibles \[varChoice\]]
+Varibles $$[varChoice]$$]
 
 There are several instances where variables defined in the tables are
 mutually exclusive options of which only one should be requested. The
@@ -433,7 +432,7 @@ HighResMIP request.
 
 [[time-slices-for-output-requests-timeslice]]
 http://clipc-services.ceda.ac.uk/dreq/index/timeSlice.html[3.11 Time
-Slices for Output Requests \[timeSlice\]]
+Slices for Output Requests $$[timeSlice]$$]
 
 Specifies time slices (i.e. subsets of an experiment when data for the
 full duration of the experiment is not required).
@@ -509,7 +508,7 @@ Units [units]
 The attributes listed in table 1 above.
 
 [[x.2-data-request-attributes-__main__]]
-{dreq-main}[X.2 Data Request Attributes \[__main__\]]
+{dreq-main}[X.2 Data Request Attributes $$[__main__]$$]
 
 Attributes used to in the content records, such as “units”, “valid_max”.
 Each record in this section defines one of these attributes, specifying
