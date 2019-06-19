@@ -266,17 +266,17 @@ attributes:</p>
 </div>
 <table class="tableblock frame-all grid-all vocab" style="width: 80%;">
 <colgroup>
-<col style="width: 11.1111%;">
-<col style="width: 11.1111%;">
-<col style="width: 44.4444%;">
-<col style="width: 33.3334%;">
+<col style="width: 9.0909%;">
+<col style="width: 9.0909%;">
+<col style="width: 45.4545%;">
+<col style="width: 36.3637%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">label</th>
-<th class="tableblock halign-center valign-top">title</th>
-<th class="tableblock halign-center valign-top">description</th>
-<th class="tableblock halign-left valign-top">usage</th>
+<th class="tableblock halign-left valign-top">Label</th>
+<th class="tableblock halign-center valign-top">Title</th>
+<th class="tableblock halign-center valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Usage</th>
 </tr>
 </thead>
 <tbody>
@@ -284,25 +284,25 @@ attributes:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>label</strong></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Label</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">A single word, with restricted character set</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>A
 short mnemonic word which is potentially meaningful but also concise and
-suitable for use in a programming environment</p></td>
+suitable for use in a programming environment</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>uid</strong></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Identifier</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Unique identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Must be unique in the data
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Must be unique in the data
 request. For well known concepts this may be related to the label, but
 for items such as simple links between concepts an a random string will
-be used.</p></td>
+be used.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>title</strong></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Title</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">A few words describing the object</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A short phrase,
-suitable for use as a section heading</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>A short phrase,
+suitable for use as a section heading</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>description</strong></p></td>
@@ -317,10 +317,10 @@ object/concept.</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">The class: value should be from a defined
 vocabulary. All records in the schema definition section must have class
 set to ''<em>core</em>''.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The useClass declared for an attribute can affect
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>The useClass declared for an attribute can affect
 its interpretation in the Python package. For example, attributes
 labelled as “useClass=internalLink” should refer to another data request
-record.</p></td>
+record.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>type</strong></p></td>
@@ -346,8 +346,8 @@ used to specify additional properties.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>id</strong></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Alternative identifier</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Alternative identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For sections, the
-id provides a short alias for the section label.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>For sections, the
+id provides a short alias for the section label.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>itemLabelMode</strong></p></td>
@@ -359,22 +359,22 @@ id provides a short alias for the section label.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>level</strong></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Level</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Level</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redundant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Redundant</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>maxOccurs</strong></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Maximum number of permissible occurrences of this section</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Maximum number of permissible occurrences of this section</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Used in
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Used in
 defining sections. In the CMIP6 Data Request each section only occurs
-once.</p></td>
+once.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>labUnique</strong></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Set true if label of each record is unique within section</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Set true if label of each record is unique within section</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Used in
-defining sections.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Used in
+defining sections.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>usage</strong></p></td>
@@ -621,7 +621,7 @@ of the ranked list is required.</p>
 <div id="indicates-variables-for-which-a-there-is-a-range-of-potential-cmor-varibles-varchoice" class="paragraph">
 <p><a href="http://clipc-services.ceda.ac.uk/dreq/index/varChoice.html">3.10
 Indicates variables for which a there is a range of potential CMOR
-Varibles \[varChoice]</a></p>
+Varibles [varChoice]</a></p>
 </div>
 <div class="paragraph">
 <p>There are several instances where variables defined in the tables are
@@ -634,7 +634,7 @@ HighResMIP request.</p>
 </div>
 <div id="time-slices-for-output-requests-timeslice" class="paragraph">
 <p><a href="http://clipc-services.ceda.ac.uk/dreq/index/timeSlice.html">3.11 Time
-Slices for Output Requests \[timeSlice]</a></p>
+Slices for Output Requests [timeSlice]</a></p>
 </div>
 <div class="paragraph">
 <p>Specifies time slices (i.e. subsets of an experiment when data for the
@@ -718,7 +718,7 @@ values<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_foo
 <p>The attributes listed in table 1 above.</p>
 </div>
 <div id="x.2-data-request-attributes-__main__" class="paragraph">
-<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/__main__.html">X.2 Data Request Attributes \[<em>main</em>]</a></p>
+<p><a href="http://clipc-services.ceda.ac.uk/dreq/index/__main__.html">X.2 Data Request Attributes [__main__]</a></p>
 </div>
 <div class="paragraph">
 <p>Attributes used to in the content records, such as “units”, “valid_max”.
