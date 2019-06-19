@@ -13,6 +13,7 @@ bodyclass: documentation
 
 Martin Juckes, June 20^th^, 2019.
 
+
 [[executive-summary]]
 [[anchor]]Executive Summary
 ---------------------------
@@ -446,12 +447,12 @@ masking, temporal mean vs. point, different vertical structure (model
 levels vs. pressure levels).
 
 [[variable-relation-link-varrellnk]]
-6.3 Variable relation link &#91;varRelLnk&#93;
+6.3 Variable relation link $$[varRelLnk]$$
 
 Provides links between CMOR variables and varRelation records.
 
 [[cell-methods-cellmethods]]
-7.1 Cell Methods &#91;cellMethods&#93;
+7.1 Cell Methods $$[cellMethods]$$
 
 [[quality-control-ranges-in-supplement]]
 Quality Control Ranges [in supplement]
@@ -492,7 +493,7 @@ Units [units]
 ++++++++++++++
 
 [[x.1-core-attributes-__core__]]
-{dreq-core}[X.1 Core Attributes &#91;__core__&#93;]
+{dreq-core}[X.1 Core Attributes $$[__core__]$$]
 
 The attributes listed in table 1 above.
 
