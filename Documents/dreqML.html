@@ -264,12 +264,12 @@ python API);<sup>1</sup></p>
 <p>The following table summarises the specifications of the core
 attributes:</p>
 </div>
-<table class="tableblock frame-all grid-all vocab" style="width: 80%;">
+<table class="tableblock frame-all grid-all" style="width: 80%;">
 <colgroup>
-<col style="width: 11.1111%;">
-<col style="width: 11.1111%;">
-<col style="width: 44.4444%;">
-<col style="width: 33.3334%;">
+<col style="width: 17.647%;">
+<col style="width: 11.7647%;">
+<col style="width: 11.7647%;">
+<col style="width: 58.8236%;">
 </colgroup>
 <thead>
 <tr>
@@ -281,7 +281,7 @@ attributes:</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>label</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">label</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Label</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">A single word, with restricted character set</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A
@@ -289,7 +289,7 @@ short mnemonic word which is potentially meaningful but also concise and
 suitable for use in a programming environment</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>uid</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">uid</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Identifier</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Unique identifier</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Must be unique in the data
@@ -298,21 +298,21 @@ for items such as simple links between concepts an a random string will
 be used.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>title</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">title</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Title</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">A few words describing the object</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">A short phrase,
 suitable for use as a section heading</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>description</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">description</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Description</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">An extended description of the
 object/concept.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>useClass</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">useClass</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Class</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">The class: value should be from a defined
 vocabulary. All records in the schema definition section must have class
@@ -323,46 +323,46 @@ labelled as “useClass=internalLink” should refer to another data request
 record.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>type</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Record Type</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">The type specifies the XSD value type constraint,
 e.g. xs:string.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>techNote</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">techNote</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Technical Note</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Additional technical information which can be
 used to specify additional properties.</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>superclass</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">superclass</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Superclass</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">States what class the property is derived from</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>id</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">id</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Alternative identifier</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Alternative identifier</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For sections, the
 id provides a short alias for the section label.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>itemLabelMode</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">itemLabelMode</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Item Label Mode</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Item Label Mode</p></td>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>level</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">level</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Level</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Level</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Redundant</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>maxOccurs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maxOccurs</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Maximum number of permissible occurrences of this section</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Maximum number of permissible occurrences of this section</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Used in
@@ -370,14 +370,14 @@ defining sections. In the CMIP6 Data Request each section only occurs
 once.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>labUnique</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">labUnique</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Set true if label of each record is unique within section</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Set true if label of each record is unique within section</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Used in
 defining sections.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>usage</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">usage</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Usage notes</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Notes on the usage of the predicate/concept defined
 by this node</p></td>
