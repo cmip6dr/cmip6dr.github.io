@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# only proceed script when started not by pull request (PR)
-if [ $TRAVIS_PULL_REQUEST == "true" ]; then
+# only proceed script when started by pull request (PR)
+if [ $TRAVIS_PULL_REQUEST == "false" ]; then
   echo "this is PR, exiting"
   exit 0
 fi
@@ -25,6 +25,8 @@ git clone https://${GH_TOKEN}@github.com/cmip6dr/cmip6dr.github.io.git ../cmip6d
 
 # copy generated HTML site to `master' branch
 cp -fR _site/Documents/adoc/*.html ../cmip6dr.github.io.master/Documents
+
+## NOTE these documents will be over-written if other versions exist in the pull request.
 
 ls -lt ../cmip6dr.github.io.master/Documents
 ls -lt Documents
