@@ -4,7 +4,7 @@ before_install:
  - chmod +x build.sh
 
 # only run for updates initiated directly in master.
-script: "./build.sh"
+script:
  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./build.sh; fi'
  
 branches:
