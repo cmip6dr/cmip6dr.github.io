@@ -157,7 +157,7 @@ python API);^1^
 The following table summarises the specifications of the core
 attributes:
 
-[width="80%",cols="3,^2,^2,10",options="header"]
+[width="80%",cols="<2s,^2,^8,6",options="header",role="vocab"]
 |=======================================================================
 |label |title |description |usage
 
