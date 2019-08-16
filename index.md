@@ -21,8 +21,9 @@ bodyclass: splash
 <h2>Support</h2>
 <ul>
   <li>For general enquiries: submit and issue <a href="https://github.com/cmip6dr/Introduction/issues">here</a>;</li>
-  <li>For specific questions about the CMIP6 data request, submit an issue <a href=" https://github.com/cmip6dr/CMIP6_DataRequest_VariableDefinitions">here</a>.</li>
+  <li>For specific questions about the CMIP6 data request, submit an issue <a href="https://github.com/cmip6dr/CMIP6_DataRequest_VariableDefinitions">here</a>;</li>
+  <li>For suggestions about future developments, submit an issue <a href="https://github.com/cmip6dr/cmip7_forward_look">here</a>.</li>
  </ul>
- 
+
  <div id="bleftxx"></div>
  <!-- the transparency CSS is not working ... perhaps too fragile to waste time on -->
