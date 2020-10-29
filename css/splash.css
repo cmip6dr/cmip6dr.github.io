@@ -1,4 +1,7 @@
 .grad1 {
-  background-color:blue;
   background-image: radial-gradient(farthest-corner at 60% 55%, #F0AA64, #FDEAE7);
+}
+
+.grad2 {
+  background-color:blue;
 }
