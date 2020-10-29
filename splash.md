@@ -1,7 +1,7 @@
 ---
 layout: splash
 title: Data Request
-bodyclass: splash
+bodyclass: grad1
 ---
 
 <h1><i>MIP Data Specifications</i></h1>
