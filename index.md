@@ -8,7 +8,7 @@ bodyclass: splash
 
 <h2>Background Information</h2>
 
-<p>The Data Request defines technical metadata for diagnostics of the climate system to promote exchange of re-usable data. Details of the prcess and an overview of the resources available are provided in the web pages of the <a href="https://www.earthsystemcog.org/projects/wip/CMIP6DataRequest">WGCM Infrastructure Panel</a>.
+<p>The Data Request defines technical metadata for diagnostics of the climate system to promote exchange of re-usable data. Details of the prcess and an overview of the resources available are provided in the web pages of the <a href="https://cmip6dr.github.io/Data_Request_Home/">WGCM Infrastructure Panel</a>.
   </p>
 
 <h2>Browse the CMIP6 Data Request</h2>
