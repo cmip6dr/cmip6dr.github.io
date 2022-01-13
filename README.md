@@ -1,7 +1,7 @@
 # cmip6dr.github.io
 Github pages site
 
-Latest build: June 19th.
+Latest build: June 19th. Trying to build, Jan 2022.
 
 Still struggline with control of travis CI workflow.
 
