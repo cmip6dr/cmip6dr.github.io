@@ -16,6 +16,7 @@ bodyclass: splash
 <ul>
   <li>The data request can be browsed <a href="http://clipc-services.ceda.ac.uk/dreq/">online</a>;</li>
   <li>It is also available as a python package <a href="https://pypi.org/project/dreqPy/" class="code">dreqPy</a>;</li>
+  <li>The data request as an <a href="https://github.com/cmip6dr/data_request_snapshots/blob/main/Release/dreqPy/docs/dreq.xml?raw=true">XML document</a> is available in the <a href="https://github.com/cmip6dr/data_request_snapshots">Data Request Snapshots</a> repository.
  </ul>
  
 
